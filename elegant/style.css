@@ -25,6 +25,7 @@ header {
     flex-direction: column;
     justify-content: flex-start;
     z-index: 1;
+    overflow: hidden;
 }
 
 .header-top {
@@ -39,6 +40,7 @@ header {
     justify-content: center;
     align-items: baseline;
     position: relative;
+
 }
 .menu p {
     font-weight: 600;
@@ -54,12 +56,15 @@ header {
         opacity: 0;
         -webkit-transform: translate3d(100%, 0, 0);
         transform: translate3d(100%, 0, 0);
+
+
     }
 
     to {
         opacity: 1;
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
+
     }
 }
 @keyframes fadeInRight {
@@ -67,6 +72,7 @@ header {
         opacity: 0;
         -webkit-transform: translate3d(100%, 0, 0);
         transform: translate3d(100%, 0, 0);
+
     }
 
     to {
@@ -78,12 +84,15 @@ header {
 @-webkit-keyframes fadeOutRight {
     from {
         opacity: 1;
+
     }
 
     to {
         opacity: 0;
         -webkit-transform: translate3d(100%, 0, 0);
         transform: translate3d(100%, 0, 0);
+        visibility: hidden;
+
     }
 }
 
@@ -98,6 +107,7 @@ header {
         -webkit-transform: translate3d(100%, 0, 0);
         transform: translate3d(100%, 0, 0);
         visibility: hidden;
+
     }
 }
 
@@ -772,6 +782,9 @@ footer p {
         background-size: cover;
 
     }
+    header {
+        overflow: hidden;
+    }
     .header-top {
         background: rgba(0,0,0,0.3);
         padding: 0;
@@ -968,6 +981,172 @@ footer p {
         font-size: 14px;
 
     }
+    .about-header {
+        background-position: 40% 50%;
+    }
+    .services {
+        flex-direction: column;
+    }
+    .about-description p {
+        margin: 80px 0;
+    }
+    .services img {
+        width: 100%;
+        height: auto;
+    }
+    .services-description {
+        flex-direction: column;
+    }
+    .services-description h3 {
+        padding-left: 30px;
+    }
+    .services-description p {
+        font-size: 16px;
+        width: 85%;
+        margin-bottom: 20px;
+        padding-left: 30px;
+    }
+    .first-column, .second-column {
+        width: 100%;
+        padding: 0;
+
+    }
+    .second-column {
+        margin-bottom: 20px;
+    }
+    .contacts-block {
+        flex-direction: column;
+        background: #fcfcfc;
+
+    }
+
+    .contacts-address,
+    .contacts-img,
+    .contacts-info,
+    .contacts-phone {
+        width: 100%;
+        height: auto;
+    }
+    .contacts-img img {
+        width: 100%;
+        height: auto;
+    }
+    .contacts-address p, .contacts-phone p {
+        font-size: 23px;
+        width: 100%;
+    }
+    .contacts-address p {
+        padding-bottom: 40px;
+    }
+    .contacts-address::after, .contacts-phone::after {
+        top: -145px;
+    }
+    .contacts-info {
+        background: #fcfcfc;
+    }
+    .contacts-info p {
+        padding-bottom: 40px;
+    }
+    .contacts-phone p:last-of-type{
+        padding-bottom: 40px;
+    }
+    .contact-main .button {
+        margin: 40px 0;
+    }
+    .blog-header {
+        background-position: 47% 50%;
+    }
+    .blog-main .container {
+        width: 320px;
+        flex-direction: column;
+        background-color: white;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .blog-posts
+    {
+        width: 100%;
+
+    }
+
+    .blog-posts .post,
+    .blog-sidebar{
+        background-color: #f9f9f9;
+        width: 100%;
+    }
+    .blog-posts .post img {
+        margin: 0;
+        width: 100%;
+        height: auto;
+    }
+    .blog-posts .post h2,
+    .blog-posts .post p,
+    .sidebar-section{
+        padding-left: 20px;
+    }
+    .blog-posts .post h2 {
+        margin-top: 20px;
+    }
+    .blog-posts .post .button {
+        margin: 0;
+        margin-bottom: 30px;
+        margin-left: 20px;
+
+    }
+    .more-posts {
+        margin: 40px auto;
+        margin-top: 0;
+    }
+    .sidebar-section img {
+        width: 94%;
+    }
+    .sidebar-section:last-of-type img:last-of-type {
+        margin-bottom: 30px;
+    }
+    .works-header {
+        background-position: 93% 50%;
+    }
+    .project-header {
+        background-position: 65% 50%;
+    }
+    .project-main .container {
+        width: 320px;
+        flex-direction: column;
+    }
+    .project-view {
+        width: 100%;
+    }
+    .project-view h2 {
+        margin: 40px 0;
+    }
+    .project-view p {
+        margin-bottom: 40px;
+    }
+    .project-view img {
+        padding: 0;
+        width: 90%;
+        height: auto;
+        margin: 5px auto;
+
+    }
+    .project-sidebar {
+        display: none;
+    }
+    .links .container {
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .links .button {
+        margin-bottom: 30px;
+    }
+    .links .button:first-of-type {
+        padding: 15px 75px;
+    }
+    .links .button:nth-of-type(2) {
+        padding: 15px 85px;
+    }
+
+
 }
 
 
