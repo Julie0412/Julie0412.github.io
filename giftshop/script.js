@@ -19,11 +19,11 @@ $(document).on('click', function (e) {
 
 
 $(document).on('mouseenter', '.men, .women, .kids, .crafts, .jewelry', function () {
-    $(this).find("a").eq(0).addClass('go-to');
+    $(this).find('.slide').eq(0).addClass('go-to');
 });
 
 $(document).on('mouseleave', '.men, .women, .kids, .crafts, .jewelry', function () {
-    $(this).find("a").eq(0).removeClass('go-to');
+    $(this).find('.slide').eq(0).removeClass('go-to');
 });
 
 $(document).on('mouseenter', '.product', function () {

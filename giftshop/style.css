@@ -423,45 +423,33 @@ body {
 }
 
 .go-to {
-    display: block;
+    display: flex;
     position: absolute;
+    background-color: rgba(0,0,0,0.7);
+    text-align: center;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.go-to a {
     font-size: 20px;
-    top: 45%;
-    left: 25%;
-    width: 50%;
+    padding: 15px 30px;
     background-color: #05aecc;
     color: white;
+    display: flex;
+    align-self: center;
     text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    z-index: 1000;
-
 }
-
-.men:hover,
-.kids:hover,
-.women:hover,
-.crafts:hover,
-.jewelry:hover{
-    background-blend-mode: soft-light;
-}
-.men:hover p,
-.men:hover h2,
-.kids:hover p,
-.kids:hover h2,
-.women:hover p,
-.women:hover h2,
-.crafts:hover p,
-.jewelry:hover p,
 .hover
 {
     -webkit-filter: brightness(30%);
     filter: brightness(30%);
 }
-
-
-
-
 
 
 .section-title {
@@ -1527,6 +1515,10 @@ body {
         padding-bottom: 5px;
 
     }
+    .go-to a {
+        font-size: 14px;
+        padding: 15px 10px;
+    }
     .step {
         display: none;
     }
@@ -1635,12 +1627,7 @@ body {
     .footer-bottom {
         text-align: center;
     }
-    .go-to {
-        width: 80%;
-        left: 10%;
-        top: 30%;
-        z-index: 1000;
-    }
+
 
 }
 @media screen and (max-width: 320px) {
@@ -1738,12 +1725,7 @@ body {
     .social-links a:last-of-type {
         margin-right: 0;
     }
-    .go-to {
-        width: 80%;
-        left: 10%;
-        top: 30%;
-        z-index: 1000;
-    }
+
 
 }
 
@@ -1799,12 +1781,7 @@ body {
     .social-links a:last-of-type {
         margin-right: 0;
     }
-    .go-to {
-        width: 80%;
-        left: 10%;
-        top: 30%;
-        z-index: 1000;
-    }
+
 
 }
 
