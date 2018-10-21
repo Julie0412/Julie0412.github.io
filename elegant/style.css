@@ -293,6 +293,7 @@ p.intro {
     color: rgba(2,23,37,0.6);
     padding: 20px 45px;
     margin-bottom: 80px;
+    cursor: pointer;
 }
 a:not(.button):hover,
 a:not(.logo a):hover {
