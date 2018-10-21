@@ -1,3 +1,4 @@
+
 h2, p, a, li, label, input, ul, nav, section, header, footer {
     font-family: 'Lato', sans-serif;
     margin: 0;
@@ -423,6 +424,8 @@ body {
 }
 
 .go-to {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: absolute;
     background-color: rgba(0,0,0,0.7);
@@ -432,8 +435,15 @@ body {
     width: 100%;
     top: 0;
     left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 .go-to a {
@@ -441,7 +451,10 @@ body {
     padding: 15px 30px;
     background-color: #05aecc;
     color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-item-align: center;
     align-self: center;
     text-align: center;
 }
@@ -1784,8 +1797,6 @@ body {
 
 
 }
-
-
 
 
 
