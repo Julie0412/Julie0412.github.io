@@ -20,13 +20,12 @@ $(document).on('click', function (e) {
 
 $(document).on('mouseenter', '.men', function () {
     $(this).find('.slide').eq(0).addClass('go-to');
-    alert();
 });
 
 $(document).on('mouseleave', '.men', function () {
     $(this).find('.slide').eq(0).removeClass('go-to');
 });
-/*
+
 $(document).on('mouseenter', '.product', function () {
     $(this).find("img").eq(0).addClass('hover');
     $(this).find("div").eq(0).addClass('product-buttons');
@@ -36,7 +35,7 @@ $(document).on('mouseleave', '.product', function () {
     $(this).find("img").eq(0).removeClass('hover');
     $(this).find("div").eq(0).removeClass('product-buttons');
 });
-*/
+
 
 
 
