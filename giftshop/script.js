@@ -20,6 +20,7 @@ $(document).on('click', function (e) {
 
 $(document).on('mouseenter', '.men', function () {
     $(this).find('.slide').eq(0).addClass('go-to');
+    alert();
 });
 
 $(document).on('mouseleave', '.men', function () {
