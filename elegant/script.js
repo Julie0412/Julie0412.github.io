@@ -20,6 +20,15 @@ $(document).on('mouseleave', '.work', function() {
     $(this).find('.work-hover').removeClass('work-on');
 });
 
+$(document).on('click', '.open-full', function() {
+    $(this).closest('.post-preview').next().toggleClass('see-full');
+    $(this).hide();
+});
+
+$(document).on('click', '.more-posts', function() {
+    $('.blog-posts').find('.post.third-post').toggleClass('see-full');
+});
+
 
 
 
