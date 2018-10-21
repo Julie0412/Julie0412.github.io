@@ -18,11 +18,11 @@ $(document).on('click', function (e) {
 });
 
 
-$(document).on('mouseenter', '.men', function () {
+$(document).on('mouseenter', 'section.men', function () {
     $(this).find('.slide').eq(0).addClass('go-to');
 });
 
-$(document).on('mouseleave', '.men', function () {
+$(document).on('mouseleave', 'section.men', function () {
     $(this).find('.slide').eq(0).removeClass('go-to');
 });
 
