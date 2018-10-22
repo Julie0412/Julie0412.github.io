@@ -709,7 +709,9 @@ footer p {
     margin-right: 100px;
     padding: 15px 45px;
 }
-
+.post.see-full {
+    display: flex;
+}
 .see-full {
     display: block;
 }
