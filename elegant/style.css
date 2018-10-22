@@ -694,12 +694,10 @@ footer p {
 .post-full {
     display: none;
 }
-.see-full {
+.post-full.see-full {
     display: block;
 }
-.post.see-full {
-     display: block;
-}
+
 
 
 
