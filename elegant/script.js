@@ -21,7 +21,7 @@ $(document).on('mouseleave', '.work', function() {
 });
 
 $(document).on('click', '.open-full', function() {
-    $(this).closest('.post-preview').next().toggleClass('see-full');
+    $(this).closest('.post-preview').next().addClass('see-full');
     $(this).hide();
 });
 
