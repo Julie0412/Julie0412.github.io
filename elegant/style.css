@@ -689,13 +689,14 @@ footer p {
     padding: 10px 45px;
 }
 
+.see-full {
+    display: block;
+}
+
 .post-full {
     display: none;
 }
 
-.see-full {
-    display: block;
-}
 
 
 .post-full .content {
