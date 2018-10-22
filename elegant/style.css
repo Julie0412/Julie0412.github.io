@@ -693,6 +693,10 @@ footer p {
     display: none;
 }
 
+.see-full {
+    display: block;
+}
+
 
 .post-full .content {
     margin-top: 65px;
@@ -710,9 +714,6 @@ footer p {
     padding: 15px 45px;
 }
 
-.post.see-full {
-    display: block;
-}
 
 .blog-sidebar {
     width: 30%;
