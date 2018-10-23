@@ -26,7 +26,7 @@ $(document).on('click', '.open-full', function() {
 });
 
 $(document).on('click', '.more-posts', function() {
-    $('.blog-posts').find('.post.third-post').toggleClass('see-full');
+    $('.blog-posts').find('.post.third-post').show();
 });
 
 
