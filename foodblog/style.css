@@ -1,0 +1,1203 @@
+
+/* fonts */
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: local('Source Serif Pro Light'), local('SourceSerifPro-Light'), url('fonts/Sourceserifprolight.woff2') format('woff2'), url('fonts/Sourceserifprolight.woff') format('woff'), url('fonts/Sourceserifprolight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: local('Source Serif Pro'), local('fonts/SourceSerifPro-Regular'), url('fonts/Sourceserifpro.woff2') format('woff2'), url('fonts/Sourceserifpro.woff') format('woff'), url('fonts/Sourceserifpro.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: local('Source Serif Pro Semibold'), local('SourceSerifPro-Semibold'), url('fonts/Sourceserifprosemibold.woff2') format('woff2'), url('fonts/Sourceserifprosemibold.woff') format('woff'), url('fonts/Sourceserifprosemibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Source Serif Pro';
+    src: local('Source Serif Pro Bold'), local('SourceSerifPro-Bold'), url('fonts/Sourceserifprobold.woff2') format('woff2'), url('fonts/Sourceserifprobold.woff') format('woff'), url('fonts/Sourceserifprobold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('fonts/MyriadPro-Bold.eot');
+    src: local('Myriad Pro Bold'), local('MyriadPro-Bold'),
+    url('fonts/MyriadPro-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/MyriadPro-Bold.woff') format('woff'),
+    url('fonts/MyriadPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* page styles */
+
+div, a, p, header, footer, main, img, body, h1, h2, h3, h4, b, section, ul, li {
+    padding: 0;
+    margin: 0;
+}
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: "Source Serif Pro", serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #212021;
+
+}
+header {
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 780px;
+
+}
+.header-left,
+.header-right {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.header-left {
+    width: 52%;
+    justify-content: flex-start;
+}
+.header-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 225px;
+}
+.header-menu-mobile {
+    display: none;
+}
+.logo {
+    width: 33%;
+    height: 100%;
+
+}
+.logo img {
+    width: 225px;
+    height: 100%;
+
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    align-items: center;
+}
+.menu li {
+    padding:0 50px;
+}
+.menu li:last-of-type {
+    padding-right: 0;
+}
+
+
+
+
+.title-back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title-back p{
+    position: absolute;
+    font-size: 120px;
+    text-transform: uppercase;
+    color: #fafafa;
+    top: 11%;
+    z-index: 0;
+    letter-spacing: 15px;
+}
+.header-left .title-back {
+    align-items: flex-start;
+    font-size: 80px;
+
+}
+.header-left .title-back p {
+    font-size: 80px;
+    top: 270px;
+    color: white;
+    margin-left: 75px;
+    text-transform: none;
+    letter-spacing: 0;
+}
+.header-left .title-back p:last-of-type {
+    top: 330px;
+    font-size: 50px;
+    margin-left: 240px;
+
+}
+.description,
+.links {
+    margin-left: 105px;
+}
+.description {
+    position: relative;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.description h1 {
+    font-weight: 600;
+    font-size: 42px;
+}
+.description p {
+    display: inline-block;
+    width: 47%;
+    margin: 30px 0;
+    font-weight: 300;
+}
+.button {
+    font-family: "Myriad Pro", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #212021;
+    margin-top: 15px;
+    padding-bottom: 5px;
+}
+.links {
+    margin-top: 210px;
+    font-size: 14px;
+    font-weight: 300;
+    opacity: 0.4;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
+.links a,
+.links a:visited {
+    color: #212021;
+    text-decoration: none;
+}
+.links a:first-of-type {
+    padding-right: 10px;
+}
+.links a:last-of-type {
+    padding-left: 10px;
+}
+.header-right {
+    background: url("images/header-img-d.png") no-repeat;
+    background-size: cover;
+    width: 48%;
+
+}
+.header-right p {
+    position: absolute;
+    top: 25px;
+    left: 150px;
+}
+.header-right img {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    left: -100px;
+    top: 160px;
+}
+.portfolio {
+    height: 2200px;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.portfolio .container {
+    height: 1650px;
+}
+.container h2:first-of-type {
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 80px;
+    z-index: 1;
+}
+.container h2::before {
+    content: "";
+    display: block;
+    height: 38px;
+    width: 2px;
+    background-color: #d4aab7;
+    margin: 100px auto;
+}
+.projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    height: 70%;
+
+}
+.column-1,
+.column-2,
+.column-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 29%;
+    height: 100%;
+}
+.column-1 {
+    width: 34%;
+
+}
+.column-2 {
+    justify-content: flex-start;
+}
+.projects img {
+    width: 100%;
+    height: auto;
+}
+.tag {
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+.project h3 {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 80px;
+
+}
+.download {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.download img {
+    position: absolute;
+    left: 0;
+    top: 85px;
+    z-index: 5;
+
+}
+.download::before {
+    content: "";
+    width: 965px;
+    height: 370px;
+    background-color: #f8f8f8;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.download-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 710px;
+    height: 466px;
+    box-sizing: border-box;
+    border: 8px solid #8eb574;
+    align-self: center;
+    margin-left: 120px;
+    text-align: left;
+    vertical-align: middle;
+    margin-top: 40px;
+}
+.download-text h3,
+.download-text p{
+    width: 40%;
+    margin-bottom: 20px;
+}
+.download-text h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+.download-text .button {
+    margin-right: 115px;
+    margin-bottom: 50px;
+
+}
+.download-text::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 28px;
+    background: url("images/pdf.png") no-repeat;
+    background-size: cover;
+    position:relative;
+    top: -78px;
+    left: 50px;
+}
+.about .title-back p {
+    top: 19%;
+
+}
+.about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    margin-bottom: 80px;
+}
+.about-content::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #f8f8f8;
+    height: 377px;
+    width: 378px;
+    top: -50px;
+    left: -135px;
+    z-index: -1;
+}
+.about-content::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #f8f8f8;
+    height: 485px;
+    width: 755px;
+    top: 99px;
+    left: 460px;
+    z-index: -1;
+}
+
+.about-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 60%;
+}
+.about-images img:last-of-type {
+    margin-left: 30px;
+    margin-top: 50px;
+}
+.about-text {
+    margin-top: 130px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about-text p {
+    margin: 9px 0;
+    width: 70%;
+}
+.about-text a {
+    width: 218px;
+}
+.pricelist .container {
+    height: 1370px;
+}
+.pricelist .title-back p {
+    top: 180px;
+
+}
+.pricelist .projects {
+    margin-bottom: 0;
+}
+.price-example h3 {
+    font-weight: 700;
+    font-size: 26px;
+    color: #8eb574;
+    margin-left: 85px;
+    margin-top: 25px;
+
+}
+.price-example h4 {
+    color: #8eb574;
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 50%;
+
+}
+.price-example p {
+    text-align: center;
+    margin: 30px 0;
+}
+.pricelist .column-1,
+.pricelist .column-3 {
+    margin-top: 80px;
+}
+.contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    flex-wrap: nowrap;
+}
+footer .title-back p {
+    top: 300px;
+    z-index: 0;
+    align-self: center;
+}
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 20px ;
+    font-weight: 600;
+    font-size: 19px;
+    letter-spacing: 2px;
+    z-index: 1;
+}
+.separate {
+    color: #8eb574;
+}
+.contact p {
+    padding: 0 5px;
+}
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+.social a {
+    display: block;
+    width: 34px;
+    height: 34px;
+    background-size: cover;
+    margin-right: 10px;
+}
+.social a:last-of-type {
+    margin-right: 0;
+}
+.vk {
+    background: url("images/vk.png") no-repeat;
+}
+.fb {
+    background: url("images/facebook.png") no-repeat;
+}
+.ig {
+    background: url("images/instagram.png") no-repeat;
+}
+.pt {
+    background: url("images/pinterest.png") no-repeat;
+}
+
+@media screen and (max-width: 1280px) {
+    header {
+        height: 700px;
+    }
+    .menu li {
+        padding: 0 30px;
+    }
+    .header-right p {
+        top: 20px;
+    }
+    .header-left .title-back p {
+        top: 230px;
+    }
+    .header-left .title-back p:last-of-type {
+        top: 292px;
+    }
+    .header-right img {
+        width: 306px;
+        height: auto;
+    }
+    .description {
+        top: -35px;
+    }
+    .description p {
+        width: 53%;
+    }
+    .links {
+        margin-top: 130px;
+    }
+    .header-right img {
+        top: 150px;
+    }
+    .download img {
+        width: 530px;
+        height: auto;
+        top: 110px;
+    }
+    .about-images img {
+        width: 45%;
+    }
+    .about-text {
+        margin-left: 20px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    header {
+        width: 100%;
+        height: 820px;
+    }
+    .header-right {
+        width: 33%;
+        background: url("images/header-small.png") no-repeat;
+        background-size: cover;
+    }
+    .header-right p {
+        left: 30px;
+    }
+    .header-right img {
+        top: 170px;
+    }
+    .header-left {
+        width: 67%;
+    }
+    .header-menu {
+        display: none;
+    }
+    .description,
+    .links {
+        margin-left: 45px;
+    }
+    .description p {
+        width: 65%;
+    }
+    .header-left .title-back p {
+        margin-left: 15px;
+        font-size: 70px;
+        top: 240px;
+    }
+    .header-left .title-back p:last-of-type {
+        margin-left: 120px;
+        top: 295px;
+    }
+    .links {
+        margin-top: 200px;
+    }
+    .portfolio {
+        height: auto;
+    }
+    .portfolio .container {
+        height: 1050px;
+    }
+
+    .container h2::before {
+        margin: 50px auto;
+    }
+    .title-back p {
+        top: 80px;
+    }
+    .tag {
+        font-size: 14px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .project h3 {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .download::before {
+        width: 78%;
+        height: 300px;
+    }
+    .download-text {
+        width: 74%;
+        margin-left: 8%;
+        height: 330px;
+        margin-top: 30px;
+    }
+    .download::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 34%;
+        height: 272px;
+        background: url("images/portfolio-small.png") no-repeat;
+        background-size: cover;
+        left: 0;
+        top: 60px;
+    }
+    .download-text h3, .download-text p {
+        width: 49%;
+        margin-bottom: 15px;
+    }
+    .download-text .button {
+        margin-bottom: 20px;
+        margin-right: 20%;
+    }
+
+    .download-text::after {
+        top: -48px;
+        left: 50px;
+    }
+    .about .title-back p {
+        top: 85px;
+    }
+    .about-content {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .about-content::before {
+        width: 100%;
+        top: 8%;
+        height: 252px;
+    }
+    .about-content::after {
+        width: 30%;
+        height: 311px;
+        left: 79%;
+        top: 140px;
+
+    }
+    .about-images {
+        width: 100%;
+    }
+    .about-images img {
+        width: 47%;
+    }
+
+    .about-text {
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-left: 5px;
+        margin-top: 0;
+        width: 100%;
+        position: relative;
+    }
+    .about-text p {
+        width: 48%;
+
+    }
+    .about-text p:nth-child(2) {
+        display: none;
+    }
+    .about-text p:first-child {
+        margin-top: -25px;
+        margin-right: 25px;
+    }
+
+    .about-text p:last-of-type {
+
+        margin-top: 25px;
+
+    }
+    .about a {
+        position: absolute;
+        top: 85px;
+        left: 52%;
+    }
+    .pricelist .container {
+        height: auto;
+    }
+    .pricelist .title-back p {
+        top: 85px;
+    }
+    .price-example h3 {
+        margin-left: 10px;
+        font-size: 20px;
+        margin-top: 5px;
+    }
+    .price-example h4 {
+        margin-left: 28%;
+        font-size: 18px;
+    }
+    .column-1 .price-example h4 {
+        margin-left: 35%;
+    }
+    .price-example p {
+        font-size: 13px;
+        margin: 15px 0;
+    }
+    .contacts {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .contact {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    .separate {
+        margin: 0 20px;
+    }
+    footer .title-back p {
+        top: 80px;
+    }
+    .social {
+        margin-bottom: 40px;
+    }
+
+}
+@media screen and (min-width: 567px) and (max-width: 767px) {
+    body {
+        font-size: 15px;
+    }
+    header {
+        width: 100%;
+        height: 600px;
+    }
+    .header-right {
+        width: 38%;
+        background: url("images/header-small.png") no-repeat;
+        background-size: 100% 100%;
+    }
+    .header-right p {
+        left: 15px;
+        top: 15px;
+    }
+    .header-right img {
+        width: 250px;
+        top: 120px;
+        left: -70px;
+    }
+    .header-left {
+        width: 62%;
+    }
+    .header-top {
+        margin-bottom: 150px;
+    }
+    .logo img {
+        width: 180px;
+    }
+    .header-menu {
+        display: none;
+    }
+    .description,
+    .links {
+        margin-left: 30px;
+    }
+    .description h1 {
+        font-size: 34px;
+    }
+    .description p {
+        width: 65%;
+        margin: 20px 0;
+    }
+    .button {
+        font-size: 14px;
+        border-bottom: 2px solid #212021;
+        padding-bottom: 2px;
+    }
+    .header-left .title-back p {
+        margin-left: 7px;
+        font-size: 52px;
+        top: 160px;
+    }
+    .header-left .title-back p:last-of-type {
+        margin-left: 110px;
+        top: 203px;
+        font-size: 40px;
+    }
+    .links {
+        margin-top: 130px;
+    }
+    .portfolio {
+        height: auto;
+    }
+    .portfolio .container {
+        height: 970px;
+    }
+    .portfolio .container,
+    .pricelist .container {
+        width: 90%;
+    }
+
+    .container h2::before {
+        margin: 50px auto;
+    }
+    .title-back p {
+        top: 100px;
+        font-size: 90px;
+    }
+    .tag {
+        font-size: 12px;
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    .project h3 {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .download::before {
+        width: 78%;
+        height: 300px;
+    }
+    .download-text {
+        width: 74%;
+        margin-left: 8%;
+        height: 330px;
+        margin-top: 30px;
+    }
+    .download-text h3 {
+        font-size: 20px;
+    }
+    .download::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 34%;
+        height: 238px;
+        background: url("images/portfolio-small.png") no-repeat;
+        background-size: cover;
+        left: 0;
+        top: 75px;
+    }
+    .download-text h3,
+    .download-text p {
+        width: 49%;
+        margin-bottom: 15px;
+    }
+    .download-text .button {
+        margin-bottom: 20px;
+        margin-right: 20%;
+    }
+
+    .download-text::after {
+        top: -48px;
+        left: 50px;
+    }
+    .about .title-back p {
+        top: 100px;
+    }
+    .about-content {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .about-content::before {
+        width: 100%;
+        top: 14%;
+        height: 252px;
+    }
+    .about-content::after {
+        width: 30%;
+        height: 311px;
+        left: 79%;
+        top: 140px;
+
+    }
+    .about-images {
+        width: 100%;
+    }
+    .about-images img {
+        width: 47%;
+    }
+
+    .about-text {
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-left: 5px;
+        margin-top: 0;
+        width: 100%;
+        position: relative;
+    }
+    .about-text p {
+        width: 48%;
+
+    }
+    .about-text p:nth-child(2) {
+        display: none;
+    }
+    .about-text p:first-child {
+        margin-top: -25px;
+        margin-right: 25px;
+    }
+
+    .about-text p:last-of-type {
+
+        margin-top: 25px;
+
+    }
+    .about-text a {
+        position: absolute;
+        top: 85px;
+        left: 52%;
+        width: 185px;
+    }
+    .pricelist .container {
+        height: auto;
+    }
+    .pricelist .title-back p {
+        top: 100px;
+    }
+    .price-example h3 {
+        margin-left: 10px;
+        font-size: 18px;
+        margin-top: 5px;
+    }
+    .price-example h4 {
+        margin-left: 28%;
+        font-size: 16px;
+    }
+    .column-1 .price-example h4 {
+        margin-left: 35%;
+    }
+    .price-example p {
+        font-size: 13px;
+        margin: 15px 0;
+    }
+    .contacts {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .contact {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .separate {
+        margin: 0 10px;
+    }
+    footer .title-back p {
+        top: 100px;
+    }
+    footer .container h2:first-of-type {
+        margin-bottom: 40px;
+
+    }
+    .social {
+        margin-bottom: 40px;
+    }
+
+}
+@media screen and (min-width: 567px) and (max-width: 640px) {
+    .header-right img {
+        width: 220px;
+        left: -40px;
+    }
+    .header-left .title-back p {
+        margin-left: 5px;
+    }
+    .header-left .title-back p:last-of-type {
+        margin-left: 80px;
+    }
+    .description, .links {
+        margin-left: 20px;
+    }
+    .description p {
+        width: 75%;
+    }
+    .download::after {
+        height: 203px;
+    }
+    .download-text h3,
+    .download-text p {
+        width:55%;
+        margin-left: 20px;
+    }
+    .download-text .button {
+        margin-right: 14%;
+    }
+    .download-text::after {
+        left: 65px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 420px) {
+    .title-back,
+    .header-right,
+    .links,
+    .header-menu,
+    .download::before,
+    .download::after,
+    .about-content::before,
+    .about-content::after {
+        display: none;
+    }
+    header {
+        background: url("images/header-mob.png")  no-repeat 70% 100%;
+        background-size: cover;
+        color: white;
+        margin-bottom: 30px;
+
+    }
+    .header-left {
+        width: 100%;
+
+    }
+    .logo img{
+        width: 180px;
+    }
+    .description {
+        margin-left: 20px;
+        margin-top: 0;
+        top: -20px;
+    }
+    .description p {
+        width: 75%;
+        margin: 15px 0;
+        font-weight: 400;
+    }
+    .button {
+        font-size: 20px;
+    }
+    header .button,
+    .download .button {
+        border-color: white;
+    }
+    .container h2::before {
+        margin: 30px auto;
+    }
+    .container h2:first-of-type {
+        margin-bottom: 50px;
+    }
+    .portfolio .container,
+    .portfolio,
+    .pricelist .container {
+        height: auto;
+    }
+    .projects {
+        flex-direction: column;
+        height: auto;
+    }
+    .column-1, .column-2, .column-3 {
+        width: 100%;
+    }
+    .project img {
+        width: 100%;
+        height: auto;
+    }
+    .tag {
+        font-size: 18px;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+    .project h3 {
+        font-size: 22px;
+        margin-bottom: 60px;
+    }
+    .download-text {
+        width: 100%;
+        margin-left: 0;
+        border: none;
+        background: url("images/download-mob.png") no-repeat 50% 100%;
+        background-size: auto 100%;
+        color: white;
+    }
+    .download-text h3, .download-text p {
+        width: 75%;
+    }
+    .download-text h3 {
+        margin-top: 60px;
+    }
+    .download-text .button {
+        margin-right: 90px;
+    }
+    .download-text::after {
+        left: 80px;
+    }
+
+    .about-content,
+    .contacts{
+        flex-direction: column;
+    }
+    .about .container {
+        width: 100%;
+    }
+    .about-content {
+        margin-bottom: 40px;
+    }
+    .about-images,
+    .about-text {
+        width: 100%;
+        overflow: hidden;
+    }
+    .about-images img {
+        width: 100%;
+    }
+    .about-text {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    .about-text p {
+        text-align: center;
+        width: 90%;
+        margin: 10px auto;
+    }
+    .about-text a {
+        align-self: center;
+        font-size: 17px;
+        margin-top: 25px;
+    }
+    .pricelist .column-1, .pricelist .column-3 {
+        margin-top: 0;
+    }
+    .price-example h3 {
+        margin-top: 15px;
+        margin-left: 35px;
+    }
+    .price-example p {
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .price-example h4 {
+        margin-left: 40%;
+    }
+    footer .container h2:first-of-type {
+        font-size: 30px;
+    }
+    .contacts {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    .contact {
+        width: 100%;
+        justify-content: center;
+        margin: 10px 0;
+    }
+    .contact p {
+        font-size: 16px;
+    }
+    .social {
+        margin-bottom: 30px;
+    }
+
+}
+@media screen and (max-width: 320px) {
+    header {
+        background-position: 60% 100%;
+    }
+    .description h1 {
+        font-size: 35px;
+    }
+    .description p {
+        width: 100%;
+        font-size: 16px;
+    }
+    .download-text {
+        background-position: 30% 100%;
+    }
+    .download-text h3, .download-text p {
+        width: 83%;
+        margin-left: 5px;
+    }
+    .download-text .button {
+        margin-right: 70px;
+    }
+    .download-text::after {
+        left: 90px;
+    }
+    footer .container h2:first-of-type {
+        font-size: 27px;
+    }
+    .contact p {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
