@@ -6,10 +6,24 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.3.1.slim.min.js"></script>
+
 </head>
 
 <body>
 <header>
+    <div class="menu-mobile-version">
+    <div class="header-menu-mobile">
+        </div>
+        <ul class="menu-mobile">
+            <li><a href="#portfolio">Портфолио</a></li>
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#price">Стоимость</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+            <li class="button-close"><img src="images/close.png" width="21" height="21"></li>
+        </ul>
+        </div>
+
     <div class="header-left">
         <div class="header-top">
         <div class="logo">
@@ -17,20 +31,14 @@
         </div>
         <div class="header-menu">
             <ul class="menu">
-                <li><a>Обо мне</a></li>
-                <li><a>Стоимость</a></li>
-                <li><a>Контакты</a></li>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#price">Стоимость</a></li>
+                <li><a href="#contacts">Контакты</a></li>
             </ul>
         </div>
-            <div class="header-menu-mobile">
-                <ul class="menu">
-                    <li><a>Портфолио</a></li>
-                    <li><a>Обо мне</a></li>
-                    <li><a>Стоимость</a></li>
-                    <li><a>Контакты</a></li>
-                </ul>
-            </div>
+
         </div>
+
         <div class="title-back">
             <p>Food</p>
             <p>Photography</p>
@@ -53,7 +61,7 @@
     </div>
 </header>
 <main>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="container">
             <div class="title-back">
                 <p>Work</p>
@@ -98,7 +106,7 @@
             </div>
 
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="title-back">
                 <p>About</p>
@@ -122,7 +130,7 @@
             </div>
             </div>
     </section>
-    <section class="pricelist">
+    <section class="pricelist" id="price">
         <div class="container">
             <div class="title-back">
                 <p>Price</p>
@@ -170,7 +178,7 @@
     </section>
 </main>
 <footer>
-    <div class="container">
+    <div class="container" id="contacts">
         <h2>Свяжитесь со мной</h2>
 
         <div class="title-back">
@@ -202,7 +210,7 @@
     </div>
 </div>
 </footer>
-
+<script src="script.js"></script>
 
 </body>
 </html>

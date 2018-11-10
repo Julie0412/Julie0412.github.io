@@ -61,6 +61,9 @@ header {
     height: 780px;
 
 }
+.menu-mobile-version {
+    display: none;
+}
 .header-left,
 .header-right {
     display: flex;
@@ -84,7 +87,59 @@ header {
 .logo {
     width: 33%;
     height: 100%;
+    z-index: 100;
 
+}
+
+.header-menu-mobile {
+    display: block;
+    background: url("images/menu.png") no-repeat 50% 50%;
+    width: 290px;
+    height: 68px;
+    position: absolute;
+    top: 0;
+    left: 225px;
+    z-index: 5;
+}
+.logo {
+    z-index: 1000;
+}
+.menu-mobile {
+    display: none;
+}
+
+.visible{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 820px;
+    top: 0;
+    left: 0;
+    background: #f8f8f8 url("images/menu-bg.png") no-repeat 50% 50%;
+    z-index: 10;
+    list-style: none;
+}
+.visible a {
+    font-size: 36px;
+    font-weight: 600;
+    color: #212021;
+    border-bottom: 3px solid #709c54;
+    padding-bottom: 3px;
+    margin: 20px 0;
+    text-decoration: none;
+
+}
+.visible li:not(:last-of-type) {
+    margin:  20px 0;
+}
+.button-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 30px;
 }
 .logo img {
     width: 225px;
@@ -351,6 +406,20 @@ header {
     top: -78px;
     left: 50px;
 }
+.download::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 538px;
+    height: 322px;
+    background: url("images/portfolio.png") no-repeat;
+    background-size: cover;
+    left: 0;
+    top: 120px;
+}
+.about {
+    overflow: hidden;
+}
 .about .title-back p {
     top: 19%;
 
@@ -362,6 +431,7 @@ header {
     width: 100%;
     position: relative;
     margin-bottom: 80px;
+
 }
 .about-content::before {
     content: "";
@@ -544,6 +614,93 @@ footer .title-back p {
         margin-left: 20px;
     }
 }
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .description,
+    .links {
+        margin-left: 50px;
+    }
+    .menu li {
+        padding: 0 10px;
+    }
+    .description p {
+        width: 63%;
+    }
+    .header-left .title-back p {
+        margin-left: 20px;
+    }
+    .header-left .title-back p:last-of-type {
+        margin-left: 140px;
+    }
+    .portfolio {
+        height: auto;
+    }
+    .download::before {
+        width: 840px;
+        height: 360px;
+
+    }
+    .download-text {
+        height: 385px;
+        margin-top: 50px;
+    }
+    .download-text h3,
+    .download-text p
+    {
+        padding-left: 100px;
+    }
+    .download-text .button {
+        margin-bottom: 0;
+        margin-left: 100px;
+    }
+    .download-text::after {
+        top: -28px;
+        left: 100px;
+    }
+
+    .download::after {
+        width: 466px;
+        height: 284px;
+        top: 100px;
+    }
+    .about .title-back p {
+        top: 180px;
+    }
+
+    .about-content::before {
+        top: -40px;
+    }
+    .about-content::after {
+        height: 510px;
+    }
+    .about-images {
+        width: 70%;
+
+    }
+    .about-text {
+        width: 30%;
+    }
+    .about-text p {
+        width: 100%;
+    }
+    .price-example h3 {
+        margin-left: 35px;
+    }
+    .price-example h4 {
+        margin-left: 40%;
+    }
+
+    footer .title-back p {
+        top: 320px;
+    }
+    .contacts {
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    .contact:last-of-type {
+        margin-top: 20px;
+    }
+}
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     header {
         width: 100%;
@@ -553,6 +710,7 @@ footer .title-back p {
         width: 33%;
         background: url("images/header-small.png") no-repeat;
         background-size: cover;
+
     }
     .header-right p {
         left: 30px;
@@ -563,9 +721,14 @@ footer .title-back p {
     .header-left {
         width: 67%;
     }
-    .header-menu {
-        display: none;
+    .menu-mobile-version {
+        display: block;
     }
+   .header-menu .menu {
+       display: none;
+   }
+
+
     .description,
     .links {
         margin-left: 45px;
@@ -619,14 +782,12 @@ footer .title-back p {
         margin-top: 30px;
     }
     .download::after {
-        content: "";
-        display: block;
-        position: absolute;
+   
         width: 34%;
         height: 272px;
         background: url("images/portfolio-small.png") no-repeat;
         background-size: cover;
-        left: 0;
+
         top: 60px;
     }
     .download-text h3, .download-text p {
@@ -833,7 +994,7 @@ footer .title-back p {
 
     .download::before {
         width: 78%;
-        height: 300px;
+        height: 280px;
     }
     .download-text {
         width: 74%;
@@ -977,6 +1138,7 @@ footer .title-back p {
         width: 220px;
         left: -40px;
     }
+
     .header-left .title-back p {
         margin-left: 5px;
     }
@@ -1004,6 +1166,14 @@ footer .title-back p {
         left: 65px;
     }
 }
+@media screen and (min-width: 568px) and (max-width: 640px) {
+    .download::before {
+        height: 255px;
+    }
+    .download-text {
+        height: 290px;
+    }
+}
 @media screen and (min-width: 320px) and (max-width: 420px) {
     .title-back,
     .header-right,
@@ -1021,6 +1191,27 @@ footer .title-back p {
         color: white;
         margin-bottom: 30px;
 
+    }
+    .menu-mobile-version {
+        display: block;
+    }
+    .header-menu-mobile {
+        left: 85%;
+
+        background: url('images/menu-mob.png') no-repeat 50% 50%;
+        width: 53px;
+        height: 53px;
+
+    }
+    .visible {
+        height: 700px;
+    }
+    .visible a {
+        font-size: 28px;
+        margin: 15px 0;
+    }
+    .button-close {
+        padding: 20px;
     }
     .header-left {
         width: 100%;
