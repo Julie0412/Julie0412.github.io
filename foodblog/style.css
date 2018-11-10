@@ -63,6 +63,7 @@ header {
 }
 .menu-mobile-version {
     display: none;
+  
 }
 .header-left,
 .header-right {
@@ -100,6 +101,7 @@ header {
     top: 0;
     left: 225px;
     z-index: 5;
+    cursor: pointer;
 }
 .logo {
     z-index: 1000;
