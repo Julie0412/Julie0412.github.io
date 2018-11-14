@@ -746,6 +746,8 @@ footer p {
             flex-direction: row;
     background-color: #f9f9f9;
 }
+.services img {
+    width: 50%;
 
 .services-description {
     display: -webkit-box;
@@ -756,6 +758,7 @@ footer p {
         -ms-flex-direction: row;
             flex-direction: row;
     color: #505d68;
+    width: 50%;
 }
 
 .services-description h3 {
