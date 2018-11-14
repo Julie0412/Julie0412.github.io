@@ -575,8 +575,12 @@ a:not(.logo a):hover {
         -ms-flex-direction: row;
             flex-direction: row;
 }
+.our-blog .post img {
+    width: 40%;
+}
 
 .post-content {
+    width: 60%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -614,6 +618,7 @@ a:not(.logo a):hover {
     line-height: 25px;
     margin-bottom: 50px;
     font-weight: 300;
+    width: 80%;
 }
 
 .post-content .button {
