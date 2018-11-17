@@ -1,0 +1,1182 @@
+
+div, section, header, main, footer, p, h1, h2, img {
+    margin: 0;
+    padding: 0;
+}
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #6c7279;
+
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+header {
+    background: url(Source/Banner.jpg) no-repeat;
+    background-size:cover;
+
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.header-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #6f1616;
+
+}
+.logo-main {
+    display: block;
+    width: 184px;
+    height: 25px;
+    background: url(Source/MayDone.png) no-repeat;
+    background-size: cover;
+    margin-top: 3px;
+
+
+}
+
+.address {
+    display: inline-block;
+    width: 180px;
+    text-align: right;
+    margin-left: 450px;
+}
+
+.address,
+.phone {
+    position: relative;
+}
+.address::before,
+.phone::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 25px;
+    width: 19px;
+    background: url(Source/sprites.png) -10px -160px;
+    padding: 0;
+    margin: 0;
+    left: -30px;
+    top: 3px;
+
+}
+.phone {
+    line-height: 25px;
+}
+.phone::before {
+    width: 25px;
+    background: url('Source/sprites.png') -190px -100px;
+    left: -45px;
+}
+.header-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header-bottom h1 {
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 108px;
+    margin-top: 110px;
+    margin-bottom: 35px;
+}
+.header-bottom p {
+    font-size: 36px;
+    line-height: 54px;
+    text-align: center;
+    width: 70%;
+    margin-bottom: 35px;
+}
+.button {
+    display: inline-block;
+    padding: 20px 60px 13px;
+    background-color: #d92727;
+    text-transform: uppercase;
+    color: white;
+    border-bottom: 5px solid #a81616;
+}
+.button:hover {
+    border-color: #d92727;
+}
+.button:active {
+    background-color: #ff7a7a;
+}
+
+.social-links{
+    display: flex;
+    width: 180px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 180px;
+}
+.social-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+
+}
+.fb {
+    background: url('Source/sprites.png') -10px -100px;
+}
+.gp {
+    background: url('Source/sprites.png') -70px -100px;
+}
+.hs {
+    background: url('Source/sprites.png') -130px -100px;
+}
+
+.features .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 31%;
+    margin: 102px 0;
+}
+.feature-title {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #2d3033;
+    margin-bottom: 40px;
+}
+.feature-description {
+    display: inline-block;
+    text-align: center;
+}
+
+.feature-description::before {
+    content:"";
+    display: flex;
+    height: 70px;
+    width: 59px;
+    background: url('Source/sprites.png') -184px -10px;
+    margin: 0 auto 40px;
+
+}
+.expert.feature-description::before {
+    width: 70px;
+    background: url('Source/sprites.png') -10px -10px;
+}
+.responce.feature-description::before {
+    width: 64px;
+    background: url('Source/sprites.png') -100px -10px;
+}
+.services {
+    background-color: #f1f2fd;
+}
+.services .container,
+.contacts .container,
+.testimonials .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section-title {
+    font-weight: 400;
+    font-size: 32px;
+    color: #2d3033;
+    margin-top: 102px;
+    margin-bottom: 40px;
+}
+.services p {
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 27px;
+}
+.service-types {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 72px;
+}
+.service-type {
+    width: 270px;
+    height: 210px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-color: #2d3033;
+    margin-bottom: 30px;
+}
+.service-type p {
+    color: #FFFFFF;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.stove {
+    background: url(Source/stove_repair.jpg) no-repeat;
+}
+.oven {
+    background: url(Source/oven_repair.jpg) no-repeat;
+}
+.dryer {
+    background: url(Source/dryer_repair.jpg) no-repeat;
+}
+.dishwasher {
+    background: url(Source/dishwasher_repair.jpg) no-repeat;
+}
+.tv {
+    background: url(Source/tv_repair.jpg) no-repeat;
+}
+.fridge {
+    background: url(Source/fridge_repair.jpg) no-repeat;
+}
+.washer {
+    background: url(Source/washer_repair.jpg) no-repeat;
+}
+.other {
+    background: url(Source/other_equipment_repair.jpg) no-repeat;
+}
+.contacts p {
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    color:  #2d3033;
+    line-height: 27px;
+    width: 40%;
+}
+.contact-form {
+    display: flex;
+    flex-direction: row;
+    margin: 40px 0;
+
+}
+.contacts input {
+    display: inline-block;
+    width: 370px;
+    height: 60px;
+    border: 1px solid #d92727;
+    text-align: center;
+    font-size: 18px;
+    padding: 0;
+}
+.contacts .button {
+    margin-bottom: 100px;
+}
+
+.contacts input:not(:last-of-type) {
+    margin-right: 30px;
+}
+.testimonials {
+    background-color: #f1f2fd;
+}
+.testimonials .container {
+    position: relative;
+}
+.prev,
+.next {
+    display: block;
+    width: 23px;
+    height: 40px;
+    background: url("Source/left_arrow.png") no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 10;
+
+}
+.prev {
+    left: 0;
+}
+.next {
+    background: url("Source/right_arrow.png") no-repeat;
+    right: 0;
+}
+
+
+.review {
+    width: 760px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-bottom: 102px;
+}
+.review-content {
+    text-align: justify;
+    font-style: italic;
+    line-height: 27px;
+    margin-bottom: 40px;
+}
+.review-author,
+.review-date {
+    display: flex;
+    align-self: flex-end;
+    text-align: left;
+    width: 34%;
+    line-height: 27px;
+}
+footer {
+    background-color: #2d3033;
+    color: #FFFFFF;
+    padding-top: 98px;
+}
+footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 102px;
+}
+footer .logo {
+    flex-direction: column;
+}
+footer .logo-main {
+    margin-bottom: 15px;
+}
+.logo-bottom,
+.social{
+    display:flex;
+    flex-direction: row;
+
+}
+.logo-bottom {
+    width: 186px;
+    text-align: justify;
+
+}
+
+footer .logo .logo-description {
+    font-family: 'Roboto', sans-serif;
+    line-height: 27px;
+    text-transform: capitalize;
+    font-size: 20px;
+    text-align: justify;
+
+    letter-spacing: 2px;
+
+}
+.logo-description::first-letter {
+    color: #d92727;
+}
+footer .social-links {
+    margin: 0;
+    margin-left: 20px;
+}
+.social {
+    padding-top: 5px;
+}
+.social p {
+    letter-spacing: 2px;
+}
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+}
+.footer-contacts p {
+    text-align: right;
+    line-height: 27px;
+}
+.footer-contacts .phone {
+    margin-bottom: 25px;
+}
+.footer-contacts .phone::before {
+    left: -50px;
+    top: 8px;
+
+}
+.footer-contacts .address {
+    margin-left: 0;
+}
+.footer-contacts .address::before {
+    left: -48px;
+    top: 8px;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+    body {
+        font-size: 15px;
+    }
+
+    .container {
+        width: 800px;
+    }
+    header {
+        background-position: 45% 100%;
+
+    }
+    .header-top {
+        padding-bottom: 15px;
+    }
+
+    .address {
+        margin-left: 135px;
+    }
+    .phone {
+        line-height: 20px;
+    }
+    .address::before, .phone::before {
+        left: -10px;
+    }
+    .phone::before {
+        left: -40px;
+    }
+    .social-links {
+        width: 140px;
+    }
+    .header-bottom h1 {
+        font-size: 54px;
+        margin-top: 75px;
+        margin-bottom: 10px;
+    }
+    .header-bottom p {
+        font-size: 24px;
+        line-height: 38px;
+    }
+    .header-bottom .social-links {
+        margin-bottom: 135px;
+    }
+    .feature-title {
+        font-size: 15px;
+    }
+    .services .container {
+        width: 1000px;
+    }
+    .service-type {
+        width: 24%;
+        height: 166px;
+        background-size: cover;
+        margin-bottom: 10px;
+    }
+    .services p {
+        line-height: 20px;
+    }
+    .section-title {
+        margin-top: 62px;
+        margin-bottom: 30px;
+        font-size: 24px;
+    }
+    .contacts p {
+        width: 50%;
+        line-height: 20px;
+    }
+    .contacts input {
+        width: 300px;
+    }
+    .contacts .button {
+        margin-bottom: 62px;
+    }
+    .review {
+        width: 627px;
+        margin-bottom: 42px;
+    }
+    .review-content {
+        line-height: 23px;
+    }
+    .review-author, .review-date {
+        line-height: 20px;
+    }
+    .social {
+        padding-top:3px;
+    }
+    footer {
+        padding-top: 57px;
+    }
+    footer .container {
+        padding-bottom: 57px;
+    }
+    .footer-contacts p {
+        line-height: 20px;
+    }
+    .footer-contacts .phone {
+        margin-bottom: 15px;
+    }
+    .footer-contacts .phone::before {
+        left: -20px;
+    }
+    .footer-contacts .address::before {
+        left: -17px;
+    }
+    footer .logo-main {
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        font-size: 15px;
+    }
+    .container {
+        width: 700px;
+    }
+
+    header {
+        background-position: 48%;
+    }
+    .phone {
+        line-height: 20px;
+    }
+    .address {
+        margin-left: 50px;
+    }
+    .contacts input {
+        width: 210px;
+        height: 45px;
+    }
+    .address::before, .phone::before {
+        left: -5px;
+    }
+    .phone::before {
+        left: -40px;
+    }
+    .header-bottom h1 {
+        font-size: 48px;
+        margin-top: 86px;
+    }
+    .header-bottom p {
+        font-size: 26px;
+        width: 85%;
+        line-height: 35px;
+        margin-bottom: 40px;
+    }
+    .header-bottom .button {
+        margin-bottom: 23px;
+    }
+    .social-links {
+        width: 160px;
+        margin-bottom: 140px;
+    }
+    .feature-item {
+        margin: 60px 0;
+    }
+    .feature-title {
+        font-size: 13px;
+
+    }
+    .service-type {
+        width: 322px;
+        height: 238px;
+        background-size: cover;
+    }
+    .section-title {
+        margin-top: 56px;
+        margin-bottom: 30px;
+        font-size: 26px;
+    }
+    .contacts p {
+        width: 56%;
+        line-height: 20px;
+    }
+    .contacts .button {
+        margin-bottom: 62px;
+        padding: 13px 28px 10px;
+    }
+    .review {
+        width: 594px;
+        margin-bottom: 23px;
+        }
+    .review-author, .review-date {
+        line-height: 20px;
+        width: 36%;
+    }
+    footer {
+        padding-top: 50px;
+    }
+    footer .container {
+        padding-bottom: 50px;
+    }
+    .footer-contacts p {
+        line-height: 20px;
+    }
+    .footer-contacts .phone {
+        margin-bottom: 15px;
+    }
+    .footer-contacts .phone::before {
+        left: -11px;
+    }
+    .footer-contacts .address::before {
+        left: -8px;
+    }
+    footer .logo-main {
+        margin-bottom: 5px;
+    }
+    footer .social-links {
+        width: 140px;
+        margin-left: 7px;
+    }
+
+}
+@media screen and (min-width: 568px) and (max-width: 767px) {
+    .container {
+        width: 600px;
+    }
+    body {
+        font-size: 13px;
+    }
+
+    header {
+        background-position: 48%;
+    }
+    .header-top {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    .logo-main {
+        width: 150px;
+        height: 20px;
+    }
+    .phone {
+        line-height: 17px;
+    }
+    .address {
+        margin-left: 70px;
+        width: 155px;
+    }
+
+    .address::before, .phone::before {
+        left: -5px;
+        top: 0;
+    }
+    .phone::before {
+        left: -40px;
+        top: 3px;
+    }
+    .header-bottom h1 {
+        font-size: 40px;
+        margin-top: 55px;
+        line-height: 70px;
+        margin-bottom: 20px;
+    }
+    .header-bottom p {
+        font-size: 22px;
+        width: 85%;
+        line-height: 30px;
+        margin-bottom: 40px;
+    }
+    .header-bottom .button {
+        margin-bottom: 23px;
+    }
+    .social-links {
+        width: 140px;
+        margin-bottom: 112px;
+    }
+    .feature-item {
+        margin: 30px 0;
+    }
+    .feature-title {
+        font-size: 11px;
+
+    }
+    .services p {
+        line-height: 17px;
+    }
+    .service-type {
+        width: 282px;
+        height: 219px;
+        background-size: cover;
+    }
+    .section-title {
+        margin-top: 30px;
+        margin-bottom: 15px;
+        font-size: 22px;
+    }
+
+    .contacts p {
+        width: 59%;
+        line-height: 17px;
+    }
+    .contacts input {
+        width: 189px;
+        height: 38px;
+        font-size: 12px;
+    }
+    .contacts .button {
+        margin-bottom: 40px;
+        padding: 13px 28px 10px;
+    }
+    .review {
+        width: 510px;
+        margin-bottom: 23px;
+    }
+    .review-content {
+        line-height: 20px;
+        margin-bottom: 17px;
+    }
+    .review-author, .review-date {
+        line-height: 17px;
+        width: 37%;
+    }
+    footer {
+        padding-top: 30px;
+    }
+    footer .container {
+        padding-bottom: 30px;
+    }
+    footer .logo .logo-description {
+        font-size: 13px;
+        line-height: 17px;
+
+    }
+    footer .logo-main {
+        margin-bottom: 5px;
+        width: 126px;
+        height: 17px;
+    }
+    footer .logo {
+        width: 150px;
+    }
+    .footer-contacts p {
+        line-height: 17px;
+    }
+    .footer-contacts .phone {
+        margin-bottom: 15px;
+    }
+    .footer-contacts .phone::before {
+        left: -11px;
+    }
+    .footer-contacts .address::before {
+        left: -8px;
+    }
+
+    footer .social-links {
+        width: 140px;
+        margin-left: 7px;
+    }
+
+}
+@media screen and (min-width: 567px) and (max-width: 639px) {
+    body {
+        font-size: 11px;
+    }
+    .container {
+        width: 500px;
+    }
+    .header-top {
+        padding-top: 15px;
+        padding-bottom: 5px;
+    }
+    .logo-main {
+        width: 120px;
+        height: 16px;
+    }
+    .address {
+        width: 130px;
+    }
+    .phone {
+        line-height: 14px;
+    }
+    .header-bottom h1 {
+        font-size: 34px;
+        margin-top: 46px;
+        margin-bottom: 20px;
+    }
+    .header-bottom p {
+        font-size: 18px;
+        width: 85%;
+        line-height: 23px;
+        margin-bottom: 25px;
+    }
+    .header-bottom .button {
+        padding: 14px 50px 11px;
+    }
+    .social-links {
+        width: 114px;
+        margin-bottom: 40px;
+        margin-top: 10px;
+    }
+    .feature-title {
+        font-size: 9px;
+    }
+    .section-title {
+        font-size: 18px;
+    }
+    .contacts input {
+        width: 155px;
+        height: 34px;
+        font-size: 10px;
+    }
+    .review {
+        width: 423px;
+    }
+    .service-type {
+        width: 240px;
+        height: 188px;
+        margin-bottom: 10px;
+    }
+    .service-types {
+        margin-bottom: 30px;
+    }
+    footer .social-links {
+        width: 100px;
+    }
+    .social-links a {
+        display: inline-block;
+        width: 26px;
+        height: 26px;
+
+    }
+    .fb {
+        background: url('Source/sprites-small.png') -5px -63px;
+    }
+    .gp {
+        background: url('Source/sprites-small.png') -44px -63px;
+    }
+    .hs {
+        background: url('Source/sprites-small.png') -82px -63px;
+    }
+    .address::before, .phone::before {
+        height: 18px;
+        width: 16px;
+        background: url(Source/sprites-small.png) -3px -222px;
+    }
+    .address::before, .phone::before {
+        left: 0;
+    }
+    .phone::before {
+        width: 18px;
+        background: url(Source/sprites-small.png) -119px -184px;
+        left: -25px;
+        top: 0;
+    }
+    footer .logo {
+        width: 126px;
+    }
+    .footer-contacts .address::before {
+        left: -4px;
+
+    }
+    .footer-contacts .phone::before {
+        left: -5px;
+    }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 420px) {
+    .social-links a {
+        display: inline-block;
+        width: 26px;
+        height: 26px;
+    }
+
+    .fb {
+        background: url('Source/sprites-small.png') -5px -63px;
+    }
+
+    .gp {
+        background: url('Source/sprites-small.png') -44px -63px;
+    }
+
+    .hs {
+        background: url('Source/sprites-small.png') -82px -63px;
+    }
+
+    .address::before, .phone::before {
+        height: 18px;
+        width: 16px;
+        background: url(Source/sprites-small.png) -3px -222px;
+    }
+
+    .address::before, .phone::before {
+        left: 0;
+    }
+
+    .phone::before {
+        width: 18px;
+        background: url(Source/sprites-small.png) -119px -184px;
+        left: -25px;
+        top: 0;
+    }
+
+    body {
+        font-size: 10px;
+    }
+
+    .container {
+        width: 360px;
+    }
+
+    .header-top {
+        padding-top: 15px;
+        padding-bottom: 5px;
+    }
+
+    .logo-main {
+        width: 109px;
+        height: 15px;
+    }
+
+    .phone {
+        line-height: 14px;
+    }
+
+    .address {
+        margin-left: 0;
+        width: 110px;
+    }
+
+    .address::before, .phone::before {
+        left: -8px;
+        top: 0;
+    }
+
+    .phone::before {
+        left: -20px;
+    }
+
+    .header-bottom h1 {
+        text-align: center;
+        font-size: 40px;
+        margin-top: 55px;
+        line-height: 45px;
+        margin-bottom: 20px;
+    }
+
+    .header-bottom p {
+        font-size: 20px;
+        width: 85%;
+        line-height: 30px;
+        margin-bottom: 40px;
+    }
+
+    .header-bottom .button {
+        margin-bottom: 23px;
+    }
+
+    .social-links {
+        width: 100px;
+        margin-bottom: 112px;
+        margin-top: 20px;
+    }
+
+    .feature-item {
+        margin: 30px 0;
+    }
+
+    .feature-title {
+        font-size: 6px;
+
+    }
+    .feature-description {
+        font-size: 8px;
+    }
+
+    .services p {
+        line-height: 17px;
+        width: 90%;
+    }
+
+    .service-type {
+        width: 282px;
+        height: 219px;
+        background-size: cover;
+    }
+    .service-types {
+        margin-bottom: 30px;
+    }
+
+    .section-title {
+        margin-top: 20px;
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+
+    .contacts p {
+        width: 76%;
+        line-height: 14px;
+    }
+
+    .contact-form {
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    .contacts input {
+        width: 189px;
+        height: 38px;
+        font-size: 12px;
+        margin: 0 auto;
+    }
+    .contacts input:not(:last-of-type) {
+        margin: 0 auto;
+        margin-bottom: 10px;
+
+    }
+
+    .contacts .button {
+        margin-bottom: 40px;
+        padding: 13px 28px 10px;
+    }
+
+    .review {
+        width: 290px;
+        margin-bottom: 10px;
+    }
+
+    .review-content {
+        line-height: 15px;
+        margin-bottom: 17px;
+    }
+
+    .review-author, .review-date {
+        line-height: 17px;
+        width: 50%;
+    }
+
+    footer {
+        padding-top: 30px;
+
+    }
+
+    footer .container {
+        padding-bottom: 30px;
+        position: relative;
+    }
+
+    footer .logo .logo-description {
+        font-size: 13px;
+        line-height: 17px;
+
+    }
+
+    footer .logo-main {
+        margin-bottom: 5px;
+        width: 126px;
+        height: 17px;
+    }
+
+    footer .logo {
+        width: 150px;
+    }
+
+    .footer-contacts p {
+        line-height: 17px;
+    }
+
+    .footer-contacts .phone {
+        margin-bottom: 15px;
+    }
+
+    .footer-contacts .phone::before {
+        left: -10px;
+    }
+
+    .footer-contacts .address::before {
+        left: -8px;
+    }
+    footer .social {
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+    }
+
+    footer .social-links {
+        width: 100px;
+        margin-top: 7px;
+        margin-left: 0;
+
+    }
+}
+@media screen and (max-width: 360px) {
+    .container {
+        width: 340px;
+    }
+    .address {
+
+        width: 99px;
+    }
+    .header-top .address::before {
+        left: -17px;
+    }
+    .section-title {
+        font-size: 13px;
+    }
+    .review {
+        width: 270px;
+    }
+    .review-author, .review-date {
+        line-height: 12px;
+        width: 54%;
+    }
+    .footer-contacts .address::before {
+        left: -16px;
+    }
+    .footer-contacts .phone::before {
+        left: -15px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    body {
+        font-size: 9px;
+    }
+    .container {
+        width: 300px;
+    }
+    .header-top {
+        padding-bottom: 10px;
+    }
+    .logo-main {
+        width: 96px;
+        height: 13px;
+    }
+    .address {
+        margin-left: 0;
+        width: 107px;
+        margin-right: 20px;
+    }
+    .phone {
+        line-height: 10px;
+    }
+    .address::before, .phone::before {
+        left: 1px;
+    }
+    .phone::before {
+        left: -18px;
+    }
+    .social-links {
+        margin-bottom: 80px;
+    }
+    .contacts input {
+        font-size: 9px;
+    }
+    .section-title {
+        font-size: 12px;
+    }
+    .review {
+        width: 230px;
+    }
+
+    .review-author, .review-date {
+        line-height: 10px;
+        width: 58%;
+    }
+
+    .footer-contacts .address {
+        margin-right: 0;
+    }
+    .footer-contacts .phone::before {
+        left: -4px;
+    }
+    .footer-contacts .address::before {
+        left: -3px;
+
+    }
+}
+
+
+
+
+
