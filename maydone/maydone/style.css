@@ -980,7 +980,7 @@ footer .social-links {
 
 }
 
-@media screen and (min-width: 320px) and (max-width: 420px) {
+@media screen and (min-width: 320px) and (max-width: 566px) {
     .social-links a {
         display: inline-block;
         width: 26px;
@@ -1243,7 +1243,9 @@ footer .social-links {
 @media screen and (max-width: 320px){
     body {
         font-size: 9px;
+        max-width: 320px;
     }
+    
     .container {
         width: 300px;
     }
