@@ -147,7 +147,7 @@ header {
     background-color: #ff7a7a;
 }
 
-.social-links{
+.problem-block{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -162,7 +162,7 @@ header {
     margin-top: 40px;
     margin-bottom: 180px;
 }
-.social-links a {
+.problem-block a {
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -488,7 +488,7 @@ footer .logo .logo-description {
 .logo-description::first-letter {
     color: #d92727;
 }
-footer .social-links {
+footer .problem-block {
     margin: 0;
     margin-left: 20px;
 }
@@ -555,7 +555,7 @@ footer .social-links {
     .phone::before {
         left: -40px;
     }
-    .social-links {
+    .problem-block{
         width: 140px;
     }
     .header-bottom h1 {
@@ -567,7 +567,7 @@ footer .social-links {
         font-size: 24px;
         line-height: 38px;
     }
-    .header-bottom .social-links {
+    .header-bottom .problem-block {
         margin-bottom: 135px;
     }
     .feature-title {
@@ -679,7 +679,7 @@ footer .social-links {
     .header-bottom .button {
         margin-bottom: 23px;
     }
-    .social-links {
+    .problem-block {
         width: 160px;
         margin-bottom: 140px;
     }
@@ -737,7 +737,7 @@ footer .social-links {
     footer .logo-main {
         margin-bottom: 5px;
     }
-    footer .social-links {
+    footer .problem-block {
         width: 140px;
         margin-left: 7px;
     }
@@ -793,7 +793,7 @@ footer .social-links {
     .header-bottom .button {
         margin-bottom: 23px;
     }
-    .social-links {
+    .problem-block {
         width: 140px;
         margin-bottom: 112px;
     }
@@ -875,7 +875,7 @@ footer .social-links {
         left: -24px;
     }
 
-    footer .social-links {
+    footer .problem-block {
         width: 130px;
         margin-left: 7px;
     }
@@ -916,7 +916,7 @@ footer .social-links {
     .header-bottom .button {
         padding: 14px 50px 11px;
     }
-    .social-links {
+    .problem-block {
         width: 114px;
         margin-bottom: 40px;
         margin-top: 10px;
@@ -943,10 +943,10 @@ footer .social-links {
     .service-types {
         margin-bottom: 30px;
     }
-    footer .social-links {
+    footer .problem-block {
         width: 100px;
     }
-    .social-links a {
+    .problem-block a {
         display: inline-block;
         width: 26px;
         height: 26px;
@@ -989,7 +989,7 @@ footer .social-links {
 }
 
 @media screen and (min-width: 320px) and (max-width: 566px) {
-    .social-links a {
+    .problem-block a {
         display: inline-block;
         width: 26px;
         height: 26px;
@@ -1087,7 +1087,7 @@ footer .social-links {
         margin-bottom: 23px;
     }
 
-    .social-links {
+    .problem-block {
         width: 100px;
         margin-bottom: 112px;
         margin-top: 20px;
@@ -1220,7 +1220,7 @@ footer .social-links {
         top: 50px;
     }
 
-    footer .social-links {
+    footer .problem-block {
         width: 100px;
         margin-top: 7px;
         margin-left: 0;
@@ -1287,7 +1287,7 @@ footer .social-links {
     .phone::before {
         left: -18px;
     }
-    .social-links {
+    .problem-block {
         margin-bottom: 80px;
     }
     .contacts input {
