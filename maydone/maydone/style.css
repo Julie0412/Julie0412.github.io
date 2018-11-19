@@ -1,4 +1,5 @@
 
+
 div, section, header, main, footer, p, h1, h2, img {
     margin: 0;
     padding: 0;
@@ -119,6 +120,7 @@ header {
     line-height: 108px;
     margin-top: 110px;
     margin-bottom: 35px;
+    text-align: center;
 }
 .header-bottom p {
     font-size: 36px;
@@ -260,6 +262,7 @@ header {
     color: #2d3033;
     margin-top: 102px;
     margin-bottom: 40px;
+    text-align: center;
 }
 .services p {
     text-align: center;
@@ -545,7 +548,7 @@ footer .social-links {
         line-height: 20px;
     }
     .address::before, .phone::before {
-        left: -10px;
+        left: -25px;
     }
     .phone::before {
         left: -40px;
@@ -621,10 +624,12 @@ footer .social-links {
         margin-bottom: 15px;
     }
     .footer-contacts .phone::before {
-        left: -20px;
+        left: -33px;
+        top: 0;
     }
     .footer-contacts .address::before {
-        left: -17px;
+        left: -30px;
+        top: 0;
     }
     footer .logo-main {
         margin-bottom: 5px;
@@ -653,7 +658,8 @@ footer .social-links {
         height: 45px;
     }
     .address::before, .phone::before {
-        left: -5px;
+        left: -20px;
+        top: 0;
     }
     .phone::before {
         left: -40px;
@@ -721,10 +727,10 @@ footer .social-links {
         margin-bottom: 15px;
     }
     .footer-contacts .phone::before {
-        left: -11px;
+        left: -31px;
     }
     .footer-contacts .address::before {
-        left: -8px;
+        left: -25px;
     }
     footer .logo-main {
         margin-bottom: 5px;
@@ -763,11 +769,11 @@ footer .social-links {
     }
 
     .address::before, .phone::before {
-        left: -5px;
+        left: -19px;
         top: 0;
     }
     .phone::before {
-        left: -40px;
+        left: -27px;
         top: 3px;
     }
     .header-bottom h1 {
@@ -861,14 +867,14 @@ footer .social-links {
         margin-bottom: 15px;
     }
     .footer-contacts .phone::before {
-        left: -11px;
+        left: -27px;
     }
     .footer-contacts .address::before {
-        left: -8px;
+        left: -24px;
     }
 
     footer .social-links {
-        width: 140px;
+        width: 130px;
         margin-left: 7px;
     }
 
@@ -959,23 +965,23 @@ footer .social-links {
         background: url(Source/sprites-small.png) -3px -222px;
     }
     .address::before, .phone::before {
-        left: 0;
+        left: -25px;
     }
     .phone::before {
         width: 18px;
         background: url(Source/sprites-small.png) -119px -184px;
-        left: -25px;
+        left: -20px;
         top: 0;
     }
     footer .logo {
         width: 126px;
     }
     .footer-contacts .address::before {
-        left: -4px;
+        left: -20px;
 
     }
     .footer-contacts .phone::before {
-        left: -5px;
+        left: -21px;
     }
 
 }
@@ -998,6 +1004,13 @@ footer .social-links {
     .hs {
         background: url('Source/sprites-small.png') -82px -63px;
     }
+    .phone {
+
+
+        width: 100px;
+        text-align: center;
+    }
+
 
     .address::before, .phone::before {
         height: 18px;
@@ -1012,7 +1025,7 @@ footer .social-links {
     .phone::before {
         width: 18px;
         background: url(Source/sprites-small.png) -119px -184px;
-        left: -25px;
+
         top: 0;
     }
 
@@ -1047,10 +1060,11 @@ footer .social-links {
         left: -8px;
         top: 0;
     }
-
     .phone::before {
-        left: -20px;
+        left: -14px;
     }
+
+
 
     .header-bottom h1 {
         text-align: center;
@@ -1211,7 +1225,7 @@ footer .social-links {
 
     }
 }
-@media screen and (max-width: 360px) {
+@media screen and(min-width: 321px) and (max-width: 360px) {
     .container {
         width: 340px;
     }
@@ -1245,7 +1259,7 @@ footer .social-links {
         font-size: 9px;
         max-width: 320px;
     }
-    
+
     .container {
         width: 300px;
     }
@@ -1258,11 +1272,12 @@ footer .social-links {
     }
     .address {
         margin-left: 0;
-        width: 107px;
+        width: 103px;
         margin-right: 20px;
     }
     .phone {
         line-height: 10px;
+        width: 80px;
     }
     .address::before, .phone::before {
         left: 1px;
@@ -1292,10 +1307,10 @@ footer .social-links {
         margin-right: 0;
     }
     .footer-contacts .phone::before {
-        left: -4px;
+        left: -18px;
     }
     .footer-contacts .address::before {
-        left: -3px;
+        left: -15px;
 
     }
 }
