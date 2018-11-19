@@ -138,6 +138,7 @@ header {
     color: white;
     border-bottom: 5px solid #a81616;
     text-decoration: none;
+    
 }
 .button:hover {
     border-color: #d92727;
