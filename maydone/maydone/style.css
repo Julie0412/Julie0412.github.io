@@ -1192,8 +1192,11 @@ footer .problem-block {
     footer .logo {
         width: 150px;
     }
-    .footer .logo,
-    .footer .social {
+    footer .logo-bottom {
+        width: 126px;
+    }
+    footer .logo,
+    footer .social {
         margin-left: 20px;
     }
     .footer-contacts {
