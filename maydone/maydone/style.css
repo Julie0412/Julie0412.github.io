@@ -1007,9 +1007,6 @@ footer .problem-block {
         background: url('Source/sprites-small.png') -82px -63px;
     }
     .phone {
-
-
-        width: 100px;
         text-align: center;
     }
 
@@ -1195,6 +1192,13 @@ footer .problem-block {
     footer .logo {
         width: 150px;
     }
+    .footer .logo,
+    .footer .social {
+        margin-left: 20px;
+    }
+    .footer-contacts {
+        margin-right: 20px;
+    }
 
     .footer-contacts p {
         line-height: 17px;
@@ -1279,7 +1283,7 @@ footer .problem-block {
     }
     .phone {
         line-height: 10px;
-        width: 80px;
+    
     }
     .address::before, .phone::before {
         left: 1px;
