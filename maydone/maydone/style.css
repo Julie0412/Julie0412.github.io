@@ -93,6 +93,7 @@ header {
 }
 .phone {
     line-height: 25px;
+    text-align: center;
 }
 .phone::before {
     width: 25px;
