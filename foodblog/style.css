@@ -1358,7 +1358,7 @@ footer .title-back p {
         height: 290px;
     }
 }
-@media screen and (min-width: 320px) and (max-width: 420px) {
+@media screen and (min-width: 320px) and (max-width: 566px) {
     .title-back,
     .header-right,
     .links,
@@ -1552,6 +1552,9 @@ footer .title-back p {
 
 }
 @media screen and (max-width: 320px) {
+    body {
+        max-width: 320px;
+    }
     header {
         background-position: 60% 100%;
     }
