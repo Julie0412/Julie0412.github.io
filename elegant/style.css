@@ -1304,7 +1304,8 @@ footer p {
 
 /* mobile version */
 
-@media screen and (min-width: 320px) and (max-width: 420px) {
+@media screen and (min-width: 320px) and (max-width: 566px) {
+  
     .container {
         width: 320px;
     }
@@ -1812,6 +1813,10 @@ footer p {
         padding: 15px 85px;
     }
 
+} 
+@media screen and (max-width: 320px) {
+    body {
+    max-width: 320px;}
 }
 
 /* tablets and landscape */
