@@ -3494,6 +3494,8 @@ img {
     }
     .case-form__input::-webkit-input-placeholder {
       font-size: 10px;
+      vertical-align: middle;
+      font-weight: 400;
     }
     .case-form__btn {
       width: 110px;
