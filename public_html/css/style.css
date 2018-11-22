@@ -2808,7 +2808,7 @@ img {
       background: #2774d8 url('../img/header-bg-mobile.png') no-repeat 50% 100%;
       padding-bottom: 0;
       padding-top: 10px;
-      background-size: 106% 100%;
+      background-size: 100% 100%;
       overflow: hidden;
     }
     .header-nav__logo {
@@ -2822,17 +2822,19 @@ img {
           align-self: center;
       margin: 0 auto;
     }
+
     .header-nav__logo::after {
       content:"Постройте прибыльный юридический бизнеc";
+
       display: inline-block;
       width: 100%;
       font-weight: 900;
-      font-size: 29px;
+      font-size: 24px;
+      line-height: 1.3;
       text-align: center;
       color: white;
-      padding-top: 35px;
-      padding-left: 2%;
-      padding-right: 2%;
+      padding-top: 20px;
+      padding-bottom: 5px;
 
     }
     .header-intro {
@@ -2840,28 +2842,29 @@ img {
     }
     .intro-details{
       padding-left: 0;
-      margin-top: 40px;
+      margin-top: 5px;
       margin-bottom: 0;
     }
     .intro-details::before {
-      content: "Хотите открыть свое дело, или у Вас уже есть готовый бизнес?";
+      white-space: pre;
+      content: "Хотите открыть свое дело,\Aили у Вас уже есть готовый бизнес?";
       display: inline-block;
       font-family: "Gotham Pro", sans-serif;
-      font-size: 18px;
+      font-size: 14px;
       font-weight: 500;
       color: #fff;
-      line-height: 1.2;
+      line-height: 1.3;
       text-align: center;
-      padding: 0 9%;
+      margin: 0 auto;
     }
     .intro-details::after {
       content: "";
       display: block;
-      width: 25px;
-      height: 15px;
+      width: 18px;
+      height: 11px;
       background:url('../img/arrow.png') no-repeat;
       background-size: cover;
-      margin: 20px auto;
+      margin: 15px auto;
 
     }
 
@@ -2876,7 +2879,7 @@ img {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      margin-top: 40px;
+      margin-top: 15px;
     }
     .form-list li {
       display: none;
@@ -2884,17 +2887,18 @@ img {
     .feedback-form {
       padding-left: 0;
       padding-right: 0;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
 
     }
     .feedback-form::before {
-      content: "Получите бесплатный аудит Вашего проекта от специалиста!";
+      white-space: pre;
+      content: "Получите бесплатный аудит\AВашего проекта от специалиста!";
       display: inline-block;
       color: #fff;
       font-family: "Gotham Pro", sans-serif;
-      font-size: 18px;
+      font-size: 14px;
       font-weight: 500;
-      line-height: 1.2;
+      line-height: 1.3;
       text-align: center;
       padding: 0 9%;
     }
@@ -2902,13 +2906,13 @@ img {
     .intro-mobile-button {
       display: block;
       font-family: "Gotham Pro", sans-serif;
-      font-size: 17px;
+      font-size: 14px;
       font-weight: 900;
       color: #fff;
       line-height: 1.2;
       background-color: transparent;
       border: 2px solid #fff;
-      width: 281px;
+      width: 241px;
       padding-top: 15px;
       padding-bottom: 15px;
       padding-left: 23px;
@@ -2918,12 +2922,13 @@ img {
       box-shadow: 0 0 20px 1px rgba(255, 255, 255, 0.3);
     }
     .feedback-form__disclaimer {
-      width: 68%;
-      font-size: 10px;
+      width: 200px;
+      font-size: 7px;
       margin-bottom: 0;
+      margin-top: 15px;
     }
     .feedback-form__link {
-      font-size: 10px;
+      font-size: 7px;
     }
 
     .main-about,
@@ -2963,42 +2968,51 @@ img {
               flex-direction: column;
     }
     .about-list  {
-      margin-top: 10px;
-      margin-bottom: 15px;
+      margin-top: 0;
+      margin-bottom: 40px;
     }
     .about-item {
       width: 100%;
-      padding-left: 80px;
+      padding-left: 60px;
       padding-right: 20px;
+      margin-top: 40px;
 
     }
     .about-item__description {
-      font-size: 13px;
+      font-size: 11px;
       text-align: start ;
+      line-height: 1.4;
+      margin-bottom: 0;
+      margin-top: 0;
     }
     .about-item--first::before,
     .about-item--second::before{
-      background-size: 32px 26px;
-      width: 32px;
-      height: 26px;
-      left: 20px;
+      background-size: 21px 19px;
+      width: 21px;
+      height: 19px;
+      left: 19px;
+      top: 2px;
     }
     .about-item--third::before {
-      background-size: 33px 24px;
-      width: 33px;
-      height: 24px;
-      left: 22px;
+      background-size: 24px 20px;
+      width: 24px;
+      height: 20px;
+      left: 18px;
+      top: 2px;
+    }
+    .about-item--third {
+      padding-right: 10px;
     }
     .main-problems {
-      padding-bottom: 75px;
+      padding-bottom: 80px;
       padding-top: 0;
       overflow: hidden;
     }
     .main-problems__title {
-      font-size: 18px;
+      font-size: 16px;
     }
     .problems-item__description {
-      font-size: 9px;
+      font-size: 8px;
     }
     .problems-item--first .problems-item__description,
     .problems-item--second .problems-item__description,
@@ -3009,35 +3023,39 @@ img {
 
 
     }
+    .problems-list {
+      margin: 0;
+    }
     .problems-list::before {
       width: 375px;
       left: 0;
       height: 310px;
+      background-size: 96%;
     }
 
     .problems-item--second::before {
-      top: 55px;
-      left: 76px;
-      width: 40px;
-      height: 59px;
-      background-size: 40px 59px;
+      top: 52px;
+      left: 70px;
+      width: 36px;
+      height: 53px;
+      background-size: 36px 53px;
     }
     .problems-item--second .problems-item__description {
-      top: 58px;
-      left: 105px;
+      top: 51px;
+      left: 93px;
 
     }
     .problems-item--third::before {
-      top: 23px;
-      left: 73px;
-      width: 48px;
-      height: 41px;
-      background-size: 48px 41px;
+      top: 18px;
+      left: 71px;
+      width: 45px;
+      height: 39px;
+      background-size: 45px 39px;
     }
     .problems-item--third  {
       margin-top: 0;
-      top: 112px;
-      left: 57px;
+      top: 105px;
+      left: 50px;
     }
     .problems-item--third .problems-item__description {
       -webkit-transform: rotate(6deg);
@@ -3046,8 +3064,8 @@ img {
     }
     .problems-item--fifth {
       margin-top: 62px;
-      top: 88px;
-      left: 48px;
+      top: 75px;
+      left: 36px;
       -webkit-transform: rotate(6deg);
           -ms-transform: rotate(6deg);
               transform: rotate(6deg);
@@ -3058,16 +3076,17 @@ img {
       width: 120px;
     }
     .problems-item--fifth::before {
-      width: 50px;
-      height: 55px;
-      background-size: 50px 55px;
-      top: 12px;
-      left: 77px;
+      width: 54px;
+      height: 59px;
+      background-size: 54px 59px;
+      top: 9px;
+      left: 79px;
+      transform: rotate(-4deg);
     }
     .problems-item--first .problems-item__description {
       width: 135px;
-      left: 226px;
-      top: 49px;
+      left: 216px;
+      top: 48px;
     }
     .problems-item--first {
       padding-left: 0;
@@ -3075,15 +3094,15 @@ img {
 
     }
     .problems-item--first::before {
-      top: 75px;
+      top: 69px;
       right: 0;
-      left: 282px;
-      width: 60px;
-      height: 50px;
-      background-size: 60px 50px;
-      -webkit-transform: rotate(-5deg);
-          -ms-transform: rotate(-5deg);
-              transform: rotate(-5deg);
+      left: 272px;
+      width: 48px;
+      height: 46px;
+      background-size: 48px 46px;
+      -webkit-transform: rotate(-7deg);
+          -ms-transform: rotate(-7deg);
+              transform: rotate(-7deg);
     }
     .problems-item--fourth .problems-item__description {
       width: 111px;
@@ -3095,22 +3114,22 @@ img {
     .problems-item--fourth {
       -ms-flex-item-align: start;
           align-self: flex-start;
-      top: 116px;
-      left: 213px;
+      top: 106px;
+      left: 200px;
     }
     .problems-item--fourth::before {
-      top: 36px;
+      top: 33px;
       right: 0;
-      left: 65px;
-      width: 31px;
-      height: 44px;
-      background-size: 31px 44px;
+      left: 62px;
+      width: 27px;
+      height: 37px;
+      background-size: 27px 37px;
     }
     .problems-item--sixth::before {
 
-      top: -78px;
+      top: -71px;
       right: 0;
-      left: 31px;
+      left: 23px;
       width: 72px;
       height: 53px;
 
@@ -3121,22 +3140,24 @@ img {
     }
 
     .problems-item--sixth .problems-item__description {
-      width: 145px;
+      width: 140px;
       -webkit-transform: rotate(6deg);
           -ms-transform: rotate(6deg);
               transform: rotate(6deg);
       margin: 0;
     }
     .problems-item--sixth {
-      top: 67px;
-      left: 178px;
+      top: 60px;
+      left: 170px;
     }
     .main-plan {
       padding-top: 0;
       padding-bottom: 0;
       background: #0056bc url('../img/plan-mobile.png') no-repeat;
-      background-size:  414px 895px;
-      min-height: 707px;
+      background-size:  375px 845px;
+      -ms-background-position-x: 10%;
+      background-position-x: 10%;
+      height: 670px;
       overflow: hidden;
     }
     .main-plan__wrapper {
@@ -3144,15 +3165,15 @@ img {
       padding-right: 0;
     }
     .main-plan__title {
-      font-size: 18px;
+      font-size: 17px;
       text-align: center;
       margin-top: 35px;
-      margin-left: 12px;
+      margin-left: 5px;
     }
     .main-plan__secondary {
-      font-size: 16px;
+      font-size: 15px;
       text-align: center;
-      margin-bottom: 32px;
+      margin-bottom: 34px;
       margin-top: 5px;
     }
     .plan-item {
@@ -3160,46 +3181,52 @@ img {
       -webkit-box-direction: normal;
           -ms-flex-direction: row;
               flex-direction: row;
-      margin-left: 58px;
-      margin-bottom: 29px;
+      margin-left: 56px;
+      margin-bottom: 31px;
       position: relative;
     }
     .plan-item__nr {
-      font-size: 22px;
+      font-size: 20px;
       margin-bottom: 0;
     }
 
     .plan-item__description {
       text-align: left;
       margin-left: 20px;
-      font-size: 14px;
+      font-size: 10px;
+    }
+    .plan-item--second,
+    .plan-item--third {
+      margin-bottom: 32px;
     }
     .plan-item--fourth {
-      margin-bottom: 30px;
+      margin-bottom: 33px;
     }
     .plan-item--fifth {
       -webkit-box-ordinal-group: 5;
           -ms-flex-order: 4;
               order: 4;
-      margin-bottom: 35px;
+      margin-bottom: 31px;
     }
     .plan-item--sixth {
-      margin-bottom: 32px;
+      margin-bottom: 34px;
       -webkit-box-ordinal-group: 6;
           -ms-flex-order: 5;
               order: 5;
     }
     .plan-item--seventh {
-      margin-bottom: 27px;
+      margin-bottom: 31px;
     }
     .plan-item--nine {
-      margin-bottom: 27px;
+      margin-bottom: 32px;
     }
-    .plan-item:last-of-type {
+
+    .plan-item--ten  {
+      margin-left: 52px;
       margin-bottom: 0;
     }
-    .plan-item--ten  .plan-item__description {
-      margin-left: 12px;
+    .plan-item--ten .plan-item__description {
+      margin-left: 13px;
     }
 
     .main-geo {
@@ -3210,38 +3237,43 @@ img {
 
     .main-geo__wrapper {
       position: relative;
-      width: 360px;
+      width: 343px;
       background: url('../img/geo-bg.png') no-repeat;
-      background-size: 360px 206px;
+      background-size: 319px 206px;
+      background-position-x: 35%;
       margin: 10px auto;
 
     }
 
     .main-geo__title {
+      padding-left: 75px;
       font-size: 18px;
-      margin-top: 20px;
+      margin-top: 40px;
     }
     .main-geo__title::before {
-      left: 39px;
-      width: 43px;
+      left: 19px;
+      width: 42px;
       height: 54px;
       background-size: 42px 54px;
+      top: 2px;
     }
     .geo-list__name {
-      font-size: 7px;
+      font-size: 6px;
     }
     .geo-list__item--spb {
       position: absolute;
-      top: -68px;
-      left: 48px;
+      top: -67px;
+      left: 46px;
       margin-left: 0;
     }
+    .geo-list__item::before {
+      height: 22px;
+      width: 17px;
+      background-size: 17px 22px;
+    }
     .geo-list__item--spb::before {
-      height: 27px;
-      width: 21px;
-      background-size: 21px 27px;
-      top: -16px;
-      left: -15px;
+      top: -7px;
+      left: -13px
     }
     .geo-list--right {
       position: relative;
@@ -3252,83 +3284,71 @@ img {
       position: relative;
     }
     .geo-list__item--smolensk {
-      top: -74px;
-      left: -1px;
+      top: -58px;
+      left: -8px;
       margin-top: 0;
       margin-left: 0;
     }
     .geo-list__item--smolensk::before {
-      height: 27px;
-      width: 21px;
-      background-size: 21px 27px;
-      top: 13px;
-      left: 17px;
+
+      top: 0;
+      left: 29px;
     }
     .geo-list__item--moscow {
       margin-top: 0;
       margin-left: 0;
       left: 32px;
-      top: -58px;
+      top: -60px;
     }
     .geo-list__item--moscow::before {
-      height: 27px;
-      width: 21px;
-      background-size: 21px 27px;
-      top: -16px;
-      left: 5px;
+
+      top: -12px;
+      left: 3px;
 
     }
     .geo-list__item--samara {
       margin-left: 0;
-      top: -71px;
-      left: 45px;
+      top: -72px;
+      left: 51px;
     }
     .geo-list__item--samara::before {
-      height: 27px;
-      width: 21px;
-      background-size: 21px 27px;
+
       left: 4px;
       top: 14px;
     }
     .geo-list__item--ekaterinburg {
-      left: 78px;
-      top: -64px;
+      left: 73px;
+      top: -65px;
      margin-left: 0;
       margin-top: 0;
     }
     .geo-list__item--ekaterinburg::before {
-      height: 27px;
-      width: 21px;
-      background-size: 21px 27px;
-      left: 9px;
-      top: -19px;
+
+      left: 12px;
+      top: -12px;
     }
     .geo-list__item--saratov {
       margin-top: 0;
       margin-left: 0;
-      top: -81px;
-      left: 24px;
+      top: -79px;
+      left: 36px;
     }
     .geo-list__item--saratov::before {
-      height: 27px;
-      width: 21px;
-      background-size: 21px 27px;
+
       left: 5px;
-      top: -15px;
+      top: -11px;
 
     }
     .geo-list__item--southsahalin {
       margin-bottom: 0;
       margin-left: 0;
-      left: 112px;
-      top: -130px;
+      left: 125px;
+      top: -121px;
     }
     .geo-list__item--southsahalin::before {
-      height: 27px;
-      width: 21px;
-      background-size: 21px 27px;
-      left: 29px;
-      top: 22px;
+
+      left: 5px;
+      top: 14px;
     }
     .geo-list__item--habarovsk {
       margin-bottom: 0;
@@ -3338,24 +3358,21 @@ img {
 
     }
     .geo-list__item--habarovsk::before {
-      height: 27px;
-      width: 21px;
-      background-size: 21px 27px;
-      left: 14px;
-      top: -18px;
+
+      left: 9px;
+      top: -11px;
     }
     .geo-list__item--vladivostok {
 
       margin-left: 0;
-      top: -88px;
-      left: 120px;
+      top: -113px;
+      left: 133px;
     }
     .geo-list__item--vladivostok::before {
-      height: 27px;
-      width: 21px;
-      background-size: 21px 27px;
-      left: 8px;
-      top: -27px;
+
+
+      left: -17px;
+      top: 2px;
     }
     .main-case__wrapper {
       width: 100%;
@@ -3363,15 +3380,24 @@ img {
       padding-right: 0;
     }
     .main-case {
-      padding-top: 30px;
-      background-size: 900px 722px;
+      padding-top: 40px;
+      background-size: cover;
+      background-position: bottom 0px center, top center;
+
     }
     .main-case__title {
       font-size: 20px;
       margin-bottom: 20px;
     }
+    .case-item__title {
+      margin-bottom: 5px;
+    }
     .case-list {
       display: none;
+    }
+    .case-details {
+      padding-bottom: 70px;
+      border-width: 3px;
     }
 
     .mobile-carousel {
@@ -3390,66 +3416,93 @@ img {
     }
     .mobile-first-slide,
     .mobile-second-slide {
-      width: 320px;
+      width: 245px;
       margin: 0 auto;
       position: relative;
     }
     .case-details__description {
-      width: 100%;
-      font-size: 15px;
+      width: 90%;
+      font-size: 11px;
+      margin-top: 10px;
+      margin-bottom: 10px;
     }
     .case-details--left::after {
-      left: 108px;
+      background-size: 59px 53px;
+      width: 59px;
+      height: 53px;
+      left: 88px;
+      top: 80px;
 
+    }
+    .case-details__btn {
+        font-size: 11px;
     }
     .prev,
     .next {
       display: block;
       width: 15px;
-      height: 32px;
+      height: 22px;
       background: url('../img/left-arrow.png') no-repeat;
-      background-size: 15px 32px;
+      background-size: 15px 22px;
       position: absolute;
-      top: 186px;
+      top: 177px;
       z-index: 100;
     }
     .prev {
-      left: 7px;
+      left: 31px;
     }
     .next {
-      right: 5px;
-      width: 17px;
-      height: 33px;
+      right: 31px;
 
       background: url('../img/right-arrow.png') no-repeat;
-      background-size: 17px 33px;
+      background-size: 15px 22px;
     }
-    .case-details--right::after {
-      left: 117px;
-    }
-    .case-feedback__title {
-      font-size: 20px;
-      text-align: center;
-    }
-    .case-feedback__action {
-      font-size: 17px;
+    .case-feedback {
       margin-top: 5px;
     }
+    .case-details--right::after {
+      left: 87px;
+      background-size: 56px 64px;
+      width: 56px;
+      height: 64px;
+      bottom: 0;
+      top: 73px;
+    }
+    .case-feedback__title {
+      font-size: 18px;
+      text-align: center;
+      width: 69%;
+    }
+    .case-feedback__action {
+      font-size: 13px;
+      margin-top: 5px;
+      width: 70%;
+    }
     .case-form__input {
-      margin-right: 15px;
+      margin-right: 7px;
       width: 110px;
-      height: 35px;
+      height: 30px;
+    }
+    .case-form__list {
+      margin-top: 15px;
     }
     .case-form__input::-webkit-input-placeholder {
       font-size: 10px;
     }
     .case-form__btn {
       width: 110px;
-      height: 35px;
+      height: 30px;
       font-size: 10px;
       padding-bottom: 1px;
     }
+    .case-form__disclaimer {
+      font-size: 8px;
+      width: 224px;
 
+    }
+    .case-form__link {
+      font-size: 8px;
+    }
     .main-contacts__wrapper,
     .contacts-table{
       width: 100%;
@@ -3457,13 +3510,16 @@ img {
     .main-contacts__wrapper {
       padding-left: 0;
       padding-right: 0;
-      margin-top: 140px;
+      margin-top: 80px;
       background-color: #0058d4;
 
 
     }
+    .main-contacts {
+      height: 400px;
+    }
     .main-contacts__iframe {
-      height: 278px;
+      height: 220px;
     }
     .contacts-table {
       -webkit-box-align: center;
@@ -3472,15 +3528,19 @@ img {
       margin-bottom: 0;
       padding-bottom: 0;
 
-      height: 187px;
+      height: 150px;
     }
     .contacts-table__title {
-      margin-top: 20px;
+      margin-top: 10px;
       font-size: 20px;
+      margin-bottom: 20px;
     }
     .contacts-table__description {
-      font-size: 14px;
+      font-size: 12px;
       text-align: center;
+    }
+    .contacts-table__description--address {
+      margin-bottom: 16px;
     }
     .contacts-table__description--phone {
       margin-bottom: 4px;
@@ -3492,11 +3552,14 @@ img {
       -webkit-box-shadow: none;
               box-shadow: none;
       border: 2px solid #fff;
+      width: 217px;
+      height: 32px;
+
 
     }
     .page-footer {
-      padding-top: 40px;
-      padding-bottom: 40px;
+      padding-top: 60px;
+      padding-bottom: 5px;
     }
     .footer-contacts__list,
     .footer-copyright{
@@ -3512,12 +3575,15 @@ img {
           -ms-flex-align: center;
               align-items: center;
     }
+    .social-list {
+      margin-bottom: 40px;
+    }
     .social-list__item {
       margin-right: 40px;
     }
     .mobile-footer-text {
       display: inline-block;
-      font-size: 13px;
+      font-size: 10px;
       color: #000000;
       width: 100%;
       margin: 0 auto;
@@ -3527,7 +3593,7 @@ img {
     }
 
     .footer-social__author {
-      font-size: 13px;
+      font-size: 10px;
       margin: 0 auto;
       width: 90%;
       text-align: center;
@@ -3569,9 +3635,10 @@ img {
   }
 @media screen and (min-width: 413px) and (max-width: 415px) {
   .modal-case {
-
     top: 344%;
-
+  }
+  .problems-list {
+    left: 20px;
   }
 
 }
@@ -3581,81 +3648,12 @@ img {
 
   }
 
-  .header-nav__logo::after {
-    font-size: 28px;
-  }
-  .intro-details::before,
-  .feedback-form::before,
-  .main-plan__title,
-  .main-problems__title{
-    font-size: 17px;
-  }
+
 
 }
-@media screen and (min-width:321px) and (max-width: 360px) {
-  .header-nav__logo::after {
-    font-size: 26px;
-  }
-  .intro-details::before,
-  .feedback-form::before,
-  .main-plan__title{
-    font-size: 17px;
-  }
-  .main-problems__title,
-  .main-plan__secondary{
-    font-size: 16px;
-  }
-  .problems-list::before {
-    width: 360px;
-    background-position: 64% 100%;
-  }
-  .problems-item--first .problems-item__description {
-    left: 211px;
-  }
-  .problems-item--first::before {
-    left: 272px;
-  }
-  .problems-item--second::before {
-    left: 60px;
-  }
-  .problems-item--second .problems-item__description {
-    left: 90px;
-  }
-  .problems-item--third {
-    left: 42px;
-  }
-  .problems-item--fourth {
-    left: 198px;
-  }
-  .problems-item--fifth {
-    left: 34px;
-  }
-  .problems-item--sixth {
-    left: 162px;
-  }
-  .geo-list__name {
-    font-size: 6px;
-  }
-  .modal-case {
-    top: 406%;
-  }
-  .prev {
-    left: 2px;
-  }
-  .next {
-    right: 0;
-  }
-  .case-feedback__title,
-  .case-feedback__action{
-    width: 90%;
-    font-size: 17px;
-    text-align: center;
-  }
-  .contacts-table__description {
-    font-size: 13px;
-  }
-}
+
 @media screen and (max-width: 320px) {
+
   .header-nav__logo::after{
     font-size: 22px;
   }
@@ -3675,106 +3673,174 @@ img {
     background-position: 64% 100%;
     height: 278px;
   }
+  .problems-item--first .problems-item__description, .problems-item--second .problems-item__description, .problems-item--third .problems-item__description, .problems-item--fourth .problems-item__description {
+    width: 85px;
+  }
   .problems-item__description {
-    font-size: 8px;
+    font-size: 6px;
   }
   .problems-item--first .problems-item__description {
-    left: 187px;
+    top: 72px;
+    left: 202px;
+    width: 92px;
+
   }
   .problems-item--first::before {
-    left: 230px;
-    top: 69px;
+    left: 246px;
+    top: 84px;
+    width: 41px;
+    height: 39px;
+    background-size: 41px 39px;
   }
   .problems-item--second::before {
-    left: 52px;
+    left: 71px;
+    top: 77px;
   }
   .problems-item--second .problems-item__description {
-    left:78px;
+    left: 93px;
+    top: 78px;
   }
   .problems-item--third {
-    left: 25px;
-    top: 103px;
+    left: 44px;
+    top: 124px;
   }
   .problems-item--third::before {
-    top: 19px;
+    top: 14px;
+    left: 70px;
+    width: 36px;
+    height: 33px;
+    background-size: 36px 33px;
   }
   .problems-item--fourth {
-    top: 105px;
-    left: 172px;
+    top: 113px;
+    left: 186px;
+  }
+  .problems-item--fourth::before {
+    top: 26px;
+    left: 51px;
+  }
+  .problems-item--fifth .problems-item__description {
+    width: 108px;
   }
   .problems-item--fifth {
-    left: 16px;
-    top: 66px;
+    left: 37px;
+    top: 83px;
+  }
+  .problems-item--fifth::before {
+    width: 42px;
+    height: 45px;
+    background-size: 42px 45px;
+    top: 9px;
+    left: 65px;
+
+
   }
   .problems-item--sixth {
-    top: 46px;
-    left: 143px;
+    top: 65px;
+    left: 162px;
   }
 
   .problems-item--sixth::before {
-    top: -65px;
+    top: -61px;
+    left: 11px;
+    background-size: 65px 47px;
+    width: 65px;
+    height: 47px;
   }
   .problems-item--sixth .problems-item__description {
-    width: 142px;
+    width: 105px;
   }
   .main-plan {
     background-size: 414px 916px;
+    height: 717px;
   }
   .main-plan__secondary {
     font-size: 14px;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
   }
   .plan-item__description {
-    font-size: 12px;
+    font-size: 10px;
   }
   .plan-item {
+    margin-bottom: 38px;
+  }
+  .plan-item--fourth {
+    margin-bottom: 35px;
+  }
+  .plan-item--seventh {
     margin-bottom: 34px;
   }
   .main-geo__wrapper {
     width: 320px;
-    background-size: 314px 206px;
+    background-size: 272px 164px;
   }
   .geo-list__name {
     font-size: 6px;
   }
+  .geo-list--left {
+    height: 30px;
+  }
+  .geo-list--right {
+    top: 59px;
+
+    height: 0;
+  }
+
   .geo-list__item--spb {
-    top: -64px;
+    top: -84px;
+    left: 54px;
   }
   .geo-list__item--smolensk {
     left: 2px;
+    top: -78px;
   }
   .geo-list__item--moscow {
-    top: -54px;
+    top: -78px;
+    left: 41px;
   }
   .geo-list__item--samara {
-    top: -67px;
+    top: -92px;
+    left: 58px;
+  }
+  .geo-list__item--ekaterinburg {
+    left: 76px;
+    top: -92px;
+  }
+  .geo-list__item--saratov {
+    top: -111px;
+    left: 36px;
   }
   .geo-list__item--southsahalin {
-    left: 103px;
+    left: 100px;
+    top: -155px;
   }
   .geo-list__item--habarovsk {
-    left: 79px;
+    left: 63px;
+    top: -144px;
   }
   .geo-list__item--vladivostok {
-    left: 105px;
+    left: 111px;
+    top: -151px;
   }
   .main-case {
     background-size: 900px 734px;
   }
   .mobile-first-slide, .mobile-second-slide {
-    width: 280px;
+    width: 230px;
   }
   .case-details--left::after {
-    left: 87px;
+    left: 82px;
+    top: 82px;
   }
   .case-details--right::after {
-    left: 89px;
+    left: 80px;
+    top: 85px
   }
   .prev {
-    left: 2px;
+    left: 13px;
   }
   .next {
-    right: 0;
+    right: 18px;
   }
   .modal-case {
     top: 476%;
@@ -3796,12 +3862,12 @@ img {
   }
   .case-form__btn {
     width: 80px;
-    height: 35px;
+    height: 30px;
     font-size: 7px;
     padding-bottom: 1px;
   }
   .case-form__input {
-    width: 80px;
+    width: 90px;
 
   }
   .case-form__input::-webkit-input-placeholder {
