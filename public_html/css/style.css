@@ -3477,6 +3477,7 @@ img {
       font-size: 13px;
       margin-top: 5px;
       width: 70%;
+      text-align: center;
     }
     .case-form__input {
       margin-right: 7px;
@@ -3484,6 +3485,9 @@ img {
       height: 30px;
       -webkit-appearance: none;
       -moz-appearance: none;
+      border-radius:0;
+      -moz-border-radius: 0;
+      -webkit-border-radius: 0;
     }
     .case-form__list {
       margin-top: 15px;
@@ -3505,6 +3509,9 @@ img {
     .case-form__link {
       font-size: 8px;
     }
+    .map {
+      filter: grayscale(100%);
+    }
     .main-contacts__wrapper,
     .contacts-table{
       width: 100%;
@@ -3514,8 +3521,6 @@ img {
       padding-right: 0;
       margin-top: 80px;
       background-color: #0058d4;
-
-
     }
     .main-contacts {
       height: 400px;
@@ -3614,6 +3619,11 @@ img {
 
     .call-list__input {
       width: 200px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      border-radius:0;
+      -moz-border-radius: 0;
+      -webkit-border-radius: 0;
     }
     .thanks__option {
       text-align: center;
@@ -3624,7 +3634,9 @@ img {
       height: 639px;
       overflow: scroll;
       top: 325%;
-
+    }
+    .modal-case__close {
+      left: 10px;
     }
 
     .js-popup {
