@@ -2753,8 +2753,8 @@ img {
     font-weight: 300;
     color: #000000;
     line-height: 1.2;
-}
-
+  }
+  
   @media screen and (min-width: 320px) and (max-width: 420px) {
     body {
       min-width: 320px;
@@ -3573,13 +3573,24 @@ img {
     top: 344%;
 
   }
+
 }
 @media screen and (min-width: 375px) and (max-width: 376px) {
   .modal-case {
-
     top: 344%;
 
   }
+
+  .header-nav__logo::after {
+    font-size: 28px;
+  }
+  .intro-details::before,
+  .feedback-form::before,
+  .main-plan__title,
+  .main-problems__title{
+    font-size: 17px;
+  }
+
 }
 @media screen and (min-width:321px) and (max-width: 360px) {
   .header-nav__logo::after {
