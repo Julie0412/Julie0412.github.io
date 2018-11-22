@@ -2864,7 +2864,7 @@ img {
       height: 11px;
       background:url('../img/arrow.png') no-repeat;
       background-size: cover;
-      margin: 15px auto;
+      margin: 10px auto;
 
     }
 
@@ -2969,13 +2969,13 @@ img {
     }
     .about-list  {
       margin-top: 0;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
     .about-item {
       width: 100%;
       padding-left: 60px;
       padding-right: 20px;
-      margin-top: 40px;
+      margin-top: 30px;
 
     }
     .about-item__description {
