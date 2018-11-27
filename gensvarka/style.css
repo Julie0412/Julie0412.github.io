@@ -24,6 +24,13 @@ body, header, main, footer, section, div, h1, h2, h3, h4, p, b, a, ul, li, img {
     padding: 0;
     line-height: 1;
 }
+a[href^="tel"],
+a,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+
+}
 
 body {
     max-width: 1920px;
@@ -37,10 +44,19 @@ body {
 .container {
     width: 1320px;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 header {
@@ -53,10 +69,19 @@ header {
 .header-first-line {
     padding-top: 15px;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .header-logo {
@@ -78,10 +103,17 @@ header {
     list-style: none;
     font-size: 21px;
     color: #993300;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     width: 84%;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding-left: 50px;
 }
 
@@ -105,9 +137,15 @@ header {
 }
 
 .header-bottom form {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin-top: 55px;
     margin-bottom: 310px;
     width: 888px;
@@ -186,14 +224,24 @@ header {
 }
 
 .service {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-bottom: 35px;
 }
 
 .service:nth-of-type(2n) {
-    flex-direction: row-reverse;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
 }
 
 .service:nth-of-type(2n) .service-photo {
@@ -201,8 +249,13 @@ header {
 }
 
 .service-photo {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 48%;
     height: 330px;
     color: #ffff00;
@@ -277,8 +330,11 @@ header {
 
 .main-prices .section-title {
     text-align: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     font-size: 60px;
     margin-top: 28px;
     margin-bottom: 35px;
@@ -290,9 +346,16 @@ header {
 .prices-menu {
     text-decoration: none;
     list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
     margin-bottom: 15px;
 }
@@ -369,15 +432,28 @@ header {
 }
 
 .main-features .container {
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .feature {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     width: 30%;
     position: relative;
     min-height: 228px;
@@ -470,16 +546,26 @@ header {
 .main-plan .section-title {
     font-size: 36px;
     margin-top: 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     margin-bottom: 95px;
     text-transform: uppercase;
 }
 
 .plan-steps {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-bottom: 100px;
 }
 
@@ -561,9 +647,16 @@ header {
 }
 
 .review {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 80%;
     margin: 25px auto;
 }
@@ -1529,7 +1622,9 @@ footer {
         margin-top: 16px;
         margin-bottom: 18px;
         padding-left: 7px;
-        align-self: center;
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
     }
 
     .prices-menu li {
@@ -1606,7 +1701,9 @@ footer {
         font-size: 20px;
         margin-top: 18px;
         margin-bottom: 67px;
-        align-self: center;
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
     }
 
     .step {
@@ -1820,7 +1917,9 @@ footer {
         margin-top: 16px;
         margin-bottom: 18px;
         padding-left: 7px;
-        align-self: center;
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
     }
 
     .prices-menu li {
@@ -1899,7 +1998,9 @@ footer {
         font-size: 17px;
         margin-top: 18px;
         margin-bottom: 67px;
-        align-self: center;
+        -ms-flex-item-align: center;
+            -ms-grid-row-align: center;
+            align-self: center;
     }
 
     .step {
@@ -1974,7 +2075,6 @@ footer {
         height: 100px;
     }
 }
-
 
 
 
