@@ -65,6 +65,9 @@ header {
     border-bottom: 7px solid #ffd801;
     color: #fff;
 }
+.header-top {
+    position: fixed;
+    top: 0;
 
 .header-first-line {
     padding-top: 15px;
@@ -177,6 +180,8 @@ header {
     width: 327px;
     padding-left: 5px;
     margin-bottom: 15px;
+    moz-appearance: none;
+    -webkit-appearance: none;
 
 }
 
