@@ -66,8 +66,16 @@ header {
     color: #fff;
 }
 .header-top {
+    width: 100%;
+    max-width: 1920px;
     position: fixed;
     top: 0;
+    background: url('images/header.png') no-repeat;
+    background-size: cover;
+    z-index: 100;
+
+;
+}
 
 .header-first-line {
     padding-top: 15px;
@@ -129,7 +137,7 @@ header {
 .header-bottom h1 {
     font-size: 48px;
     text-transform: uppercase;
-    margin-top: 135px;
+    margin-top: 325px;
     margin-bottom: 70px;
 }
 
@@ -717,7 +725,7 @@ footer {
 
     .header-bottom h1 {
         font-size: 36px;
-        margin-top: 100px;
+        margin-top: 260px;
         margin-bottom: 40px;
     }
 
@@ -956,7 +964,7 @@ footer {
 
     .header-bottom h1 {
         font-size: 28px;
-        margin-top: 80px;
+        margin-top: 220px;
         margin-bottom: 40px;
     }
 
@@ -1234,7 +1242,7 @@ footer {
 
     .header-bottom h1 {
         font-size: 22px;
-        margin-top: 80px;
+        margin-top: 180px;
         margin-bottom: 40px;
     }
 
@@ -1526,7 +1534,7 @@ footer {
 
     .header-bottom h1 {
         font-size: 14px;
-        margin-top: 80px;
+        margin-top: 150px;
         margin-bottom: 40px;
     }
 
@@ -1821,7 +1829,8 @@ footer {
 
     .header-bottom h1 {
         font-size: 11px;
-        margin-top: 80px;
+        margin-top: 100px;
+
         margin-bottom: 40px;
     }
 
