@@ -686,6 +686,7 @@ body {
 .experience-description {
     display: flex;
     flex-direction: column;
+    width: 50%;
 }
 .experience-description h3 {
     font-family: "Proxima Nova", sans-serif;
@@ -702,18 +703,23 @@ body {
 .first-column, .second-column {
     display: flex;
     flex-direction: column;
-
-    width: 48%;
+    width: 50%;
 }
 .description-columns p {
     color: #f69800;
     font-family: "Proxima Nova", sans-serif;
     font-weight: 600;
     font-size: 25px;
-    line-height: 25px;
+    line-height: 27px;
+    width: 102%;
 }
-.description-columns p:not(:first-child) {
-    border-bottom: 3px solid #f69800;
+.description-columns p:not(:first-child)::after {
+    content:"";
+    height: 3px;
+    width: 200px;
+    display: block;
+    background-color: #f69800;
+    margin-top: 10px;
 }
 .description-columns p:first-child {
     font-size: 40px;
@@ -721,8 +727,86 @@ body {
 
 }
 .first-column p:last-child {
-    margin-top: 43px;
+    margin-top: 40px;
+    font-size: 30px;
 }
+.experience-description img {
+    width: 250px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+.practice {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-family: "Proxima Nova", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+.practice a {
+    margin-left: 50px;
+    text-decoration: none;
+    color: #0012ff;
+    border-bottom: 1px solid #0012ff;
+    cursor:pointer;
+}
+.pop-up-practice-first {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 557px;
+    width: 593px;
+    z-index: 5;
+    top: 263px;
+    left: 48%;
+    background: url("images/pop-up-1-bg.png") no-repeat;
+    background-size: cover;
+    padding-left: 60px;
+    font-family: "Proxima Nova", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+}
+.pop-up-practice-first h3 {
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+.pop-up-practice-first h3::after {
+    content:"";
+    margin-top: 30px;
+    display: block;
+    height: 4px;
+    width: 30%;
+    background: url("images/h1 top.png") no-repeat;
+}
+.cases-list {
+    padding-left: 30px;
+}
+.cases-list li{
+    list-style: none;
+    font-size: 18px;
+    line-height: 35px;
+    width: 90%;
+    position: relative;
+}
+.cases-list li::before {
+    content: "";
+    background-color: #faab00;
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    position: absolute;
+    left: -29px;
+    top: 6px;
+}
+.pop-up-practice-first .button {
+    margin-top: 30px;
+    width: 28%;
+    box-shadow: none;
+}
+
 
 
 /*
