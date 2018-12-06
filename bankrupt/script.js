@@ -2,7 +2,6 @@ $(document).on('click','.show-practice', function () {
     $('.pop-up-practice-first').show();
 });
 $(document).on('click', function (e) {
-    debugger;
     if( $('.pop-up-practice-first:visible').length > 0
         && $(e.target).closest('.pop-up-practice-first').length == 0
         && !$(e.target).is('.pop-up-practice-first')
@@ -10,6 +9,14 @@ $(document).on('click', function (e) {
     )
     {
         $('.pop-up-practice-first').hide();
+    }
+    if ($(e.target).is('.show-all-cases'))
+    {
+        $('.pop-up-practice-first').hide();
+        $('.pop-up-practice-second').show();
+    }
+    if ($(e.target).is('.close-cases')) {
+        $('.pop-up-practice-second').hide();
     }
 
 });
