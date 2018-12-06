@@ -1285,9 +1285,13 @@ border-bottom: 7px solid #1a1a1b c;
     height: 10px;
     background-color: #8b8b8c;
     cursor: pointer;
+    border: none;
+    box-shadow: none;
 }
 .do-second-part .owl-carousel button.owl-dot.active {
     background-color: #ffae2b;
+    border: none;
+    box-shadow: none;
 }
 .do-second-part .button {
     margin: 20px auto;
