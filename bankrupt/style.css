@@ -1058,8 +1058,32 @@ border-bottom: 7px solid #1a1a1b c;
 }
 
 /* screen-6 */
+
 .do-second-part {
     position: relative;
+}
+.corner {
+    display: block;
+    position: absolute;
+    width: 80px;
+    height: 60px;
+    background-color: #ffae2b;
+    top: 0;
+}
+.corner:first-of-type {
+    top: 187px;
+}
+.corner:nth-of-type(2) {
+    top: 187px;
+    right: 360px;
+}
+.corner:nth-of-type(3) {
+    top: 1022px;
+
+}
+.corner:nth-of-type(4) {
+    top: 1022px;
+    right: 360px;
 }
 .do-second-part h3 {
     font-family: "Proxima Nova", sans-serif;
