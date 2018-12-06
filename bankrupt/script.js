@@ -20,3 +20,16 @@ $(document).on('click', function (e) {
     }
 
 });
+$(document).ready(function(){
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+        loop: true,
+        items: 3,
+        dots: true,
+        dotsEach:1
+
+        })
+
+    });
+
+
