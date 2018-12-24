@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>ЗЕМКАД-100</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="lightbox.css">
     <link rel="stylesheet" href="owl.carousel.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="js/jquery-3.3.1.min.js"></script>
@@ -31,13 +32,14 @@
         </div>
     <div class="header-top mobile">
         <a class="open-menu mobile"></a>
-        <ul class="menu mobile">
+        <ul class="menu mobile hidden">
             <li><a href="#services">услуги</a></li>
             <li><a href="#works">наши работы</a></li>
             <li><a href="#calculator">расчет стоимости</a></li>
             <li><a href="#steps">схема работы</a></li>
             <li><a href="#questions">вопрос-ответ</a></li>
             <li><a href="#contacts">контакты</a></li>
+            <li class="mobile-close"></li>
         </ul>
             <div class="logo mobile">
                 <img src="images/logo.png">
@@ -114,7 +116,7 @@
                 <a class="submit open-popup"></a>
             </div>
             <div class="service-description hidden"  data-index="5">
-                <h3>Технический план<br>
+                <h3>Технический план
                     для внесения изменений после планировки</h3>
                 <p>Раздел помещения необходим в случае
                     раздела собственности, выдела части
@@ -178,7 +180,7 @@
                     Укажите площадь:
                     <input type="number" name="meters" value="0" id="meters" placeholder="100 м&sup2;">
                 </label>
-                <label>
+                <label id="label-price">
                     Стоимость:
                     <input type="text" name="price" id="price" disabled>
                 </label>
@@ -193,7 +195,7 @@
                         <option value="service6">Техническая ошибка</option>
                         </select>
                 </label>
-              <label>
+              <label id="label-region">
                     Выберите регион:
                     <select name="region" id="region">
                         <option value="msk" selected>Москва</option>
@@ -215,16 +217,29 @@
     <section class="works" id="works">
         <div class="container">
         <h2 class="section-title">посмотрите Наши работы</h2>
-            <div class="gallery visible">
+            <div class="gallery">
+                <a class="liteboxLink" href="images/work1.jpeg" data-lightbox="work1">
                 <img src="images/work1.jpeg">
+                    </a>
+
+                <a class="liteboxLink" href="images/work2.jpeg" data-lightbox="work2">
                 <img src="images/work2.jpeg">
+                    </a>
+                <a class="liteboxLink" href="images/work3.jpeg" data-lightbox="work3">
                 <img src="images/work3.jpeg">
+                    </a>
+                <a class="liteboxLink" href="images/work4.jpeg" data-lightbox="work4">
                 <img src="images/work4.jpeg">
+                    </a>
             </div>
-            <a class="button red">Посмотреть еще</a>
-            <div class="gallery hidden">
+            <a class="button red show-more">Посмотреть еще</a>
+            <div class="gallery g2 hidden ">
+                <a class="liteboxLink" href="images/work5.jpeg" data-lightbox="work5">
                 <img src="images/work5.jpeg">
+                    </a>
+                <a class="liteboxLink" href="images/work6.jpeg" data-lightbox="work6">
                 <img src="images/work6.jpeg">
+                    </a>
                 <!-- <img src="images/work7.jpeg"> -->
                 </div>
             </div>
@@ -233,38 +248,38 @@
         <div class="container">
         <h2 class="section-title">6 шагов до готового документа</h2>
         <div class="steps owl-carousel">
-            <div class="step">
+            <div class="step step1">
                 <h4 class="red">01</h4>
                 <p>Оставьте заявку на сайте.
                     Наш специалист свяжется
                     с Вами в течение 30 минут</p>
                 </div>
-            <div class="step">
+            <div class="step step2">
                 <h4 class="red">02</h4>
                 <p>Направьте документы<br>
                     на анализ нашим
                     специалистам</p>
             </div>
-            <div class="step">
+            <div class="step step3">
                 <h4 class="red">03</h4>
                 <p>Выезд специалиста<br>
                     на обмеры. Согласование
                     работ. Заключение договора</p>
             </div>
-            <div class="step">
+            <div class="step step4">
                 <h4 class="red">04</h4>
                 <p>Выполнение работ
                     (согласование перепланировки,
                     подготовка технического плана)</p>
             </div>
-            <div class="step">
+            <div class="step step5">
                 <h4 class="red">05</h4>
                 <p>Подача документов<br>
                     в Росреестр (передача
                     диска с техническим
                     планом клиенту)</p>
             </div>
-            <div class="step">
+            <div class="step step6">
                 <h4 class="red">06</h4>
                 <p>Получение выписки ЕГРН
                     с новыми сведениями</p>
@@ -280,7 +295,7 @@
                 <p>Когда необходим раздел помещений?</p>
                 <a class="expand"></a>
                 </div>
-            <div class="answer">
+            <div class="answer hidden">
                 <p>Если в собственности помещение или здание, то для того, чтобы совершить сделку с частью его площади, нужно выделить эту площадь как отдельное помещение.<br><br>
                 Например, у вас в собственности помещение площадью 1000м<sup>2</sup>. Необходимо продать (или осуществить любую другую сделку) часть этого помещения площадью 100м<sup>2</sup> . Тогда помещение  в собственности площадью 1000м<sup>2</sup>  необходимо разделить на два помещения: площадью 100м<sup>2</sup> для продажи и остаток 900м<sup>2</sup>.<br><br>
                 Право собственности на исходное помещение площадью 1000м<sup>2</sup>  прекращается и возникает право собственности на два вновь образованных помещения. Каждому вновь образованному помещению присваивается кадастровый номер.
@@ -384,7 +399,7 @@
                 <a class="button red open-popup">Получить консультацию</a>
                 </div>
             <div class="map">
-                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aff5cf07e365f54cc5f2be63e02912f607b45a4d37d160a75ac6ed4ec4c827ec2&amp;source=constructor" width="600" height="500" frameborder="0"></iframe>
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aff5cf07e365f54cc5f2be63e02912f607b45a4d37d160a75ac6ed4ec4c827ec2&amp;source=constructor" frameborder="0"></iframe>
                 </div>
             </div>
         </section>
@@ -400,10 +415,12 @@
             </div>
         <div class="third-part">
             <div class="phone button">
-                <p>+ 7 495 740 56 70</p>
+                <a>+ 7 495 740 56 70</a>
+                </div>
+                <a class="mobile email">roskad100@gmail.com</a>
             </div>
             </div>
-        </div>
+
     </footer>
 <div class="popup hidden">
     <div class="popup-content">
@@ -426,7 +443,7 @@
             и наш специалист ответит на все вопросы!</p>
         <form>
 
-            <input type="tel" name="tel" id="tel" placeholder="Введите телефон">
+            <input type="tel" name="tel" id="telnum" placeholder="Введите телефон">
             <input type="submit" value="Перезвоните мне">
         </form>
         <p>Нажимая на кнопку "Оставить заявку", я даю согласие на обработку<br>
@@ -435,6 +452,7 @@
     </div>
     </div>
 <script src="js/owl.carousel.min.js"></script>
+<script src="js/lightbox.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

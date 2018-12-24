@@ -210,6 +210,7 @@ h1 {
     margin-top: 67px;
     font-size: 28px;
     line-height: 40px;
+    width: 90%;
 }
 .service-description.active h3::after {
     content: "";
@@ -384,12 +385,25 @@ h1 {
     border-bottom: 1px solid #be2816;
     padding-bottom: 90px;
 }
-.gallery img {
-    display: block;
-    width: 250px;
-    height: 356px;
+
+.gallery a {
+    width: 23%;
+    height: 50%;
     box-shadow: -5px 2px 10px rgba(0,0,0, 0.3);
 }
+
+.gallery img {
+    width: 100%;
+    display: block;
+    height: 100%;
+}
+.onhover {
+    background-color: rgba(190,40,22,0.5);
+    background-image: url('images/loupe.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
 .works .button {
     width: 13%;
     padding: 8px 50px;
@@ -454,7 +468,7 @@ h1 {
 .step:nth-child(5)::before {
     background: url('images/step5.png') no-repeat;
 }
-.step:last-child::before {
+.step6::before {
     background: url('images/step6.png') no-repeat;
 }
 .scheme .button {
@@ -611,8 +625,13 @@ h1 {
     margin-bottom: 140px;
 }
 .map {
-    margin-top: 70px;
+    width: 50%;
+    margin-top: 95px;
     margin-bottom: 40px;
+}
+.map iframe {
+    width: 100%;
+    height: 530px;
 }
 
 /* футер */
@@ -828,10 +847,7 @@ footer .phone p::before {
         font-size: 18px;
         height: 39px;
     }
-    .gallery img {
-        width: 23%;
-        height: 50%;
-    }
+
     .works .button {
         padding: 8px 35px;
         font-size: 17px;
@@ -1100,6 +1116,7 @@ footer .phone p::before {
 @media screen and (max-width: 889px) {
     header {
         background: url('images/header-bg-mob.png');
+        background-size: cover;
     }
     .header-top {
         display: none;
@@ -1116,7 +1133,7 @@ footer .phone p::before {
         display: flex;
     }
     .menu.mobile {
-        display: none;
+        display: flex;
         position: absolute;
         top: 0;
         left: 0;
@@ -1127,7 +1144,29 @@ footer .phone p::before {
         height: 500px;
         justify-content: center;
         align-items: center;
+        padding-top: 60px;
+        padding-bottom: 20px;
+        list-style: none;
     }
+    .menu.mobile li {
+        font-family: "Uni Sans Heavy CAPS", sans-serif;
+        font-size: 25px;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+    .menu.mobile li:hover {
+        text-decoration: underline;
+    }
+    .mobile-close {
+        display: block;
+        width: 61px;
+        height: 49px;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        background: url('images/mobile-close.png') no-repeat;
+    }
+
     .open-menu.mobile {
         background: url('images/open-menu.png') no-repeat;
         background-size: cover;
@@ -1262,13 +1301,6 @@ footer .phone p::before {
     .gallery {
         margin-top: 5px;
     }
-    .gallery img {
-        width: 30%;
-        height: 50%;
-    }
-    .gallery img:last-of-type {
-        display: none;
-    }
     .works .button {
         width: auto;
     }
@@ -1284,17 +1316,116 @@ footer .phone p::before {
         color: #242424;
         text-align: center;
         width: 80%;
+        margin-bottom: 0;
     }
     .step {
-        width: 80%;
+        width: 60%;
         margin: 0 auto;
+        padding-left: 120px;
+    }
+    .step::before {
+        width: 100px;
+        height: 90px;
+    }
+
+    .step1::before {
+        content: '';
+        background: url('images/step1.png') no-repeat;
+        background-size: cover;
+        height: 96px;
+        top: 95px;
+        left: -116px;
+    }
+    .step2::before {
+        content: '';
+        background: url('images/step2.png') no-repeat;
+        background-size: cover;
+        height: 99px;
+        width: 85px;
+        top: 105px;
+        left: -115px;
+    }
+    .step3::before {
+        content: '';
+        background: url('images/step3.png') no-repeat;
+        background-size: cover;
+        height: 97px;
+        width: 97px;
+        top: 99px;
+        left: -120px;
+    }
+    .step4::before {
+        content: '';
+        background: url('images/step4.png') no-repeat;
+        background-size: cover;
+        height: 97px;
+        width: 97px;
+        top: 103px;
+        left: -120px;
+    }
+    .step5::before {
+        content: '';
+        background: url('images/step5.png') no-repeat;
+        background-size: cover;
+        height: 92px;
+        width: 103px;
+        top: 99px;
+        left: -120px;
+    }
+    .step6::before {
+        content: '';
+        background: url('images/step6.png') no-repeat;
+        background-size: cover;
+        height: 97px;
+        width: 95px;
+        top: 103px;
+        left: -120px;
     }
     .step h4 {
         font-size: 46px;
     }
     .step p {
         font-size: 29px;
-        width: 80%;
+        width: 100%;
+        line-height: 33px;
+    }
+    .scheme .container .steps .owl-prev {
+        position: absolute;
+        display: block;
+        background: url("images/prev.png") no-repeat;
+        width: 24px;
+        height: 37px;
+        left: -5px;
+        top: 50%;
+    }
+    .scheme .container .steps .owl-next {
+        position: absolute;
+        display: block;
+        background: url("images/next.png") no-repeat;
+        width: 24px;
+        height: 37px;
+        right: -5px;
+        top: 50%;
+
+    }
+    .owl-dots {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 40%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .scheme .container .steps .owl-dot {
+        display: block;
+        width: 15px;
+        height: 15px;
+        border: 2px solid #be2816;
+        border-radius: 100%;
+    }
+    .scheme .container .steps .owl-dot.active {
+        background-color: #be2816;
     }
     .scheme .button {
         width: auto;
@@ -1318,7 +1449,7 @@ footer .phone p::before {
         left: -152px;
     }
     .manager .content {
-        width: 48%;
+        width: 50%;
         margin-top: 100px;
         padding-bottom: 50px;
     }
@@ -1349,6 +1480,9 @@ footer .phone p::before {
     .feature p {
         width: 80%;
     }
+    .contacts {
+        overflow: hidden;
+    }
     .contacts .section-title {
         text-align: center;
         margin: 100px auto;
@@ -1356,6 +1490,7 @@ footer .phone p::before {
     .contacts .container {
         flex-direction: column;
         align-items: center;
+
     }
     .contacts .left-part p {
         text-align: center;
@@ -1363,9 +1498,80 @@ footer .phone p::before {
     .contacts .left-part {
         margin-bottom: 100px;
     }
+    .map {
+        width: 117%;
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 600px;
+    }
+    .map iframe {
+        height: 100%;
+    }
+    footer .phone {
+        font-family: Circe, sans-serif;
+        font-size: 14px;
+        border: none;
+        padding: 0;
+        margin-bottom: 11px;
+    }
+    footer .phone::before {
+        display: none;
+    }
+    footer .third-part {
+        font-family: Circe, sans-serif;
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .popup-content {
+        left: 5%;
+        top: 25%;
+    }
+}
+@media screen and (max-width: 823px) {
+    .service-description.active .number {
+        margin-bottom: 102px;
+        margin-top: 145px;
+    }
+}
+@media screen and (max-width: 812px) {
+    .service-description.active .number {
+        margin-bottom: 87px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .service-description.active .number {
+        margin-bottom: 102px;
+        margin-top: 97px;
+    }
+}
+@media screen and (max-width: 736px) {
+    .service-description.active .number {
+        margin-top: 47px;
+    }
+    .popup-content {
+        left: 5%;
+        top: 5%;
+        width: 664px;
+        height: 417px;
+    }
+    .calculator select,
+    .calculator input[type="submit"]{
+        width: 280px;
+    }
+    .calculator input{
+        width: 266px;
+    }
+    .calculator label {
+        margin-left: 0;
+    }
 
-
-
+}
+@media screen and (max-width: 667px) {
+    .title-description p {
+        width: 65%;
+    }
 
 }
 @media screen and (min-width: 568px) and (max-width: 640px) {

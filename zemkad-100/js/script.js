@@ -2,7 +2,19 @@
  * Created by julyaosipova on 22/12/2018.
  */
 
+jQuery.fn.swap = function(b) {
+    b = jQuery(b)[0];
+    var a = this[0],
+        a2 = a.cloneNode(true),
+        b2 = b.cloneNode(true),
+        stack = this;
 
+    a.parentNode.replaceChild(b2, a);
+    b.parentNode.replaceChild(a2, b);
+
+    stack[0] = a2;
+    return this.pushStack( stack );
+};
 
 window.calculator = {
     'type' : 'house',
@@ -349,6 +361,11 @@ $(document).on('click', function(e) {
         $('body').removeClass('overflow');
     }
 });
+$(document).on('mouseover', function (e) {
+    if($(e.target).closest('.liteboxLink').length == 0 && !$(e.target).is('.liteboxLink') && !$(e.target).is('.onhover')){
+        $('.onhover').remove();
+    }
+});
 $(document).on('click', function(e) {
     if($(e.target).is('.popup-leave')
         && !$(e.target).is('.popup-content')
@@ -358,6 +375,7 @@ $(document).on('click', function(e) {
         $('.popup-leave').addClass('hidden');
         $('body').removeClass('overflow');
     }
+
 });
 
 // функция возвращает cookie с именем name, если есть, если нет, то undefined
@@ -380,38 +398,44 @@ if (alertwin != "no") {
         }
     });}
 
-
-$(document).ready(function(){
-    var owl = $('.owl-carousel');
-    owl.owlCarousel({
-        loop: true,
-        dots: true,
-        dotsEach:1,
-        items: 1
+    function owl_init() {
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            loop: true,
+            dots: true,
+            nav: true,
+            dotsEach:1,
+            items: 1
 
         })
 
+    }
+
+$(document).ready(function(){
+        if ( $(window).width() <= 889 ) {
+            owl_init();
+            $('#label-price').swap('#label-region');
+        }
     });
 
-if ( $(window).width() > 769 ) {
-    var owlActive = owl.owlCarousel(owlOptions);
-} else {
-    owl.addClass('off');
-}
 
 $(window).resize(function() {
-    if ( $(window).width() > 769 ) {
-        if ( $('.owl-carousel').hasClass('off') ) {
-            var owlActive = owl.owlCarousel(owlOptions);
-            owl.removeClass('off');
-        }
+    if ( $(window).width() > 889 ) {
+        $('.owl-carousel').owlCarousel('destroy');
     } else {
-        if ( !$('.owl-carousel').hasClass('off') ) {
-            owl.addClass('off').trigger('destroy.owl.carousel');
-            owl.find('.owl-stage-outer').children(':eq(0)').unwrap();
-        }
+        owl_init();
     }
-});
+    // if ( $(window).width() > 769 ) {
+    //     if ( $('.owl-carousel').hasClass('off') ) {
+    //         var owlActive = owl.owlCarousel(owlOptions);
+    //         owl.removeClass('off');
+    //     }
+    // } else {
+    //     if ( !$('.owl-carousel').hasClass('off') ) {
+    //         owl.addClass('off').trigger('destroy.owl.carousel');
+    //         owl.find('.owl-stage-outer').children(':eq(0)').unwrap();
+    //     }
+    // }
 });
 
 
@@ -426,4 +450,30 @@ $('.service-list li').click(function () {
 $('.expand').click(function(){
     answer_div = $(this).closest('.question').next();
     answer_div.toggleClass('hidden');
+});
+
+$('.show-more').click(function () {
+   $(this).hide();
+    $('.g2').removeClass('hidden');
+});
+$('.liteboxLink').hover(function () {
+    $('.onhover').remove();
+     w = $(this).width();
+     h = $(this).height();
+    offset_el = $(this).offset();
+    lightbox_attr = $(this).attr('data-lightbox');
+    $(this).closest('.gallery').append('<div style="position: absolute; top: '+parseInt(offset_el.top)+'px; left: '+parseInt(offset_el.left)+'px; width: '+w+'px; height: '+h+'px;" class="onhover" data-lightboxid="'+lightbox_attr+'"></div>');
+});
+
+$(document).on('click', '.onhover',function () {
+    lightboxid = $(this).attr('data-lightboxid');
+    $('a[data-lightbox="'+lightboxid+'"]').click();
+    $('.onhover').remove();
+});
+
+$(document).on('click', '.open-menu.mobile', function() {
+    $('.menu.mobile').removeClass('hidden');
+});
+$(document).on('click', '.mobile-close', function() {
+    $('.menu.mobile').addClass('hidden');
 });
