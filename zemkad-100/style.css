@@ -308,6 +308,9 @@ h1 {
     padding-top: 100px;
     letter-spacing: 1px;
 }
+.calc-title.mobile {
+    display: none;
+}
 .calculator p {
     margin: 0 auto;
     font-family: "CirceBold", sans-serif;
