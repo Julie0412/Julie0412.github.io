@@ -2240,6 +2240,13 @@ footer .phone p::before {
         padding: 6px 18px;
         left: 32px;
     }
+    .popup-content p:first-of-type {
+        font-size: 20px;
+    }
+    .popup-content p:last-of-type {
+        font-size: 10px;
+    }
+
 
 }
 
