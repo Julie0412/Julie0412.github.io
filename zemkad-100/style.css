@@ -1532,9 +1532,9 @@ footer .phone p::before {
     }
     .calculator form {
         width: 100%;
-        -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-        justify-content: space-evenly;
+        -webkit-box-pack: space-between;
+        -ms-flex-pack: space-between;
+        justify-content: space-between;
         position: relative;
     }
     .gallery {
@@ -2530,6 +2530,110 @@ footer .phone p::before {
     .popup-content p:last-of-type {
         font-size: 10px;
     }
+
+}
+@media screen and (max-width: 320px) {
+    .title, h1 {
+        font-size: 18px;
+    }
+    h1 {
+        font-size: 21px;
+    }
+    .title-description {
+        font-size: 14px;
+    }
+    .title-description p {
+        line-height: 19px;
+    }
+    .buttons .button:first-of-type {
+        padding: 6px 28px;
+    }
+    .button {
+        font-size: 14px;
+    }
+    .service-list li {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .service-description.active h3 {
+        font-size: 16px;
+        line-height: 18px;
+        margin-top: 30px;
+    }
+    .service-description.active p {
+        font-size: 10px;
+        line-height: 12px;
+        width: 75%;
+    }
+    .service-description.active .time {
+        font-size: 12px;
+    }
+    .service-description.active .price {
+        font-size: 12px;
+    }
+    .service-description.active .number {
+        font-size: 16px;
+        margin-top: 32px;
+        margin-bottom: 30px;
+    }
+    .submit {
+        width: 70px;
+        height: 51px;
+    }
+    .submit:active, .submit:hover, .submit:visited { width: 70px;
+        height: 51px;
+    }
+    .calc-title {
+        font-size: 13px;
+    }
+    .calculator select, .calculator input[type="submit"] {
+        width: 124px;
+        font-size: 8px;
+    }
+    .calculator input {
+        width: 120px;
+        font-size: 8px;
+    }
+    .calculator label {
+        font-size: 10px;
+    }
+    .works .section-title {
+        font-size: 19px;
+    }
+    .scheme .section-title {
+        font-size: 23px;
+    }
+    .step p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .question {
+        font-size: 9px;
+    }
+    .manager img {
+        width: 340px;
+    }
+    .manager .content h4 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .feature {
+        font-size: 10px;
+    }
+    .manager .content .manager-name {
+        margin-top: 22px;
+    }
+    .manager .content .button {
+        padding: 6px 13px;
+        left: 26px;
+    }
+    footer .first-part, footer .third-part {
+        font-size: 9px;
+    }
+    footer .phone {
+        font-size: 9px;
+    }
+
 
 }
 
