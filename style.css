@@ -1,48 +1,77 @@
+/* fonts */
+
 @font-face {
-    font-family: 'Century Gothic';
-    src: local('Century Gothic Bold'), local('SenturyGothic-Bold'), url('font/CenturyGothic-Bold.woff2') format('woff2'), url('font/CenturyGothic-Bold.woff') format('woff'), url('font/CenturyGothic-Bold.ttf') format('truetype');
+    font-family: 'Circe';
+    src: url('fonts/Circe-Regular.eot');
+    src: local('Circe'), local('Circe-Regular'),
+    url('fonts/Circe-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Circe-Regular.woff') format('woff'),
+    url('fonts/Circe-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'CirceBold';
+    src: url('fonts/CirceBold-Bold.eot');
+    src: local('CirceBold'), local('CirceBold-Bold'),
+    url('fonts/CirceBold-Bold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/CirceBold-Bold.woff') format('woff'),
+    url('fonts/CirceBold-Bold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
-
 @font-face {
-    font-family: 'Century Gothic';
-    src: local('Century Gothic Bold Italic'), local('SenturyGothic-BoldItalic'), url('font/CenturyGothic-BoldItalic.woff2') format('woff2'), url('font/CenturyGothic-BoldItalic.woff') format('woff'), url('font/CenturyGothic-BoldItalic.ttf') format('truetype');
-    font-weight: 600;
-    font-style: italic;
+    font-family: 'Uni Sans Heavy CAPS';
+    src: url('fonts/UniSansHeavyCAPS.eot');
+    src: local('Uni Sans Heavy CAPS'), local('UniSansHeavyCAPS'),
+    url('fonts/UniSansHeavyCAPS.eot?#iefix') format('embedded-opentype'),
+    url('fonts/UniSansHeavyCAPS.woff') format('woff'),
+    url('fonts/UniSansHeavyCAPS.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
 }
 
-@font-face {
-    font-family: 'Century Gothic';
-    src: local('Century Gothic Italic'), local('SenturyGothic-Italic'), url('font/CenturyGothic-Italic.woff2') format('woff2'), url('font/CenturyGothic-Italic.woff') format('woff'), url('font/CenturyGothic-Italic.ttf') format('truetype');
-    font-weight: 400;
-    font-style: italic;
-}
+/* desktop */
 
-body, header, main, footer, section, div, h1, h2, h3, h4, p, b, a, ul, li, img {
-    margin: 0;
+div, section, footer, header, h1, h2, h3, h4, p, a, img, ul, li, label, input, body {
     padding: 0;
-    line-height: 1;
+    margin: 0;
+    line-height: normal;
 }
-a[href^="tel"],
-a,
-a:visited {
+a {
+    text-decoration: none;
+    color: inherit;
+
+}
+a[href^="tel"] {
     color: inherit;
     text-decoration: none;
+}
+a[href^="tel"], input, input:disabled {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+body {
+    width: 100%;
+    margin: 0 auto;
+    color: #242424;
 
 }
-
-body {
-    max-width: 1920px;
-    min-width: 320px;
-    margin: 0 auto;
-    font-family: "Century Gothic", sans-serif;
-    font-weight: 600;
-    color: #000;
+.overflow {
+    overflow: hidden;
+}
+.red {
+    color: #be2816;
+}
+.hidden {
+    display: none !important;
+}
+.mobile {
+    display: none;
 }
 
 .container {
-    width: 1320px;
+    width: 85%;
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -51,316 +80,18 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    max-width: 1142px;
 }
+/* хедер */
 
 header {
-    background: url('images/header.png') no-repeat;
+    background: url("images/header-bg.png") no-repeat;
     background-size: cover;
-    border-bottom: 7px solid #ffd801;
-    color: #fff;
 }
 .header-top {
-    width: 100%;
-    max-width: 1920px;
-    position: fixed;
-    top: 0;
-    background: url('images/header.png') no-repeat;
-    background-size: cover;
-    z-index: 100;
-
-;
+    position: relative;
 }
-
-.header-first-line {
-    padding-top: 15px;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-.header-logo {
-    margin-left: 50px;
-    padding-bottoM: 10px;
-}
-
-.header-phone p {
-    font-size: 36px;
-    color: #ffcc00;
-}
-
-.header-second-line {
-    background-color: #ffd801;
-}
-
-.header-menu {
-    text-decoration: none;
-    list-style: none;
-    font-size: 21px;
-    color: #993300;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    width: 84%;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding-left: 50px;
-}
-
-.header-menu a {
-    display: inline-block;
-    padding: 38px 0;
-    cursor: pointer;
-}
-
-.header-bottom h1 {
-    font-size: 48px;
-    text-transform: uppercase;
-    margin-top: 325px;
-    margin-bottom: 70px;
-}
-
-.header-bottom p {
-    font-size: 32px;
-    text-align: center;
-    line-height: 36px;
-}
-
-.header-bottom form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-top: 55px;
-    margin-bottom: 310px;
-    width: 888px;
-    border: 2px solid #b19601;
-    border-radius: 15px;
-    background-color: rgba(6, 26, 52, 0.6);
-}
-
-.header-bottom form p {
-    font-size: 26px;
-    width: 100%;
-    margin-top: 30px;
-    margin-bottom: 40px;
-}
-
-.header-bottom form input {
-    display: inline-block;
-    height: 55px;
-    font-family: "Century Gothic", sans-serif;
-    font-size: 25px;
-    border-radius: 7px;
-    margin-left: 15px;
-    border: none;
-
-}
-
-.header-bottom form input[type="text"] {
-    text-align: left;
-    width: 327px;
-    padding-left: 5px;
-    margin-bottom: 15px;
-    moz-appearance: none;
-    -webkit-appearance: none;
-
-}
-
-.header-bottom form input[type="text"]::-webkit-input-placeholder {
-    color: #cccccc;
-}
-
-.header-bottom form input[type="submit"] {
-    background-color: #ffd801;
-    color: #996600;
-    width: 153px;
-    margin-right: 15px;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-}
-
-.main-info {
-    margin-bottom: 33px;
-    border-bottom: 23px solid #ffd801;
-}
-
-.main-info .section-title {
-    font-size: 43px;
-    margin-top: 95px;
-    margin-bottom: 87px;
-}
-
-.main-info p {
-    margin: 0 auto;
-    width: 90%;
-    font-size: 25px;
-    font-style: italic;
-    text-align: center;
-    margin-bottom: 75px;
-}
-
-.main-services {
-    border-bottom: 8px solid #ffd801;
-}
-
-.main-services .section-title {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 48px;
-    margin-top: 55px;
-    margin-bottom: 90px;
-}
-
-.service {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    margin-bottom: 35px;
-}
-
-.service:nth-of-type(2n) {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: row-reverse;
-    flex-direction: row-reverse;
-}
-
-.service:nth-of-type(2n) .service-photo {
-    text-align: right;
-}
-
-.service-photo {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    width: 48%;
-    height: 330px;
-    color: #ffff00;
-}
-
-.service-photo h3 {
-    font-size: 36px;
-    margin-bottom: 40px;
-    margin-top: 20px;
-    margin-left: 28px;
-
-}
-
-.service-photo p {
-    font-size: 30px;
-    line-height: 40px;
-    margin-left: 28px;
-}
-
-.service:nth-of-type(2n) .service-photo p,
-.service:nth-of-type(2n) .service-photo h3 {
-    margin-right: 30px;
-    margin-left: 0;
-}
-
-.service-description {
-    width: 49%;
-    font-size: 30px;
-    font-weight: 400;
-    font-style: italic;
-}
-
-.service-description p {
-    margin: 25px 0;
-    line-height: 34px;
-}
-
-.service:first-of-type .service-photo {
-    background: url("images/service-1.png") no-repeat;
-    background-size: cover;
-}
-
-.service:nth-of-type(2) .service-photo {
-    background: url("images/service-2.png") no-repeat;
-    background-size: cover;
-}
-
-.service:nth-of-type(3) .service-photo {
-    background: url("images/service-3.png") no-repeat;
-    background-size: cover;
-}
-
-.service:nth-of-type(4) .service-photo {
-    background: url("images/service-4.png") no-repeat;
-    background-size: cover;
-}
-
-.service:nth-of-type(5) .service-photo {
-    background: url("images/service-5.png") no-repeat;
-    background-size: cover;
-}
-
-.service:last-of-type .service-photo {
-    background: rgba(0, 0, 0, 0.2) url("images/service-6.png") no-repeat;
-    background-blend-mode: overlay;
-    background-size: cover;
-}
-
-.main-prices {
-    border-bottom: 8px solid #ffd801;
-}
-
-.main-prices .section-title {
-    text-align: right;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-item-align: start;
-    align-self: flex-start;
-    font-size: 60px;
-    margin-top: 28px;
-    margin-bottom: 35px;
-    padding-left: 17px;
-    text-transform: uppercase;
-    color: #003333;
-}
-
-.prices-menu {
-    text-decoration: none;
-    list-style: none;
+.menu-desktop {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -371,82 +102,159 @@ header {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    width: 100%;
-    margin-bottom: 15px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: "Uni Sans Heavy CAPS", sans-serif;
+    font-size: 15px;
+    color: #242424;
+    list-style: none;
+    text-transform: uppercase;
+    padding-top: 30px;
 }
-
-.prices-menu li {
-
-    padding-top: 21px;
-    padding-bottom: 25px;
-    padding-left: 20px;
-    padding-right: 45px;
-    text-align: left;
-    background-color: #ffd801;
-    border: 2px solid #e0b828;
-    border-right: none;
-    cursor: pointer;
-    color: #003333;
+.menu-desktop li:not(:last-of-type) {
+    margin-right: 77px;
 }
-
-.prices-menu li:last-of-type {
-    border-right: 2px solid #e0b828;
+.header-top .phone.button {
+    position: absolute;
+    top: 105px;
+    right: 125px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    border: 2px solid #242424;
+    border-radius: 30px;
+    padding: 9px;
+    padding-left: 60px;
+    padding-right: 15px;
+    padding-bottom: 6px;
+    font-family: "Uni Sans Heavy CAPS", sans-serif;
+    font-size: 23px;
+    color: #242424;
 }
-
-.prices-table {
-    border: 2px solid #e0b828;
-    width: 1277px;
-    border-collapse: collapse;
-    margin-bottom: 65px;
+.header-top .phone.button p:first-of-type::before {
+    content: "";
+    display: block;
+    width: 28px;
+    height: 28px;
+    background: url("images/call-black.png") no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 16px;
+    top: 7px;
 }
-
-.prices-table tr {
-    height: 55px;
+.header-bottom {
+    margin-top: 140px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
 }
-
-.prices-table td {
-    border: none;
-    border-top: 2px solid #e0b828;
-    padding-left: 30px;
-    font-size: 18px;
-    color: #003333;
-    background-color: #ffd801;
-}
-
-.prices-table tr:first-of-type th {
-    padding-left: 30px;
-    font-size: 24px;
-    color: #003333;
-    background-color: #ffd801;
-}
-
-.prices-table th:first-child,
-.prices-table th:last-child {
-    text-align: left;
-}
-
-.prices-table td:nth-child(2),
-.prices-table th:nth-child(2) {
-    text-align: center;
-}
-
-.prices-table tr:nth-child(2n+1) td {
-    background-color: #f4cc0a;
-}
-
-.prices-table tr:last-of-type {
-    border-bottom: none;
-}
-
-.main-features .section-title {
-    margin-top: 50px;
-    margin-bottom: 90px;
+.title, h1 {
+    font-family: "Uni Sans Heavy CAPS", sans-serif;
     font-size: 48px;
-    text-align: center;
     text-transform: uppercase;
 }
+h1 {
+    font-size: 57px;
+}
+.title-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: "CirceBold", sans-serif;
+    font-size: 25px;
+    margin-top: 5px;
+}
+.buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 125px;
+}
+.buttons .button:first-of-type {
+    margin-right: 35px;
+    background: #be2816;
+    color: white;
+    padding: 5px 39px;
+    -webkit-box-shadow: 0 5px 10px rgba(0,0,0, 0.3);
+    box-shadow: 0 5px 10px rgba(0,0,0, 0.3);
+}
+.button {
+    border: 2px solid #be2816;
+    border-radius: 30px;
+    padding: 5px 22px;
+    font-family: "CirceBold", sans-serif;
+    font-size: 24px;
+    cursor: pointer;
+}
+.phone-circle {
+    display: block;
+    background: url('images/red-button.png') no-repeat;
+    width: 90px;
+    height: 90px;
+    background-size: cover;
+    position: fixed;
+    top: 70%;
+    right: 120px;
+    cursor: pointer;
+    z-index: 999;
+}
+/* услуги */
 
-.main-features .container {
+.section-title {
+    font-family: "Uni Sans Heavy CAPS", sans-serif;
+    font-size: 38px;
+    color: #242424;
+    margin-top: 95px;
+    position: relative;
+    margin-left: 50px;
+    text-transform: uppercase;
+}
+.section-title::before {
+    display: block;
+    content:"";
+    width: 27px;
+    height: 41px;
+    background: url("images/title.png") no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: -2px;
+    left: -37px;
+}
+.services-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
@@ -454,11 +262,16 @@ header {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-top: 60px;
+    margin-bottom: 70px;
 }
-
-.feature {
+.service-description.active{
+    width: 50%;
+    max-width: 634px;
+    max-height: 648px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -469,108 +282,76 @@ header {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    width: 30%;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    font-family: "CirceBold", sans-serif;
+    background: url("images/service-bg.png") no-repeat;
+    background-size: cover;
+    padding-left: 65px;
     position: relative;
-    min-height: 228px;
-    margin-bottom: 100px;
 }
-
-.feature h4 {
-    font-size: 20px;
-    line-height: 22px;
-    width: 50%;
-    margin-bottom: 30px;
+.service-description.active h3 {
+    margin-top: 67px;
+    font-size: 28px;
+    line-height: 40px;
+    width: 90%;
 }
-
-.feature p {
-    font-size: 16px;
-    width: 96%;
-    line-height: 18px;
-}
-
-.feature::before {
+.service-description.active h3::after {
     content: "";
     display: block;
-    width: 80px;
-    height: 80px;
-    position: relative;
-    top: -8px;
+    width: 50px;
+    height: 4px;
+    background-color: #be2816;
+    margin-top: 20px;
 }
-
-.feature-first::before {
-    background: url('images/feature-1.png') no-repeat;
-    top: 0;
-}
-
-.feature-second::before {
-    background: url('images/feature-2.png') no-repeat;
-}
-
-.feature-second p {
-    width: 74%;
-}
-
-.feature-third::before {
-    background: url('images/feature-3.png') no-repeat;
-}
-
-.feature-third p {
-    width: 80%;
-}
-
-.feature-fourth::before {
-    background: url('images/feature-4.png') no-repeat;
-}
-
-.feature-fourth p {
-    width: 74%;
-}
-
-.feature-fourth h4 {
-    width: 56%;
-}
-
-.feature-fifth h4 {
-    width: 42%;
-}
-
-.feature-fifth::before {
-    background: url('images/feature-5.png') no-repeat;
-}
-
-.feature-fifth p {
+.service-description.active p {
+    font-family: Circe, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
     width: 72%;
+    margin-top: 22px;
+    line-height: 28px;
 }
-
-.feature-sixth::before {
-    background: url('images/feature-6.png') no-repeat;
+.service-description.active .time {
+    font-family: "CirceBold", sans-serif;
+    font-size: 22px;
+    margin-top: 52px;
 }
-
-.feature-sixth p {
-    width: 85%;
+.service-description.active .price {
+    font-family: "CirceBold", sans-serif;
+    font-size: 22px;
+    margin-top: 0;
 }
-
-.main-features {
-    border-bottom: 5px solid #ffd801;
+.service-description.active .number {
+    margin-top: 134px;
+    font-family: "Uni Sans Heavy CAPS", sans-serif;
+    font-size: 30px;
+    margin-bottom: 75px;
 }
-
-.main-plan {
-    border-bottom: 8px solid #ffd801;
+.submit {
+    position: absolute;
+    display: block;
+    background: url('images/stamp.png') no-repeat;
+    background-size: cover;
+    width: 188px;
+    height: 137px;
+    right: 75px;
+    bottom: 89px;
+    cursor: pointer;
 }
-
-.main-plan .section-title {
-    font-size: 36px;
-    margin-top: 35px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-item-align: start;
-    align-self: flex-start;
-    margin-bottom: 95px;
-    text-transform: uppercase;
+.submit:active,
+.submit:hover,
+.submit:visited {
+    background: url('images/stamp-hover.png') no-repeat;
+    right: 60px;
+    bottom: 79px;
 }
-
-.plan-steps {
+.service-list {
+    list-style: none;
+    width: 40%;
+}
+.service-list li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -581,87 +362,38 @@ header {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin-bottom: 100px;
-}
-
-.step {
-    width: 24%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 4px solid #be2816;
+    height: 70px;
+    font-family: Circe, sans-serif;
+    font-weight: 400;
     font-size: 20px;
-    text-align: center;
-    position: relative;
+    opacity: 0.6;
+}
+.service-list li.active {
+    opacity: 1;
+}
+.service-list li:not(:last-of-type) {
+    margin-bottom: 30px;
 }
 
-.step::before {
-    content: "1";
-    font-size: 72px;
-    border-radius: 100%;
-    border: 8px solid #f4cc09;
-    padding: 0 24px;
+.service-list p:first-of-type {
+    padding-left: 20px;
 }
+.service-list p:last-of-type {
+    padding-right: 20px;
+    font-family: "Uni Sans Heavy CAPS", sans-serif;
+    font-size: 30px;
+}
+/* калькулятор */
 
-.step::after {
-    content: '';
-    display: block;
-    width: 144px;
-    height: 27px;
-    position: absolute;
-    background: url('images/arrow.png') no-repeat;
+.calculator {
+    background: url("images/calc-bg.png") no-repeat;
     background-size: cover;
-    top: 25px;
-    left: 250px;
 }
-
-.step p {
-    margin-top: 40px;
-}
-
-.step-two::before {
-    content: "2";
-}
-
-.step-three::before {
-    content: "3";
-}
-
-.step-four::before {
-    content: "4";
-}
-
-.step-four::after {
-    display: none;
-}
-
-.main-gallery .section-title {
-    margin-top: 65px;
-    margin-bottom: 55px;
-    font-size: 36px;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.main-gallery {
-    padding-bottom: 45px;
-    border-bottom: 8px solid #ffd801;
-
-}
-
-.main-reviews {
-    padding-bottom: 15px;
-}
-
-.main-reviews .section-title {
-    margin-top: 73px;
-    font-size: 36px;
-    text-transform: uppercase;
-}
-
-.main-reviews .container p:first-of-type {
-    font-size: 24px;
-    text-transform: none;
-    margin-top: 10px;
-}
-
-.review {
+.calc-title {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -672,1429 +404,2403 @@ header {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    width: 80%;
-    margin: 25px auto;
+    text-transform: uppercase;
+    font-family: "Uni Sans Heavy CAPS", sans-serif;
+    font-size: 26px;
+    padding-top: 100px;
+    letter-spacing: 1px;
 }
-
-.review-text {
-    width: 78%;
+.calc-title.mobile {
+    display: none;
+}
+.calculator p {
+    margin: 0 auto;
+    font-family: "CirceBold", sans-serif;
     font-size: 24px;
-    margin-left: 33px;
+}
+.calculator form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 85%;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 105px;
+}
+.calculator label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-family: Circe, sans-serif;
+    font-size: 22px;
+    text-align: center;
+    margin-left: 25px;
+    margin-top: 35px;
+}
+.calculator input,
+.calculator select {
+    width: 280px;
+    height: 45px;
+    color: rgba(36,36,36,0.6);
+    border: 2px solid #242424;
+    border-radius: 25px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-family: Circe, sans-serif;
+    font-size: 22px;
+    padding-left: 10px;
+    background-color: #ffffff;
+}
+.calculator input:disabled {
+    background-color: #ffffff;
+    color: #242424;
+    opacity: 1;
+}
+.calculator input::-webkit-input-placeholder,
+.calculator input[type="number"],
+.calculator input[type="text"],
+.calculator select[id="region"]{
+    text-align: center;
+    text-align-last: center;
+}
+.calculator select {
+    width: 294px;
+    height: 49px;
+}
+.label-submit {
+    color: transparent;
+}
+.calculator input[type="submit"] {
+    margin-right: 0;
+    background-color: #be2816;
+    color: white;
+    border-color: #be2816;
+    padding-left: 0;
+    width: 294px;
+    font-family: "CirceBold", sans-serif;
+    font-size: 22px;
+    height: 49px;
+    -webkit-box-shadow: 0 5px 10px rgba(0,0,0, 0.3);
+    box-shadow: 0 5px 10px rgba(0,0,0, 0.3);
+}
+/* работы */
+.gallery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 65px;
+    margin-bottom: 70px;
+}
+.works .container {
+    border-bottom: 1px solid #be2816;
+    padding-bottom: 90px;
 }
 
-.review-author {
-    margin-bottom: 25px;
+.gallery a {
+    width: 23%;
+    height: 50%;
+    -webkit-box-shadow: -5px 2px 10px rgba(0,0,0, 0.3);
+    box-shadow: -5px 2px 10px rgba(0,0,0, 0.3);
 }
 
-.review-third .review-avatar {
-    width: 100px;
+.gallery img {
+    width: 100%;
+    display: block;
+    height: 100%;
 }
+.onhover {
+    background-color: rgba(190,40,22,0.5);
+    background-image: url('images/loupe.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.works .button {
+    width: auto;
+    padding: 6px 48px;
+    margin: 0 auto;
+}
+
+/* 6 шагов */
+
+.steps {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+.step {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 25%;
+    position: relative;
+    padding-left: 90px;
+}
+.step h4 {
+    font-family: "Uni Sans Heavy CAPS", sans-serif;
+    font-size: 36px;
+}
+.step p {
+    font-family: "CirceBold", sans-serif;
+    font-size: 18px;
+    width: 75%;
+}
+.step:nth-of-type(3) p {
+    width: 80%;
+}
+.step:nth-of-type(4) p {
+    width: 90%;
+}
+.step:nth-of-type(5) p {
+    width: 65%;
+}
+
+.step::before {
+    content:'';
+    display: block;
+    background: url('images/step1.png') no-repeat;
+    width: 73px;
+    height: 70px;
+    position: relative;
+    top: 70px;
+    left: -90px;
+}
+.step::after {
+    content:'';
+    display:block;
+    background:url("images/step-arrow.png") no-repeat;
+    background-size: cover;
+    height: 20px;
+    width: 13px;
+    position: relative;
+    top: -117px;
+    left: 239px;
+}
+.step3::after,
+.step6::after {
+    display: none;
+}
+.step4::after,
+.step5::after {
+    top: -145px;
+}
+
+.step:nth-child(2)::before {
+    background: url('images/step2.png') no-repeat;
+}
+.step:nth-child(3)::before {
+    background: url('images/step3.png') no-repeat;
+}
+.step:nth-child(4)::before {
+    background: url('images/step4.png') no-repeat;
+}
+.step:nth-child(5)::before {
+    background: url('images/step5.png') no-repeat;
+}
+.step6::before {
+    background: url('images/step6.png') no-repeat;
+}
+.scheme .button {
+    background-color: #be2816;
+    color: white;
+    width: auto;
+    font-size: 24px;
+    margin: 0 auto;
+    margin-top: 80px;
+    padding: 6px 48px;
+    margin-bottom:100px;
+}
+.scheme .container {
+    border-bottom: 1px solid #be2816;
+}
+
+/* вопросы */
+.questions .section-title {
+    margin-bottom: 35px;
+}
+.questions {
+    margin-bottom: 90px;
+}
+.question {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-family: "CirceBold", sans-serif;
+    font-size: 27px;
+    border-bottom: 2px solid #be2816;
+    position: relative;
+}
+.question p {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.expand {
+    display: block;
+    background: url('images/que-arrow.png') no-repeat;
+    width: 30px;
+    height: 16px;
+    position: relative;
+    top: 25px;
+    cursor: pointer;
+}
+.answer {
+    font-family: Circe, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    width: 65%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.answer sup {
+    font-size: 10px;
+}
+/* гендиректор */
+
+.manager {
+    background-color: #e4e4e4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+.manager img {
+    width: 30%;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+
+}
+.manager .content {
+    width: 55%;
+    font-family: Circe, sans-serif;
+    font-weight: 400;
+    margin-left: 6%;
+    padding-bottom: 50px;
+}
+.manager .content h4 {
+    font-family: "CirceBold", sans-serif;
+    font-size: 36px;
+    width: 72%;
+    line-height: 42px;
+    margin-top: 90px;
+    margin-bottom: 20px;
+}
+.manager .content .manager-name {
+    font-family: "CirceBold", sans-serif;
+    font-size: 20px;
+}
+.manager .content .position {
+    font-size: 16px;
+
+}
+.features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 60px;
+    width: 80%;
+
+}
+.feature {
+    font-size: 18px;
+    position: relative;
+    width: 40%;
+    padding-left: 80px;
+}
+.feature p {
+    width: 90%;
+}
+.feature::before {
+    content:"";
+    display: block;
+    background: url('images/feature-1.png') no-repeat;
+    width: 60px;
+    height: 61px;
+    position: relative;
+    top: 70px;
+    left: -80px;
+}
+.feature:last-of-type::before {
+    background: url('images/feature-2.png') no-repeat;
+    height: 64px;
+    width: 61px;
+}
+.manager .content .button {
+    background-color: #be2816;
+    color: white;
+    margin: 0 auto;
+    padding: 6px 48px;
+    margin-bottom: 100px;
+    -webkit-box-shadow: 0 5px 10px rgba(0,0,0, 0.3);
+    box-shadow: 0 5px 10px rgba(0,0,0, 0.3);
+}
+
+/* контакты */
+
+.contacts .section-title::before {
+    background: url('images/contacts-title.png') no-repeat;
+    width: 31px;
+}
+.contacts .section-title {
+    margin-bottom: 100px;
+}
+.contacts .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.contacts .left-part p {
+    font-family: Circe, sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    margin-bottom: 35px;
+}
+.contacts .left-part p:last-of-type {
+    margin-bottom: 70px;
+}
+.contacts .left-part {
+    margin-bottom: 140px;
+}
+.map {
+    width: 50%;
+    margin-top: 95px;
+    margin-bottom: 40px;
+}
+.map iframe {
+    width: 100%;
+    height: 530px;
+}
+
+/* футер */
 
 footer {
-    background: url('images/footer.png') no-repeat;
+    background-color: #be2816;
+    color: white;
+
+}
+footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+footer .first-part {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-family: Circe, sans-serif;
+    font-size: 14px;
+}
+footer .first-part a {
+    text-decoration: underline;
+}
+footer .first-part p:last-of-type {
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+footer .second-part {
+    margin: 30px 0;
+}
+footer .phone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 9px;
+    padding-left: 70px;
+    padding-right: 15px;
+    font-family: "Uni Sans Heavy CAPS", sans-serif;
+    font-size: 20px;
+    color: white;
+    position: relative;
+}
+footer .phone a::before {
+    content: "";
+    display: block;
+    width: 35px;
+    height: 33px;
+    background: url("images/footer-phone.png") no-repeat;
     background-size: cover;
+    position: absolute;
+    left: 14px;
+    top: 5px;
+}
+
+/* попапы  */
+
+.popup, .popup-leave {
+    display: block;
     width: 100%;
-    height: 200px;
-}
-
-/* desktops */
-@media screen and (min-width: 1025px) and (max-width: 1365px) {
-    .container {
-        width: 1000px;
-    }
-
-    header {
-        border-width: 5px;
-    }
-
-    .header-logo img {
-        height: 58px;
-    }
-
-    .header-phone p {
-        font-size: 26px;
-    }
-
-    .header-menu {
-        font-size: 16px;
-    }
-
-    .header-menu a {
-        padding: 26px 0;
-    }
-
-    .header-bottom h1 {
-        font-size: 36px;
-        margin-top: 260px;
-        margin-bottom: 40px;
-    }
-
-    .header-bottom p {
-        font-size: 26px;
-        text-align: center;
-        line-height: 28px;
-    }
-
-    .header-bottom form {
-        margin-top: 45px;
-        width: 705px;
-        margin-bottom: 234px;
-    }
-
-    .header-bottom form p {
-        font-size: 21px;
-        margin-top: 15px;
-        margin-bottom: 22px;
-    }
-
-    .header-bottom form input {
-        font-size: 16px;
-    }
-
-    .header-bottom form input[type="text"] {
-        width: 250px;
-        height: 40px;
-    }
-
-    .header-bottom form input[type="submit"] {
-        width: 130px;
-        height: 40px;
-    }
-
-    .main-info .section-title {
-        font-size: 34px;
-        margin-top: 57px;
-        margin-bottom: 57px;
-    }
-
-    .main-info p {
-        font-size: 19px;
-        margin-bottom: 56px;
-    }
-
-    .main-info {
-        border-width: 17px;
-    }
-
-    .main-services .section-title {
-        font-size: 38px;
-        margin-top: 0;
-        margin-bottom: 50px;
-    }
-
-    .service {
-        margin-bottom: 0;
-    }
-
-    .service-description {
-        font-size: 23px;
-        width: 46%;
-    }
-
-    .service-description p {
-        line-height: 26px;
-    }
-
-    .service-photo h3 {
-        font-size: 30px;
-        margin-left: 20px;
-        margin-bottom: 20px;
-        margin-top: 10px;
-    }
-
-    .service-photo p {
-        font-size: 23px;
-        line-height: 26px;
-        margin-left: 20px;
-    }
-
-    .service-photo {
-        width: 43%;
-        height: 238px;
-    }
-
-    .service:nth-of-type(2n) .service-photo p, .service:nth-of-type(2n) .service-photo h3 {
-        margin-right: 20px;
-    }
-
-    .main-prices {
-        border-width: 6px;
-    }
-
-    .main-prices .section-title {
-        font-size: 42px;
-        margin-top: 16px;
-        margin-bottom: 18px;
-        padding-left: 7px;
-    }
-
-    .prices-menu li {
-        font-size: 11px;
-        padding-top: 15px;
-        padding-bottom: 17px;
-    }
-
-    .prices-table {
-        width: 984px;
-        margin-bottom: 50px;
-    }
-
-    .prices-table tr {
-        height: 48px;
-    }
-
-    .prices-table td {
-        font-size: 13px;
-    }
-
-    .prices-table tr:first-of-type th {
-        font-size: 18px;
-    }
-
-    .main-features .section-title {
-        margin-top: 30px;
-        margin-bottom: 35px;
-        font-size: 36px;
-    }
-
-    .feature h4 {
-        font-size: 15px;
-    }
-
-    .feature p {
-        font-size: 12px;
-    }
-
-    .feature {
-        margin-bottoM: 40px;
-    }
-
-    .main-plan .section-title {
-        font-size: 28px;
-        margin-top: 18px;
-        margin-bottom: 67px;
-    }
-
-    .step {
-        font-size: 15px;
-    }
-
-    .step::before {
-
-        font-size: 61px;
-
-        border-width: 5px;
-        padding: 0 20px;
-    }
-
-    .step::after {
-        top: 20px;
-        left: 184px;
-    }
-
-    .plan-steps {
-        margin-bottom: 80px;
-    }
-
-    .main-gallery .section-title {
-        margin-top: 30px;
-        margin-bottom: 45px;
-        font-size: 28px;
-    }
-
-    .main-reviews .section-title {
-        margin-top: 35px;
-        font-size: 28px;
-    }
-
-    .main-reviews .container p:first-of-type {
-        font-size: 19px;
-        text-transform: none;
-        margin-top: 5px;
-    }
-
-    .review {
-        margin: 20px auto;
-    }
-
-    .review-author {
-        margin-bottom: 15px;
-    }
-
-    .review-text {
-        font-size: 18px;
-    }
-
-    .review-third .review-avatar {
-        width: 95px;
-    }
-
-    footer {
-        height: 150px;
-    }
+    min-height: 100%;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    z-index: 99999999;
+    top: 0;
 
 }
-
-/* tablets */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-    .container {
-        width: 700px;
-    }
-
-    header {
-        border-width: 5px;
-    }
-
-    .header-logo img {
-        height: 50px;
-    }
-
-    .header-phone p {
-        font-size: 22px;
-    }
-
-    .header-menu {
-        font-size: 12px;
-        padding-left: 0;
-    }
-
-    .header-menu a {
-        padding: 20px 0;
-    }
-
-    .header-bottom h1 {
-        font-size: 28px;
-        margin-top: 220px;
-        margin-bottom: 40px;
-    }
-
-    .header-bottom p {
-        font-size: 22px;
-        text-align: center;
-        line-height: 26px;
-    }
-
-    .header-bottom form {
-        margin-top: 45px;
-        width: 705px;
-        margin-bottom: 150px;
-    }
-
-    .header-bottom form p {
-        font-size: 21px;
-        margin-top: 15px;
-        margin-bottom: 22px;
-    }
-
-    .header-bottom form input {
-        font-size: 16px;
-    }
-
-    .header-bottom form input[type="text"] {
-        width: 250px;
-        height: 40px;
-    }
-
-    .header-bottom form input[type="submit"] {
-        width: 130px;
-        height: 40px;
-    }
-
-    .main-info .section-title {
-        font-size: 34px;
-        margin-top: 57px;
-        margin-bottom: 57px;
-    }
-
-    .main-info p {
-        font-size: 19px;
-        margin-bottom: 56px;
-    }
-
-    .main-info {
-        border-width: 17px;
-    }
-
-    .main-services .section-title {
-        font-size: 38px;
-        margin-top: 0;
-        margin-bottom: 50px;
-    }
-
-    .service {
-        margin-bottom: 20px;
-    }
-
-    .service-description {
-        font-size: 18px;
-        width: 48%;
-    }
-
-    .service-description p {
-        line-height: 24px;
-    }
-
-    .service-photo h3 {
-        font-size: 26px;
-        margin-left: 15px;
-        margin-bottom: 20px;
-        margin-top: 10px;
-    }
-
-    .service-photo p {
-        font-size: 18px;
-        line-height: 24px;
-        margin-left: 10px;
-    }
-
-    .service-photo {
-        width: 48%;
-        height: 238px;
-    }
-
-    .service:nth-of-type(2n) .service-photo p, .service:nth-of-type(2n) .service-photo h3 {
-        margin-right: 10px;
-    }
-
-    .main-prices {
-        border-width: 6px;
-    }
-
-    .main-prices .section-title {
-        font-size: 42px;
-        margin-top: 16px;
-        margin-bottom: 18px;
-        padding-left: 7px;
-    }
-
-    .prices-menu li {
-        font-size: 9px;
-        padding-top: 15px;
-        padding-bottom: 17px;
-        padding-right: 24px;
-        padding-left: 7px;
-    }
-
-    .prices-table {
-        width: 697px;
-        margin-bottom: 50px;
-    }
-
-    .prices-table tr {
-        height: 48px;
-    }
-
-    .prices-table td {
-        font-size: 11px;
-    }
-
-    .prices-table tr:first-of-type th {
-        font-size: 14px;
-    }
-
-    .main-features .section-title {
-        margin-top: 30px;
-        margin-bottom: 35px;
-        font-size: 36px;
-    }
-
-    .feature::before {
-        width: 50px;
-        height: 50px;
-        background-size: 50px 50px;
-    }
-
-    .feature h4 {
-        font-size: 11px;
-        width: 53%;
-        line-height: 16px;
-        margin-bottom: 15px;
-    }
-
-    .feature-first::before {
-        background-size: 49px 42px;
-    }
-
-    .feature-third::before {
-        background-size: 46px 50px;
-    }
-
-    .feature-sixth::before {
-        background-size: 44px 50px;
-    }
-
-    .feature p {
-        font-size: 8px;
-    }
-
-    .feature {
-        margin-bottoM: 40px;
-        min-height: 153px;
-    }
-
-    .main-plan .section-title {
-        font-size: 28px;
-        margin-top: 18px;
-        margin-bottom: 67px;
-    }
-
-    .step {
-        font-size: 10px;
-    }
-
-    .step::before {
-
-        font-size: 42px;
-
-        border-width: 4px;
-        padding: 0 14px;
-    }
-
-    .step::after {
-        width: 100px;
-        height: 19px;
-        top: 13px;
-        left: 124px;
-    }
-
-    .plan-steps {
-        margin-bottom: 80px;
-    }
-
-    .main-gallery .section-title {
-        margin-top: 30px;
-        margin-bottom: 45px;
-        font-size: 28px;
-    }
-
-    .main-gallery img {
-        width: 700px;
-    }
-
-    .main-reviews .section-title {
-        margin-top: 35px;
-        font-size: 28px;
-    }
-
-    .main-reviews .container p:first-of-type {
-        font-size: 16px;
-        text-transform: none;
-        margin-top: 5px;
-    }
-
-    .review {
-        margin: 20px auto;
-    }
-
-    .review-author {
-
-        margin-bottom: 15px;
-    }
-
-    .review-text {
-        font-size: 14px;
-    }
-
-    .review-third .review-avatar {
-        width: 95px;
-    }
-
-    footer {
-        height: 150px;
-    }
+.popup-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    top: calc((100% - 467px)/2);
+    left: calc((100% - 699px)/2);
+    background: #fff url("images/popup-bg.png") no-repeat;
+    background-size: cover;
+    opacity: 1;
+    z-index: 99999999;
+    width: 699px;
+    height: 467px;
 
 }
+.popup-content p:first-of-type {
+    font-family: "CirceBold", sans-serif;
+    font-size: 26px;
+    text-align: center;
+    line-height: 29px;
+    margin-top: 65px;
+}
+.close {
+    display: block;
+    position: absolute;
+    background: url('images/close.png') no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    top: 20px;
+    right: 20px;
+}
+.popup-content form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 
-@media screen and (min-width: 567px) and (max-width: 767px) {
-    .container {
-        width: 500px;
+}
+.popup-content input {
+    width: 280px;
+    height: 45px;
+    color: rgba(36,36,36,0.6);
+    border: 2px solid #242424;
+    border-radius: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Circe, sans-serif;
+    font-size: 20px;
+}
+.popup-content input[type='submit'] {
+    color: white;
+    background-color: #be2816;
+    border-color: #be2816;
+    -webkit-box-shadow: 0 5px 10px rgba(0,0,0, 0.3);
+    box-shadow: 0 5px 10px rgba(0,0,0, 0.3);
+}
+.popup-content p:last-of-type {
+    font-family: Circe, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.popup-content a {
+    text-decoration: underline;
+}
+.popup-content h4 {
+    margin-top: 65px;
+    font-family: "Uni Sans Heavy CAPS", sans-serif;
+    font-size: 32px;
+    text-align: center;
+}
+.popup-leave .popup-content p:first-of-type {
+    margin-top: -25px;
+}
+.popup-leave .popup-content p:last-of-type {
+    margin-bottom: 50px;
+}
+/* адаптив десктоп */
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+    .menu-desktop {
+        padding-top: 20px;
     }
-
-    header {
-        border-width: 5px;
+    .menu-desktop li:not(:last-of-type) {
+        margin-right: 60px;
     }
-
-    .header-first-line {
-        padding-top: 7px;
+    .header-top .phone.button {
+        font-size: 18px;
+        padding-left: 40px;
     }
-
-    .header-logo {
-        padding-bottom: 3px;
+    .header-top .phone.button p:first-of-type::before {
+        width: 22px;
+        height: 22px;
+    }
+    .section-title {
+        font-size: 36px;
+    }
+    .service-description.active {
+        width: 520px;
+    }
+    .service-description.active .number {
+        margin-top: 74px;
+        margin-bottom: 70px;
+    }
+    .service-description.active .time {
+        margin-top: 30px;
+    }
+    .submit {
+        right: 66px;
+        bottom: 82px;
+    }
+    .service-list {
+        width: 38%;
+    }
+    .service-list li {
+        font-size: 17px;
+        height: 60px;
+    }
+    .service-list p:first-of-type {
+        padding-left: 10px;
+    }
+    .service-list p:last-of-type {
+        font-size: 24px;
+        padding-right: 10px;
+    }
+    .calculator form {
+        -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
+    }
+    .calculator label {
+        font-size: 18px;
         margin-left: 0;
     }
-
-    .header-logo img {
-        height: 40px;
-    }
-
-    .header-phone p {
-        font-size: 18px;
-    }
-
-    .header-menu {
-        font-size: 8px;
-        padding-left: 0;
-    }
-
-    .header-menu a {
-        padding: 15px 0;
-    }
-
-    .header-bottom h1 {
-        font-size: 22px;
-        margin-top: 180px;
-        margin-bottom: 40px;
-    }
-
-    .header-bottom p {
-        font-size: 18px;
-        text-align: center;
-        line-height: 22px;
-    }
-
-    .header-bottom form {
-        margin-top: 45px;
-        width: 500px;
-        margin-bottom: 80px;
-    }
-
-    .header-bottom form p {
-        font-size: 14px;
-        margin-top: 15px;
-        margin-bottom: 22px;
-    }
-
-    .header-bottom form input {
-        font-size: 11px;
-    }
-
-    .header-bottom form input[type="text"] {
-        width: 160px;
-        height: 30px;
-    }
-
-    .header-bottom form input[type="submit"] {
-        width: 108px;
-        height: 30px;
-    }
-
-    .main-info .section-title {
-        font-size: 28px;
-        margin-top: 57px;
-        margin-bottom: 57px;
-    }
-
-    .main-info p {
-        font-size: 16px;
-        margin-bottom: 40px;
-        line-height: 18px;
-    }
-
-    .main-info {
-        border-width: 17px;
-    }
-
-    .main-services .section-title {
-        font-size: 30px;
-        margin-top: 0;
-        margin-bottom: 50px;
-    }
-
-    .service {
-        margin-bottom: 20px;
-    }
-
-    .service-description {
-        font-size: 10px;
-        width: 40%;
-    }
-
-    .service-description p {
-        line-height: 14px;
-    }
-
-    .service-photo h3 {
-        font-size: 16px;
-        margin-left: 15px;
-        margin-bottom: 20px;
-        margin-top: 10px;
-    }
-
-    .service-photo p {
-        font-size: 12px;
-        line-height: 16px;
-        margin-left: 10px;
-    }
-
-    .service-photo {
-        width: 50%;
-        height: 167px;
-    }
-
-    .service:nth-of-type(2n) .service-photo p,
-    .service:nth-of-type(2n) .service-photo h3 {
-        margin-right: 10px;
-    }
-
-    .main-prices {
-        border-width: 6px;
-    }
-
-    .main-prices .section-title {
-        font-size: 42px;
-        margin-top: 16px;
-        margin-bottom: 18px;
-        padding-left: 7px;
-    }
-
-    .prices-menu li {
-        font-size: 7px;
-        padding-top: 13px;
-        padding-bottom: 15px;
-        padding-right: 11px;
-        padding-left: 4px;
-    }
-
-    .prices-table {
-        width: 500px;
-        margin-bottom: 50px;
-    }
-
-    .prices-table tr {
-        height: 48px;
-    }
-
-    .prices-table td {
-        font-size: 10px;
-    }
-
-    .prices-table tr:first-of-type th {
-        font-size: 12px;
-    }
-
-    .main-features .section-title {
-        margin-top: 30px;
-        margin-bottom: 35px;
-        font-size: 36px;
-    }
-
-    .feature::before {
-        width: 50px;
-        height: 50px;
-        background-size: 50px 50px;
-    }
-
-    .feature h4 {
-        font-size: 9px;
-        width: 64%;
-        line-height: 16px;
-        margin-bottom: 15px;
-    }
-
-    .feature-first::before {
-        background-size: 49px 42px;
-    }
-
-    .feature-third::before {
-        background-size: 46px 50px;
-    }
-
-    .feature-fifth h4 {
-        width: 50%;
-    }
-
-    .feature-sixth::before {
-        background-size: 44px 50px;
-    }
-
-    .feature p {
-        font-size: 8px;
-        line-height: 11px;
-    }
-
-    .feature {
-        margin-bottoM: 40px;
-        min-height: 153px;
-    }
-
-    .main-plan .section-title {
-        font-size: 28px;
-        margin-top: 18px;
-        margin-bottom: 67px;
-    }
-
-    .step {
-        font-size: 10px;
-    }
-
-    .step::before {
-
-        font-size: 42px;
-
-        border-width: 4px;
-        padding: 0 14px;
-    }
-
-    .step::after {
-        width: 52px;
-        height: 9px;
-        top: 16px;
-        left: 100px;
-    }
-
-    .plan-steps {
-        margin-bottom: 80px;
-    }
-
-    .main-gallery .section-title {
-        margin-top: 30px;
-        margin-bottom: 45px;
-        font-size: 28px;
-    }
-
-    .main-gallery img {
-        width: 500px;
-    }
-
-    .main-reviews .section-title {
-        margin-top: 35px;
-        font-size: 22px;
-    }
-
-    .main-reviews .container p:first-of-type {
-        font-size: 14px;
-        text-transform: none;
-        margin-top: 5px;
-    }
-
-    .review {
-        margin: 20px auto;
-    }
-
-    .review-avatar img {
-        height: 100px;
-    }
-
-    .review-author {
-
-        margin-bottom: 15px;
-    }
-
-    .review-text {
-        font-size: 14px;
-    }
-
-    .review-third .review-avatar {
-        width: 115px;
-    }
-
-    footer {
-        height: 100px;
-    }
-
-}
-
-/* smartphones */
-@media screen and (min-width: 321px) and (max-width: 566px) {
-
-    .container {
-        width: 320px;
-    }
-
-    header {
-        border-width: 5px;
-    }
-
-    .header-first-line {
-        padding-top: 7px;
-    }
-
-    .header-logo {
-        padding-bottom: 3px;
-        margin-left: 0;
-    }
-
-    .header-logo img {
+    .calculator input, .calculator select {
+        width: 220px;
         height: 35px;
+        font-size: 16px;
+    }
+    .calculator select {
+        width: 234px;
+        height: 39px;
+    }
+    .calculator input[type="submit"] {
+        width: 234px;
+        font-size: 18px;
+        height: 39px;
     }
 
-    .header-phone p {
-        font-size: 15px;
+    .works .button {
+        padding: 8px 35px;
+        font-size: 17px;
     }
-
-    .header-menu {
-        width: 100%;
-        font-size: 6px;
-        padding-left: 0;
-    }
-
-    .header-menu a {
-        padding: 15px 0;
-    }
-
-    .header-bottom h1 {
-        font-size: 14px;
-        margin-top: 150px;
-        margin-bottom: 40px;
-    }
-
-    .header-bottom p {
-        font-size: 12px;
-        text-align: center;
-        line-height: 16px;
-    }
-
-    .header-bottom form {
-        margin-top: 45px;
-        width: 300px;
-        margin-bottom: 80px;
-    }
-
-    .header-bottom form p {
-        font-size: 11px;
-        margin-top: 15px;
-        margin-bottom: 22px;
-    }
-
-    .header-bottom form input {
-        font-size: 7px;
-    }
-
-    .header-bottom form input[type="text"] {
-        width: 78px;
-        height: 20px;
-    }
-
-    .header-bottom form input[type="submit"] {
-        width: 64px;
-        height: 20px;
-    }
-
-    .main-info .section-title {
-        font-size: 20px;
-        margin-top: 57px;
-        margin-bottom: 57px;
-    }
-
-    .main-info p {
-        font-size: 12px;
-        margin-bottom: 40px;
-        line-height: 16px;
-    }
-
-    .main-info {
-        border-width: 17px;
-    }
-
-    .main-services .section-title {
-        font-size: 20px;
-        margin-top: 0;
-        margin-bottom: 50px;
-    }
-
-    .service {
-        margin-bottom: 0;
-    }
-
-    .service-description {
-        font-size: 8px;
-        width: 47%;
-    }
-
-    .service-description p {
-        line-height: 11px;
-    }
-
-    .service-photo h3 {
-        font-size: 12px;
-        margin-left: 15px;
-        margin-bottom: 20px;
-        margin-top: 10px;
-    }
-
-    .service-photo p {
-        font-size: 8px;
-        line-height: 12px;
-        margin-left: 10px;
-    }
-
-    .service-photo {
-        width: 50%;
-        height: 120px;
-    }
-
-    .service:nth-of-type(2n) .service-photo p,
-    .service:nth-of-type(2n) .service-photo h3 {
-        margin-right: 10px;
-    }
-
-    .main-prices {
-        border-width: 6px;
-    }
-
-    .main-prices .section-title {
-        font-size: 20px;
-        margin-top: 16px;
-        margin-bottom: 18px;
-        padding-left: 7px;
-        -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    }
-
-    .prices-menu li {
-        font-size: 7px;
-        padding-top: 10px;
-        padding-bottom: 8px;
-        padding-right: 11px;
-        padding-left: 4px;
-    }
-
-    .prices-table {
-        width: 330px;
-        margin-bottom: 50px;
-    }
-
-    .prices-table tr {
-        height: 40px;
-    }
-
-    .prices-table td {
-        font-size: 6px;
-    }
-
-    .prices-table tr:first-of-type th {
-        font-size: 8px;
-    }
-
-    .main-features .section-title {
-        margin-top: 30px;
-        margin-bottom: 35px;
-        font-size: 20px;
-    }
-
-    .feature::before {
-        width: 50px;
-        height: 50px;
-        background-size: 50px 50px;
-    }
-
-    .feature h4 {
-        font-size: 9px;
-        width: 100%;
-        line-height: 11px;
-        margin-bottom: 15px;
-    }
-
-    .feature-first::before {
-        background-size: 49px 42px;
-    }
-
-    .feature-third::before {
-        background-size: 46px 50px;
-    }
-
-    .feature-fifth h4 {
-        width: 50%;
-    }
-
-    .feature-sixth::before {
-        background-size: 44px 50px;
-    }
-
-    .feature p {
-        font-size: 8px;
-        line-height: 10px;
-    }
-
-    .feature {
-        margin-bottoM: 40px;
-        min-height: 180px;
-    }
-
-    .main-plan .section-title {
-        font-size: 20px;
-        margin-top: 18px;
-        margin-bottom: 67px;
-        -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    }
-
     .step {
-        font-size: 8px;
+        width: 23%;
     }
-
-    .step p {
-        margin-top: 15px;
-    }
-
     .step::before {
-
-        font-size: 30px;
-        border-width: 3px;
-        padding: 0 11px;
+        background-size: cover;
+        width: 63px;
+        height: 60px;
+        top: 65px;
     }
-
-    .step::after {
-        width: 29px;
-        height: 5px;
-        top: 13px;
-        left: 64px;
+    .step:nth-child(2)::before,
+    .step:nth-child(3)::before,
+    .step:nth-child(4)::before,
+    .step:nth-child(5)::before,
+    .step:last-child::before {
+        background-size: contain;
     }
-
-    .plan-steps {
-        margin-bottom: 80px;
+    .step p {
+        font-size: 15px;
+        width: 78%;
     }
-
-    .main-gallery .section-title {
-        margin-top: 30px;
-        margin-bottom: 45px;
-        font-size: 20px;
+    .step h4 {
+        font-size: 32px;
     }
-
-    .main-gallery img {
-        width: 300px;
+    .step:nth-of-type(5) p {
+        width: 82%;
     }
-
-    .main-reviews .section-title {
-        margin-top: 35px;
+    .scheme .button {
+        padding: 8px 35px;
+        font-size: 17px;
+    }
+    .question {
         font-size: 22px;
     }
-
-    .main-reviews .container p:first-of-type {
-        font-size: 12px;
-        text-transform: none;
-        margin-top: 5px;
+    .answer {
+        font-size: 18px;
     }
-
-    .review {
-        margin: 20px auto;
+    .manager img {
+        width: 450px;
     }
-
-    .review-author {
-
-        margin-bottom: 15px;
+    .manager .content h4 {
+        margin-top: 0;
+        padding-top: 70px;
+        font-size: 31px;
+        line-height: 35px;
     }
-
-    .review-text {
-        font-size: 10px;
+    .feature {
+        font-size: 15px;
+        padding-left: 70px;
     }
-
-    .review-third .review-avatar {
-        width: 145px;
+    .feature::before {
+        width: 50px;
+        height: 51px;
+        background-size: cover;
+        top: 55px;
+        left: -60px;
     }
+    .feature:last-of-type::before {
+        height: 52px;
+        width: 50px;
+        background-size: cover;
+    }
+    .contacts .left-part p {
 
-    footer {
-        height: 100px;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    footer .phone {
+        font-size: 18px;
     }
 }
+@media screen and (min-width: 1025px) and (max-width: 1149px) {
+    .header-top .phone.button {
+        right: 40px;
+    }
+    .service-description.active {
+        width: 450px;
+    }
+    .service-description.active h3 {
+        margin-top: 37px;
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .service-description.active p {
+        width: 72%;
+        font-size: 18px;
+        margin-top: 22px;
+        line-height: 24px;
+    }
+    .service-list li:not(:last-of-type) {
+        margin-bottom: 17px;
+    }
+    .service-description.active .number {
+        margin-top: 89px;
+        margin-bottom: 66px;
+    }
+    .service-description.active .time,
+    .service-description.active .price{
+        font-size: 20px;
+    }
+    .submit {
+        right: 50px;
+        bottom: 67px;
+    }
+    .calc-title {
+        font-size: 23px;
+    }
+    .calculator p {
+        font-size: 21px;
+    }
+    .works .button {
 
-@media screen and (max-width: 320px) {
+        font-size: 15px;
+    }
+    .step:nth-of-type(4) p {
+        width: 100%;
+    }
+    .scheme .button {
 
-    .container {
+        font-size: 15px;
+    }
+    .feature p {
+        width: 77%;
+    }
+    .manager .content {
+        width: 54%;
+    }
+    .manager .content h4 {
+
+        width: 90%;
+    }
+
+
+
+}
+/* aдаптив планшет */
+
+@media screen and (min-width:890px ) and (max-width: 1024px) {
+    .menu-desktop li:not(:last-of-type) {
+        margin-right: 30px;
+    }
+    .header-top .phone.button {
+        right: 85px;
+    }
+    header {
+        background-position-x: 12%;
+    }
+    .popup-content {
+        left: 16%;
+        top: 20%;
+    }
+    .service-description.active {
+        width: 60%;
+    }
+    .service-description.active h3 {
+        margin-top: 37px;
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .service-description.active p {
+        width: 72%;
+        font-size: 18px;
+        margin-top: 22px;
+        line-height: 24px;
+    }
+    .service-description.active .number {
+        margin-bottom: 80px;
+    }
+    .service-description.active .time {
+        margin-top: 70px;
+    }
+    .service-list {
+        width: 30%;
+    }
+    .service-list li {
+        font-size: 14px;
+        height: 70px;
+    }
+    .service-list li:not(:last-of-type) {
+        margin-bottom: 20px;
+    }
+    .service-list p:first-of-type {
+        padding-left: 10px;
+    }
+    .service-list p:last-of-type {
+        padding-right: 10px;
+        font-size: 20px;
+    }
+    .calc-title {
+        font-size: 22px;
+    }
+    .calculator p {
+        font-size: 20px;
+    }
+    .calculator form {
+        -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
+    }
+    .gallery img {
+        width: 23%;
+        height: 50%;
+    }
+    .works .button {
+
+        font-size: 15px;
+    }
+    .step {
+        width: 22%;
+    }
+    .step p,
+    .step:nth-of-type(3) p,
+    .step:nth-of-type(4) p,
+    .step:nth-of-type(5) p{
+        width: 100%;
+    }
+    .scheme .button {
+        font-size: 15px;
+    }
+    .manager .content {
+        width: 54%;
+    }
+    .manager img {
+        width: 450px;
+    }
+    .manager .content h4 {
+        margin-top: 0;
+        padding-top: 70px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .manager .content .button {
+        font-size: 15px;
+    }
+    .feature {
+        font-size: 15px;
+        padding-left: 70px;
+    }
+    .feature::before {
+        width: 50px;
+        height: 51px;
+        background-size: cover;
+        top: 55px;
+        left: -60px;
+    }
+    .feature:last-of-type::before {
+        height: 52px;
+        width: 50px;
+        background-size: cover;
+    }
+    .contacts .left-part p {
+
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    footer .phone {
+        font-size: 18px;
+    }
+
+}
+
+
+/* адаптив мобильный */
+
+@media screen and (max-width: 889px) {
+    header {
+        background: url('images/header-bg-mob.png');
+        background-size: cover;
+    }
+    .header-top {
+        display: none;
+    }
+    .header-top.mobile {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        position: relative;
+        padding-top: 50px;
+    }
+    .mobile {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .menu.mobile {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #be2816;
+        color: white;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: 500px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding-top: 60px;
+        padding-bottom: 20px;
+        list-style: none;
+        z-index: 99999;
+    }
+    .menu.mobile li {
+        font-family: "Uni Sans Heavy CAPS", sans-serif;
+        font-size: 25px;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+    .menu.mobile li:hover {
+        text-decoration: underline;
+    }
+    .mobile-close {
+        display: block;
+        width: 61px;
+        height: 49px;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        background: url('images/mobile-close.png') no-repeat;
+    }
+
+    .open-menu.mobile {
+        background: url('images/open-menu.png') no-repeat;
+        background-size: cover;
+        display: block;
+        width: 60px;
+        height: 38px;
+
+        margin-left: 50px;
+    }
+    .logo.mobile img {
+        width: 46px;
+        height: 70px;
+
+    }
+    .phone.mobile a {
+        font-size: 0;
+        width: 50px;
+        height: 50px;
+        background: url("images/call-black-mobile.png") no-repeat;
+        background-position: center;
+        border-radius: 100%;
+        border: 2px solid #242424;
+        margin-right: 50px;
+    }
+    .header-bottom {
+        margin-top: 85px;
+    }
+    .title, h1 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+    h1 {
+        font-size: 46px;
+    }
+    .title-description {
+        margin-top: 50px;
+    }
+    .title-description p {
+        text-align: center;
+        width: 55%;
+        margin: 0 auto;
+        line-height: 30px;
+    }
+    .header-bottom .button.red {
+        display: none;
+    }
+    .button {
+        font-size: 29px;
+        border-radius: 30px;
+        padding: 8px 50px;
+    }
+    .buttons .button:first-of-type {
+        margin-right: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        padding: 8px 50px;
+    }
+    .phone-circle {
+        top: 45%;
+    }
+    .section-title {
+        color: #be2816;
+        margin: 100px auto;
+        font-size: 42px;
+        margin-bottom: 65px;
+        padding-left: 0;
+    }
+    .section-title::before {
+        display: none;
+    }
+    .services-content {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+        margin-top: 0;
+    }
+    .service-description.active {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 25px;
+    }
+    .service-description.active h3,
+    .service-description.active p {
+        padding-left: 65px;
+    }
+    .service-description.active h3 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .service-description.active p {
+        font-size: 25px;
+        width: 78%;
+        line-height: 30px;
+    }
+    .service-description.active .time {
+        font-size: 27px;
+        margin-bottom: 10px;
+    }
+    .service-description.active .price {
+        font-size: 27px;
+    }
+    .service-description.active .number {
+        margin-bottom: 77px;
+        margin-top: 115px;
+    }
+    .service-list {
+        width: 96%;
+        margin: 0 auto;
+    }
+    .service-list li {
+        font-size: 22px;
+    }
+    .service-list li:not(:last-of-type) {
+        margin-bottom: 15px;
+    }
+    .service-list p:last-of-type {
+        font-size: 30px;
+        padding-right: 30px;
+    }
+    .service-list p:first-of-type {
+        padding-left: 30px;
+        line-height: 24px;
+    }
+    .calc-title,
+    .calculator p{
+        display: none;
+    }
+    .calc-title.mobile {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .calculator form {
+        width: 100%;
+        -webkit-box-pack: space-between;
+        -ms-flex-pack: space-between;
+        justify-content: space-between;
+        position: relative;
+    }
+    .gallery {
+        margin-top: 5px;
+    }
+    .works .button {
+        width: auto;
+    }
+    .works .container,
+    .scheme .container{
+        border-bottom: none;
+    }
+    .scheme {
+        background: url('images/steps-bg-mobile.png') no-repeat;
+        background-size: cover;
+    }
+    .scheme .section-title {
+        color: #242424;
+        text-align: center;
+        width: 80%;
+        margin-bottom: 0;
+    }
+    .step {
+        width: 60%;
+        margin: 0 auto;
+        padding-left: 120px;
+    }
+    .step::before {
+        width: 100px;
+        height: 90px;
+    }
+
+    .step1::before {
+        content: '';
+        background: url('images/step1.png') no-repeat;
+        background-size: cover;
+        height: 96px;
+        top: 95px;
+        left: -116px;
+    }
+    .step2::before {
+        content: '';
+        background: url('images/step2.png') no-repeat;
+        background-size: cover;
+        height: 99px;
+        width: 85px;
+        top: 105px;
+        left: -115px;
+    }
+    .step3::before {
+        content: '';
+        background: url('images/step3.png') no-repeat;
+        background-size: cover;
+        height: 97px;
+        width: 97px;
+        top: 99px;
+        left: -120px;
+    }
+    .step4::before {
+        content: '';
+        background: url('images/step4.png') no-repeat;
+        background-size: cover;
+        height: 97px;
+        width: 97px;
+        top: 103px;
+        left: -120px;
+    }
+    .step5::before {
+        content: '';
+        background: url('images/step5.png') no-repeat;
+        background-size: cover;
+        height: 92px;
+        width: 103px;
+        top: 99px;
+        left: -120px;
+    }
+    .step6::before {
+        content: '';
+        background: url('images/step6.png') no-repeat;
+        background-size: cover;
+        height: 97px;
+        width: 95px;
+        top: 103px;
+        left: -120px;
+    }
+    .step h4 {
+        font-size: 46px;
+    }
+    .step p {
+        font-size: 29px;
+        width: 100%;
+        line-height: 33px;
+    }
+    .scheme .container .steps .owl-prev {
+        position: absolute;
+        display: block;
+        background: url("images/prev.png") no-repeat;
+        width: 24px;
+        height: 37px;
+        left: -5px;
+        top: 50%;
+    }
+    .scheme .container .steps .owl-next {
+        position: absolute;
+        display: block;
+        background: url("images/next.png") no-repeat;
+        width: 24px;
+        height: 37px;
+        right: -5px;
+        top: 50%;
+
+    }
+    .owl-dots {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 40%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .scheme .container .steps .owl-dot {
+        display: block;
+        width: 15px;
+        height: 15px;
+        border: 2px solid #be2816;
+        border-radius: 100%;
+    }
+    .scheme .container .steps .owl-dot.active {
+        background-color: #be2816;
+    }
+    .scheme .button {
+        width: auto;
+    }
+    .question {
+        font-size: 21px;
+    }
+    .expand {
+        background-size: cover;
+        width: 20px;
+        height: 10px;
+    }
+    .manager {
+        position: relative;
+        overflow: hidden;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+    }
+    .manager img {
+        width: 510px;
+        position: absolute;
+        left: -152px;
+    }
+    .manager .content {
+        width: 50%;
+        margin-top: 100px;
+        padding-bottom: 50px;
+    }
+    .manager .content h4 {
+        position: absolute;
+        width: 80%;
+        left: 10%;
+        top: 60px;
+        margin-top: 0;
+    }
+    .manager .content .manager-name {
+        margin-top: 90px;
+        padding-left: 80px;
+        font-size: 32px;
+    }
+    .manager .content .position {
+        font-size: 24px;
+        padding-left: 80px;
+    }
+    .features {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+    .feature {
+        font-size: 24px;
+        width: 100%;
+    }
+    .feature p {
+        width: 80%;
+    }
+    .contacts {
+        overflow: hidden;
+    }
+    .contacts .section-title {
+        text-align: center;
+        margin: 100px auto;
+    }
+    .contacts .container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+
+    }
+    .contacts .left-part p {
+        text-align: center;
+    }
+    .contacts .left-part {
+        margin-bottom: 100px;
+    }
+    .map {
+        width: 117%;
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 600px;
+    }
+    .map iframe {
+        height: 100%;
+    }
+    footer .phone {
+        font-family: Circe, sans-serif;
+        font-size: 14px;
+        border: none;
+        padding: 0;
+        margin-bottom: 11px;
+    }
+    footer .phone::before {
+        display: none;
+    }
+    footer .third-part {
+        font-family: Circe, sans-serif;
+        font-size: 14px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+        align-items: flex-end;
+    }
+    .popup-content {
+        left: 5%;
+        top: 25%;
+    }
+}
+@media screen and (max-width: 823px) {
+    .service-description.active .number {
+        margin-bottom: 102px;
+        margin-top: 145px;
+    }
+}
+@media screen and (max-width: 812px) {
+    .service-description.active .number {
+        margin-bottom: 87px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .service-description.active .number {
+        margin-bottom: 102px;
+        margin-top: 97px;
+    }
+}
+@media screen and (max-width: 736px) {
+    .service-description.active .number {
+        margin-top: 40px;
+    }
+    .popup-content {
+        left: 5%;
+        top: 5%;
+        width: 664px;
+        height: 417px;
+    }
+    .calculator select,
+    .calculator input[type="submit"]{
+        width: 280px;
+    }
+    .calculator input{
+        width: 266px;
+    }
+    .calculator label {
+        margin-left: 0;
+    }
+
+}
+@media screen and (max-width: 667px) {
+    .title-description p {
+        width: 65%;
+    }
+    .title, h1 {
+        font-size: 38px;
+    }
+    h1 {
+        font-size: 44px;
+    }
+    .button {
+        font-size: 27px;
+    }
+    .service-description.active h3 {
+        font-size: 33px;
+    }
+    .service-description.active p {
+        font-size: 23px;
+        width: 78%;
+        line-height: 26px;
+    }
+    .service-description.active .time {
+        font-size: 25px;
+    }
+    .service-description.active .price {
+        font-size: 25px;
+    }
+    .service-description.active .number {
+        margin-top: 33px;
+        font-size: 27px;
+        margin-bottom: 73px;
+    }
+    .submit {
+        width: 165px;
+        height: 120px;
+        right: 56px;
+        bottom: 67px;
+    }
+    .submit:active, .submit:hover, .submit:visited {
+        right: 60px;
+        bottom: 66px;
+        width: 171px;
+        height: 126px;
+    }
+    .calculator input {
+        width: 246px;
+    }
+    .calculator select, .calculator input[type="submit"] {
         width: 260px;
     }
-
-    header {
-        border-width: 5px;
-    }
-
-    .header-first-line {
-        padding-top: 7px;
-    }
-
-    .header-logo {
-        padding-bottom: 3px;
-        margin-left: 0;
-    }
-
-    .header-logo img {
-        height: 35px;
-    }
-
-    .header-phone p {
-        font-size: 15px;
-    }
-
-    .header-menu {
-        width: 100%;
-        font-size: 5px;
-        padding-left: 0;
-    }
-
-    .header-menu a {
-        padding: 10px 0;
-    }
-
-    .header-bottom h1 {
-        font-size: 11px;
-        margin-top: 100px;
-
-        margin-bottom: 40px;
-    }
-
-    .header-bottom p {
-        font-size: 10px;
+    .works .section-title {
+        font-size: 40px;
         text-align: center;
-        line-height: 16px;
     }
-
-    .header-bottom form {
-        margin-top: 45px;
-        width: 300px;
-        margin-bottom: 80px;
+    .manager .content h4 {
+        width: 86%;
+        left: 7%;
     }
-
-    .header-bottom form p {
-        font-size: 8px;
-        margin-top: 15px;
-        margin-bottom: 22px;
+    .feature {
+        font-size: 22px;
     }
-
-    .header-bottom form input {
-        font-size: 6px;
+    .feature p {
+        width: 70%;
+        line-height: 25px;
     }
-
-    .header-bottom form input[type="text"] {
-        width: 80px;
-        height: 20px;
+    .manager img {
+        width: 472px;
     }
-
-    .header-bottom form input[type="submit"] {
-        width: 64px;
-        height: 20px;
-    }
-
-    .main-info .section-title {
-        font-size: 17px;
-        margin-top: 57px;
-        margin-bottom: 57px;
-    }
-
-    .main-info p {
-        font-size: 12px;
-        margin-bottom: 40px;
-        line-height: 16px;
-    }
-
-    .main-info {
-        border-width: 17px;
-    }
-
-    .main-services .section-title {
-        font-size: 17px;
-        margin-top: 0;
-        margin-bottom: 50px;
-    }
-
-    .service {
-        margin-bottom: 0;
-    }
-
-    .service-description {
-        font-size: 7px;
+    .manager .content {
         width: 50%;
     }
-
-    .service-description p {
-        line-height: 8px;
+    .button {
+        font-size: 25px;
     }
 
-    .service-photo h3 {
-        font-size: 10px;
-        margin-left: 10px;
-        margin-bottom: 10px;
-        margin-top: 5px;
-    }
 
-    .service-photo p {
-        font-size: 8px;
-        line-height: 12px;
-        margin-left: 10px;
+}
+@media screen and (max-width: 640px) {
+    .submit {
+        right: 41px;
     }
-
-    .service-photo {
-        width: 48%;
-        height: 96px;
+    .service-description.active p {
+        font-size: 22px;
+        line-height: 25px;
     }
-
-    .service:nth-of-type(2n) .service-photo p,
-    .service:nth-of-type(2n) .service-photo h3 {
-        margin-right: 10px;
+    .scheme .section-title {
+        width: 85%;
     }
-
-    .main-prices {
-        border-width: 6px;
+    .question {
+        font-size: 18px;
     }
-
-    .main-prices .section-title {
-        font-size: 17px;
-        margin-top: 16px;
-        margin-bottom: 18px;
-        padding-left: 7px;
-        -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    .manager .content h4 {
+        width: 90%;
     }
-
-    .prices-menu li {
-        font-size: 7px;
-        padding-top: 10px;
-        padding-bottom: 8px;
-        padding-right: 5px;
-        padding-left: 4px;
+    .manager .content .position {
+        font-size: 23px;
     }
-
-    .prices-table {
-        width: 300px;
-        margin-bottom: 50px;
+    .manager img {
+        width: 457px;
     }
-
-    .prices-table tr {
-        height: 40px;
+    .manager .content {
+        width: 51%;
     }
-
-    .prices-table td {
-        font-size: 6px;
-        padding-left: 15px;
+    .button {
+        font-size: 23px;
     }
-
-    .prices-table tr:first-of-type th {
-        font-size: 8px;
-        padding-left: 15px;
-    }
-
-    .main-features .section-title {
-        margin-top: 30px;
-        margin-bottom: 35px;
+    .feature {
         font-size: 20px;
     }
 
-    .feature::before {
-        width: 50px;
-        height: 50px;
-        background-size: 50px 50px;
+}
+@media screen and (max-width: 568px) {
+    .title, h1 {
+        text-align: center;
+        font-size: 32px;
+    }
+    h1 {
+        font-size: 38px;
+    }
+    .title-description p {
+        width: 72%;
+    }
+    .section-title {
+        text-align: center;
+        font-size: 40px;
     }
 
-    .feature h4 {
-        font-size: 7px;
+    .service-description.active h3 {
+        font-size: 30px;
+        line-height: 33px;
+    }
+    .service-description.active p {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .service-description.active .time {
+        font-size: 23px;
+    }
+    .service-description.active .price {
+        font-size: 23px;
+    }
+    .service-description.active .time {
+
+        margin-top: 10px;
+    }
+    .submit {
+        width: 127px;
+        height: 92px;
+    }
+    .submit:active, .submit:hover, .submit:visited {
+        width: 127px;
+        height: 92px;
+        background-size: cover;
+        right: 39px;
+    }
+    .calc-title {
+        font-size: 24px;
+    }
+    .calculator input {
+        width: 200px;
+        font-size: 16px;
+        height: 33px;
+    }
+    .calculator select, .calculator input[type="submit"] {
+        width: 214px;
+        font-size: 16px;
+        height: 37px;
+    }
+    .calculator label
+    { font-size: 18px;}
+    .works .section-title {
+        font-size: 35px;
+    }
+    .scheme .section-title {
+        width: 92%;
+    }
+    .step h4 {
+        font-size: 40px;
+    }
+    .step p {
+        font-size: 22px;
         width: 100%;
-        line-height: 11px;
-        margin-bottom: 15px;
+        line-height: 24px;
     }
-
-    .feature-first::before {
-        background-size: 49px 42px;
+    .manager .content h4 {
+        left: 6%;
+        font-size: 32px;
+        line-height: 36px;
     }
-
-    .feature-third::before {
-        background-size: 46px 50px;
+    .manager .content .position {
+        font-size: 19px;
     }
-
-    .feature-fifth h4 {
+    .manager .content .manager-name {
+        font-size: 28px;
+    }
+    .feature {
+        font-size: 18px;
+    }
+    .manager .content {
         width: 50%;
     }
-
-    .feature-sixth::before {
-        background-size: 44px 50px;
+    .manager img {
+        width: 422px;
+    }
+    .button {
+        font-size: 19px;
+    }
+    .contacts .button {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .contacts .left-part {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .question {
+        font-size: 16px;
     }
 
-    .feature p {
-        font-size: 6px;
-        line-height: 7px;
+}
+@media screen and (max-width: 420px) {
+    .open-menu.mobile {
+        width: 30px;
+        height: 20px;
+        margin-left: 25px;
+    }
+    .logo.mobile img {
+        width: 40px;
+        height: 56px;
+    }
+    .phone.mobile a {
+        background-size: 27px 22px;
+        width: 40px;
+        height: 40px;
+        margin-right: 25px;
+    }
+    .header-top.mobile {
+        padding-top: 25px;
+    }
+    .title, h1 {
+        font-size: 23px;
+        margin-bottom: 0;
+    }
+    h1 {
+        font-size: 27px;
+    }
+    .title-description {
+        font-size: 19px;
+        margin-top: 25px;
+    }
+    .title-description p {
+        width: 80%;
+    }
+    .buttons .button:first-of-type {
+        padding: 8px 40px;
+    }
+    .button {
+        font-size: 18px;
+    }
+    .buttons {
+        margin-top: 25px;
+        margin-bottom: 50px;
+    }
+    .header-bottom {
+        margin-top: 50px;
+    }
+    .section-title {
+        font-size: 26px;
+        margin: 40px auto;
+    }
+    .service-list p:first-of-type {
+        padding-left: 10px;
+        line-height: 16px;
+    }
+    .service-list p:last-of-type {
+        padding-right: 10px;
+        font-size: 22px;
+
+    }
+    .service-list li {
+        font-size: 14px;
+        border: 3px solid #be2816;
+        height: 40px;
+    }
+    .service-description.active h3 {
+        font-size: 20px;
+        line-height: 24px;
+        margin-top: 38px;
+    }
+    .service-description.active h3, .service-description.active p {
+        padding-left: 35px;
+    }
+    .service-description.active p {
+        font-size: 12px;
+        line-height: 16px;
+        width: 70%;
+        margin-top: 15px;
+    }
+    .service-description.active h3::after {
+        margin-top: 10px;
+        width: 33px;
+        height: 3px;
+    }
+    .service-description.active .time {
+        margin-top: 25px;
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+    .service-description.active .price {
+        font-size: 15px;
+    }
+    .service-description.active .number {
+        font-size: 18px;
+        margin-top: 61px;
+        margin-bottom: 40px;
+    }
+    .submit {
+        width: 106px;
+        height: 77px;
+        bottom: 49px;
+    }
+    .submit:active, .submit:hover, .submit:visited {
+        width: 106px;
+        height: 77px;
+        bottom: 49px;
+        right: 41px;
+    }
+    .services-content {
+        margin-bottom: 30px;
+    }
+    .calc-title {
+        font-size: 16px;
+        padding-top: 40px;
+    }
+    .calculator label {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .calculator input, .calculator select {
+        border-width: 1px;
     }
 
-    .feature {
-        margin-bottoM: 40px;
-        min-height: 180px;
+    .calculator select, .calculator input[type="submit"]  {
+        width: 164px;
+        font-size: 13px;
+        height: 27px;
+
+    }
+    .calculator input{
+        width: 150px;
+        font-size: 10px;
+        height: 23px;
+    }
+    .calculator input[id="price"] {
+        width: 155px;
+        height: 25px;
+    }
+    .calculator input, .calculator select {
+        padding-left: 5px;
+    }
+    .calculator form {
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        margin-top: 0;
+        margin-bottom: 60px;
+    }
+    .calculator input[type="submit"] {
+        font-size: 14px;
+    }
+    .calculator {
+        background-position-x: 63%;
+    }
+    .works .section-title {
+        font-size: 25px;
+    }
+    .works {
+        overflow: hidden;
+    }
+    .gallery {
+        margin-bottom: 40px;
+    }
+    .works .container {
+        padding-bottom: 50px;
+    }
+    .gallery.desktop {
+        display: none;
+    }
+    .gallery.mobile {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 160%;
+        margin: 0 auto;
+        position: relative;
+        left: -80px;
+        align-self: flex-start;
+    }
+    .gallery.mobile a, .g2 a {
+        width: 30%;
+        margin-right: 40px;
+        box-shadow: -2px 2px 10px rgba(0,0,0, 0.3);
+        margin-bottom: 40px;
+    }
+    .g2 {
+        position: relative;
+        width: 160%;
+        left: -80px;
+        flex-wrap: nowrap;
     }
 
-    .main-plan .section-title {
-        font-size: 17px;
-        margin-top: 18px;
-        margin-bottom: 67px;
-        -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    .works .button {
+        padding: 6px 28px;
     }
-
+    .scheme .section-title {
+        font-size: 29px;
+    }
+    .scheme .container .steps .owl-prev {
+        width: 12px;
+        height: 19px;
+        left: -20px;
+        background-size: cover;
+        top: 40%;
+    }
+    .scheme .container .steps .owl-next {
+        width: 12px;
+        height: 19px;
+        right: -15px;
+        background-size: cover;
+        top: 40%
+    }
+    .owl-nav span,
+    footer .phone a::before{
+        display: none;
+    }
     .step {
-        font-size: 6px;
+        padding-left: 78px;
+    }
+    .step::after {
+        display: none;
+    }
+    .step p {
+        font-size: 16px;
+        width: 100%;
+        line-height: 20px;
+    }
+    .step h4 {
+        font-size: 30px;
+    }
+    .step::before {
+        width: 60px;
+    }
+    .step1::before {
+        height: 57px;
+        top: 59px;
+        left: -80px;
+    }
+    .step2::before {
+        height: 70px;
+        top: 73px;
+        left: -78px;
+    }
+    .step3::before {
+        height: 60px;
+        top: 64px;
+        left: -80px;
+    }
+    .step4::before {
+
+        height: 60px;
+
+        top: 60px;
+        left: -80px;
+    }
+    .step5::before {
+        height: 54px;
+        top: 61px;
+        left: -80px;
+    }
+    .step6::before {
+        height: 61px;
+        top: 58px;
+        left: -80px;
+    }
+    .scheme .button {
+        margin-top: 40px;
+        padding: 6px 28px;
+        margin-bottom: 50px;
+        font-size: 17px;
+    }
+    .question {
+        font-size: 12px;
+    }
+    .expand {
+        top: 20px;
+        width: 10px;
+        height: 5px;
+    }
+    .answer {
+        font-size: 14px;
+    }
+    .questions {
+        margin-bottom: 50px;
+    }
+    .manager {
+        justify-content: space-between;
+    }
+    .manager .content h4 {
+        /*;*/
+
+        display: none;
+    }
+    .man-title.mobile {
+        position: absolute;
+        top: 30px;
+        display: flex;
+        font-family: "CirceBold", sans-serif;
+        font-size: 23px;
+        line-height: 28px;
+        padding-left: 7%;
+    }
+    .manager .content {
+        width: 51%;
+        margin-left: 0;
+        align-items: flex-start;
+    }
+    .manager .content .manager-name {
+        font-size: 20px;
+        padding-left: 58px;
+        margin-top: 30px;
+    }
+    .manager .content .position {
+        font-size: 14px;
+        padding-left: 58px;
+        margin-bottom: 18px;
+    }
+    .manager img {
+        width: 330px;
+        left: -116px;
+    }
+    .feature p {
+        width: 80%;
+        line-height: 17px;
+    }
+    .feature {
+        font-size: 12px;
+        padding-left: 65px;
+    }
+    .feature::before {
+        background-size: cover;
+        width: 31px;
+        height: 31px;
+        top: 33px;
+        left: -40px;
+    }
+    .feature:last-of-type::before {
+        height: 34px;
+        width: 33px;
+        background-size: cover;
+    }
+    .manager .content .button {
+        padding: 6px 28px;
+        font-size: 12px;
+        position: relative;
+        left: 30px;
+    }
+    .contacts .section-title {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+    .contacts .left-part p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .contacts .left-part {
+        margin-bottom: 50px;
+    }
+    .contacts .left-part p:last-of-type {
+        margin-bottom: 40px;
+    }
+    .contacts .button {
+        font-size: 16px;
+        padding: 6px 16px;
+    }
+    .map { height: 300px;
+    }
+    footer .first-part,
+    footer .third-part{
+
+        font-size: 10px;
+    }
+    footer .container {
+        width: 95%;
+    }
+    footer .phone {
+        font-size: 11px;
+    }
+    footer .logo {
+        display: block;
+        width: 40px;
+        height: 56px;
+    }
+    .first-part {
+        width: 45%;
+    }
+    .third-part {
+        width: 45%;
+    }
+    footer .first-part p:last-of-type {
+        margin-top: 10px;
+    }
+    footer .phone {
+        margin-bottom: 7px;
     }
 
-    .step p {
+    .second-part {
+        width: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .mobile-close {
+        width: 38px;
+        height: 32px;
+        background-size: cover;
+        top: 25px;
+        left: 25px;
+    }
+    .menu.mobile li {
+        font-size: 14px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    .menu.mobile {
+        height: 268px;
+    }
+    .popup-content {
+        width: 90%;
+        left: 5%;
+        top: 5%;
+        height: 90%;
+    }
+    .popup-content p:first-of-type {
+        font-size: 22px;
+    }
+    .popup-content p:last-of-type {
+        font-size: 12px;
+    }
+    .phone-circle {
+        right: 10px;
+        width: 70px;
+        height: 70px;
+        background-size: cover;
+    }
+}
+@media screen and (max-width: 375px) {
+    .title, h1 {
+        font-size: 21px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .title-description p {
+        line-height: 25px;
+    }
+
+    .title-description {
+        font-size: 18px;
+    }
+
+    .service-description.active h3 {
+        font-size: 18px;
+        line-height: 20px;
+        margin-top: 35px;
+    }
+
+    .service-description.active p {
+        font-size: 11px;
+        line-height: 14px;
+        width: 70%;
         margin-top: 15px;
     }
 
-    .step::before {
+    .service-description.active .time {
 
-        font-size: 22px;
-        border-width: 3px;
-        padding: 0 7px;
+        font-size: 14px;
+        margin-bottom: 5px;
     }
 
-    .step::after {
-        width: 29px;
-        height: 5px;
-        top: 8px;
-        left: 50px;
-    }
-
-    .plan-steps {
-        margin-bottom: 80px;
-    }
-
-    .main-gallery .section-title {
-        margin-top: 30px;
-        margin-bottom: 45px;
-        font-size: 17px;
-    }
-
-    .main-gallery img {
-        width: 300px;
-    }
-
-    .main-reviews .section-title {
-        margin-top: 35px;
+    .service-description.active .price {
         font-size: 14px;
     }
 
-    .main-reviews .container p:first-of-type {
-        font-size: 8px;
-        text-transform: none;
-        margin-top: 5px;
+    .service-description.active .number {
+        font-size: 18px;
+        margin-top: 54px;
+        margin-bottom: 30px;
     }
 
-    .review {
-        margin: 20px auto;
+    .submit {
+        width: 106px;
+        height: 77px;
+        bottom: 34px;
+        right: 31px;
     }
 
-    .review-author {
-
-        margin-bottom:7px;
+    .submit:active, .submit:hover, .submit:visited {
+        width: 106px;
+        height: 77px;
+        bottom: 34px;
+        right: 31px;
     }
 
-    .review-text {
-        font-size: 8px;
-        margin-left: 10px;
+    .calc-title {
+        font-size: 14px;
     }
-    .review-avatar  {
-        height: 88px;
+    .calculator select, .calculator input[type="submit"] {
+        width: 154px;
+        font-size: 12px;
+    }
+    .calculator input {
+        width: 147px;
+        font-size: 10px;
+    }
+    .calculator input[type="submit"] {
+        font-size: 13px;
+    }
+    .calculator input[id="price"] {
+        width: 147px;
+        height: 25px;
+    }
+    .calculator label {
+        font-size: 13px;
+        margin-top: 15px;
+    }
+    .works .section-title {
+        font-size: 23px;
+    }
+    .button {
+        font-size: 15px;
+    }
+    .scheme .section-title {
+        font-size: 27px;
+    }
+    .question {
+        font-size: 10px;
+        border-bottom: 1px solid #be2816;
+    }
+    .manager .content h4 {
+        font-size: 21px;
+        line-height: 25px;
+    }
+    .manager img {
+        width: 362px;
+    }
+    .feature {
+        font-size: 11px;
+        padding-left: 57px;
+    }
+    .man-title.mobile {
+        font-size: 21px;
+    }
+    .manager .content .button {
+        padding: 6px 18px;
+        left: 32px;
+    }
+    .manager img {
+        width: 348px;
+        left: -140px;
+    }
+    .manager .content .manager-name {
+        font-size: 18px;
+
+    }
+    .manager .content .position {
+        font-size: 11px;
+
+    }
+    .manager .content {
+        width: 49%;
+    }
+    .first-part {
+        width: 45%;
+    }
+    .second-part {
+        width: 15%;
+    }
+    .third-part {
+        width: 40%;
+    }
+    .popup-content p:first-of-type {
+        font-size: 20px;
+    }
+    .popup-content p:last-of-type {
+        font-size: 10px;
+    }
+    .expand {
+       top: 15px;
+        width: 15px;
+        height: 8px;
     }
 
-    .review-third .review-avatar {
-        width: 68px;
-    }
-
-    footer {
-        height: 100px;
-    }
 }
+@media screen and (max-width: 320px) {
+    .title, h1 {
+        font-size: 18px;
+    }
+    h1 {
+        font-size: 21px;
+    }
+    .title-description {
+        font-size: 14px;
+    }
+    .title-description p {
+        line-height: 19px;
+    }
+    .buttons .button:first-of-type {
+        padding: 6px 28px;
+    }
+    .button {
+        font-size: 14px;
+    }
+    .service-list li {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .service-description.active h3 {
+        font-size: 16px;
+        line-height: 18px;
+        margin-top: 30px;
+    }
+    .service-description.active p {
+        font-size: 10px;
+        line-height: 12px;
+        width: 75%;
+    }
+    .service-description.active .time {
+        font-size: 12px;
+    }
+    .service-description.active .price {
+        font-size: 12px;
+    }
+    .service-description.active .number {
+        font-size: 16px;
+        margin-top: 32px;
+        margin-bottom: 30px;
+    }
+    .submit {
+        width: 70px;
+        height: 51px;
+    }
+    .submit:active, .submit:hover, .submit:visited { width: 70px;
+        height: 51px;
+    }
+    .calc-title {
+        font-size: 13px;
+    }
+    .calculator select, .calculator input[type="submit"] {
+        width: 124px;
+        font-size: 8px;
+    }
+    .calculator input {
+        width: 120px;
+        font-size: 8px;
+    }
+    .calculator label {
+        font-size: 10px;
+    }
+    .works .section-title {
+        font-size: 19px;
+    }
+    .scheme .section-title {
+        font-size: 23px;
+    }
+    .step p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .question {
+        font-size: 9px;
+    }
+    .manager img {
+        width: 340px;
+    }
+    .manager .content h4 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .feature {
+        font-size: 10px;
+    }
+    .manager .content .manager-name {
+        margin-top: 22px;
+    }
+    .manager .content .button {
+        padding: 6px 13px;
+        left: 26px;
+    }
+    footer .first-part, footer .third-part {
+        font-size: 9px;
+    }
+    footer .phone {
+        font-size: 9px;
+    }
 
 
-
-
-
+}
 
 
