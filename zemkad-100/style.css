@@ -67,7 +67,7 @@ body {
     display: none !important;
 }
 .mobile {
-    display: none;
+    display: none !important;
 }
 
 .container {
@@ -371,6 +371,7 @@ h1 {
     font-weight: 400;
     font-size: 20px;
     opacity: 0.6;
+    cursor: pointer;
 }
 .service-list li.active {
     opacity: 1;
@@ -468,8 +469,6 @@ h1 {
     background-color: #ffffff;
     color: #242424;
     opacity: 1;
-    width: inherit;
-    height: inherit;
 }
 .calculator input::-webkit-input-placeholder,
 .calculator input[type="number"],
@@ -1452,7 +1451,7 @@ footer .phone a::before {
         display: block;
         width: 60px;
         height: 38px;
-
+        cursor: pointer;
         margin-left: 50px;
     }
     .logo.mobile img {
@@ -2283,35 +2282,26 @@ footer .phone a::before {
         display: none;
     }
     .gallery.mobile {
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -ms-flex-wrap: nowrap;
-            flex-wrap: nowrap;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
         width: 160%;
         margin: 0 auto;
         position: relative;
         left: -80px;
-        -ms-flex-item-align: start;
-            align-self: flex-start;
+        align-self: flex-start;
     }
     .gallery.mobile a, .g2 a {
         width: 30%;
         margin-right: 40px;
-        -webkit-box-shadow: -2px 2px 10px rgba(0,0,0, 0.3);
-                box-shadow: -2px 2px 10px rgba(0,0,0, 0.3);
+        box-shadow: -2px 2px 10px rgba(0,0,0, 0.3);
         margin-bottom: 40px;
     }
     .g2 {
         position: relative;
         width: 160%;
         left: -80px;
-        -ms-flex-wrap: nowrap;
-            flex-wrap: nowrap;
+        flex-wrap: nowrap;
     }
 
     .works .button {
@@ -2408,9 +2398,7 @@ footer .phone a::before {
         margin-bottom: 50px;
     }
     .manager {
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
+        justify-content: space-between;
     }
     .manager .content h4 {
         /*;*/
@@ -2420,8 +2408,6 @@ footer .phone a::before {
     .man-title.mobile {
         position: absolute;
         top: 30px;
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
         font-family: "CirceBold", sans-serif;
         font-size: 23px;
@@ -2431,9 +2417,7 @@ footer .phone a::before {
     .manager .content {
         width: 51%;
         margin-left: 0;
-        -webkit-box-align: start;
-            -ms-flex-align: start;
-                align-items: flex-start;
+        align-items: flex-start;
     }
     .manager .content .manager-name {
         font-size: 20px;
@@ -2526,19 +2510,10 @@ footer .phone a::before {
 
     .second-part {
         width: 10%;
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
     .mobile-close {
         width: 38px;
@@ -2828,4 +2803,5 @@ footer .phone a::before {
 
 
 }
+
 
