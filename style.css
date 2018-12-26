@@ -67,7 +67,7 @@ body {
     display: none !important;
 }
 .mobile {
-    display: none;
+    display: none !important;
 }
 
 .container {
@@ -371,6 +371,7 @@ h1 {
     font-weight: 400;
     font-size: 20px;
     opacity: 0.6;
+    cursor: pointer;
 }
 .service-list li.active {
     opacity: 1;
@@ -1450,7 +1451,7 @@ footer .phone a::before {
         display: block;
         width: 60px;
         height: 38px;
-
+        cursor: pointer;
         margin-left: 50px;
     }
     .logo.mobile img {
