@@ -471,7 +471,7 @@ $(document).on('click', '.onhover',function () {
     $('.onhover').remove();
 });
 
-$(document).on('click', '.open-menu.mobile', function() {
+$(document).on('click', '.open-menu', function() {
     $('.menu.mobile').removeClass('hidden');
 });
 $(document).on('click', '.mobile-close', function() {
