@@ -67,7 +67,7 @@ body {
     display: none !important;
 }
 .mobile {
-    display: none !important;
+    display: none;
 }
 
 .container {
@@ -249,7 +249,7 @@ h1 {
     background-size: cover;
     position: absolute;
     top: -2px;
-    left: -37px;
+    left: -48px;
 }
 .services-content {
     display: -webkit-box;
@@ -525,6 +525,9 @@ h1 {
     height: 50%;
     -webkit-box-shadow: -5px 2px 10px rgba(0,0,0, 0.3);
     box-shadow: -5px 2px 10px rgba(0,0,0, 0.3);
+}
+.gallery.mobile {
+    display: none;
 }
 
 .gallery img {
@@ -2282,6 +2285,7 @@ footer .phone a::before {
         display: none;
     }
     .gallery.mobile {
+        display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-between;
