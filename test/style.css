@@ -1,4 +1,16 @@
-@import "http://fonts.fontstorage.com/import/gilroy.css";
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Light'), local('Gilroy-Light'), url('font/Gilroy-Light.woff') format('woff'), url('font/Gilroy-Light.ttf') format('truetype'), url('font/Gilroy-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Extra Bold'), local('Gilroy-ExtraBold'), url('font/Gilroy-ExtraBold.woff') format('woff'), url('font/Gilroy-ExtraBold.ttf') format('truetype'), url('font/Gilroy-ExtraBold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
 
 body, div, main, a, p, span, h1, ul, li, img {
     padding: 0;
