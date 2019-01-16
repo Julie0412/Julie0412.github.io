@@ -1788,7 +1788,7 @@ border-bottom: 7px solid #1a1a1b c;
     }
     
     .advantage-cards {
-        margin-bottom: 105px;
+        margin-bottom: 135px;
     }
     .what-we-do {
         top: -128px;
@@ -2342,14 +2342,14 @@ border-bottom: 7px solid #1a1a1b c;
         margin-bottom: 10px;
     }
     .corner:nth-of-type(2) {
-        right: -3px;
+        left: 658px;
     }
     .corner:nth-of-type(3) {
-        top: 645px;
+        top: 784px;
     }
     .corner:nth-of-type(4) {
-        top: 645px;
-        right: -3px;
+        top: 784px;
+        left: 658px;
     }
     .owl-dots {
         width: 18%;
