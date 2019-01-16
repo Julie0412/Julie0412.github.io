@@ -1155,7 +1155,7 @@ border-bottom: 7px solid #1a1a1b c;
 }
 .corner:nth-of-type(2) {
     top: 187px;
-    right: 360px;
+    left: 1113px;
 }
 .corner:nth-of-type(3) {
     top: 1022px;
