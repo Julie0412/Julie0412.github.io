@@ -32,3 +32,14 @@ $('.oc-4').owlCarousel({
     items: 1
 
 });
+
+$(document).on('click', '.show-menu', function() {
+    $('.menu').removeClass('hidden');
+    $(this).hide();
+
+});
+$(document).on('click', '.close', function() {
+    $('.menu').addClass('hidden');
+    $('.show-menu').show();
+
+});
