@@ -553,11 +553,13 @@ main .main-why-us .owl-dot{
     height: 30px;
     border-radius: 100%;
     background-color: rgba(255, 255, 255, 0.75);
+    cursor: pointer;
 }
 main .main-price .owl-dot.active,
 main .main-why-us .owl-dot.active {
     background-color: rgba(255, 255, 255, 0.3);
     border: none;
+    
 }
 .main-works {
     position: relative;
@@ -577,6 +579,7 @@ main .main-why-us .owl-dot.active {
     transform: rotate(90deg);
     top: 86px;
     left: -16px;
+    cursor: pointer;
 }
 .main-works .owl-carousel .owl-nav button.owl-prev.disabled,
 .main-works .owl-carousel .owl-nav button.owl-next.disabled{
@@ -592,6 +595,7 @@ main .main-why-us .owl-dot.active {
     transform: rotate(270deg);
     top: 86px;
     right: -23px;
+    cursor: pointer;
 }
 .work-one, .work-three {
     font-size: 18px;
@@ -868,6 +872,7 @@ margin-bottom: 20px;
     transform: rotate(90deg);
     top: 112px;
     left: -17px;
+    cursor: pointer;
 }
 .main-reviews .owl-carousel .owl-nav button.owl-prev.disabled,
 .main-reviews .owl-carousel .owl-nav button.owl-next.disabled{
@@ -883,6 +888,7 @@ margin-bottom: 20px;
     transform: rotate(270deg);
     top: 112px;
     right: -23px;
+    cursor: pointer;
 }
 
 .main-contacts .section-title {
