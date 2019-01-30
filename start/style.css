@@ -788,7 +788,67 @@ footer .container {
     height: 25px;
 }
 
-
+.birds-clouds .birds-2 {
+    position: absolute;
+    left: 295px;
+    top: 1070px;
+    display: block;
+    width: 197px;
+    height: 103px;
+}
+.birds-clouds .vector {
+    position: absolute;
+    left: 1093px;
+    top: 1080px;
+    display: block;
+    width: 228px;
+    height: 231px;
+}
+.birds-clouds .clouds-2 {
+    position: absolute;
+    left: 140px;
+    top: 1650px;
+    width: 225px;
+    height: 160px;
+}
+.birds-clouds .cloud-2 {
+    position: absolute;
+    left: 1066px;
+    top: 1810px;
+    display: block;
+    width: 188px;
+    height: 108px;
+}
+.birds-clouds .bird-3 {
+    position: absolute;
+    width: 56px;
+    height: 49px;
+    left: 1489px;
+    top: 1810px;
+}
+.birds-clouds .bird-4 {
+    position: absolute;
+    left: 289px;
+    top: 1945px;
+    width: 56px;
+    height: 76px;
+}
+.birds-clouds .cloud-3 {
+    position: absolute;
+    top: 1980px;
+    left: 1545px;
+    width: 234px;
+    height: 135px;
+}
+.birds-clouds .birds-3 {
+    position: absolute;
+    left: 1218px;
+    top: 2665px;
+    display: block;
+    width: 197px;
+    height: 103px;
+    transform: scale(-1, 1)
+}
 
 
 
