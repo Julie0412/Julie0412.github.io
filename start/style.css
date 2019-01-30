@@ -866,11 +866,39 @@ footer .container {
     height: 25px;
     transform: scale(-1, 1);
 }
+.animated {
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+}
+.e4, .e5 {
+    animation-delay: 0.5s;
+}
+.e47 {
+    animation-delay: 0.5s;
+}
 
+.e48 {
+    animation-delay: 1s;
+}
+.e49 {
+    animation-delay: 1.5s;
+}
+.e50 {
+    animation-delay: 2s;
+}
+.e51 {
+    animation-delay: 2.5s;
+}
 
-
-
-
+.e22 {
+    animation-delay: 0.5s;
+}
+.e23 {
+    animation-delay: 1s;
+}
+.e24 {
+    animation-delay: 1.5s;
+}
 
 
 
