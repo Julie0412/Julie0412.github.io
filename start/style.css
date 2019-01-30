@@ -630,10 +630,10 @@ footer .container {
 .footer-menu ul{
     list-style: none;
 }.footer-social .links {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-start;
+     align-items: center;
  }
 .footer-social .vk {
     display: block;
@@ -706,6 +706,47 @@ footer .container {
     right: 0;
     z-index: 1;
 }
+.birds-clouds {
+    position: absolute;
+    width: 100%;
+    height: 900vh;
+    z-index: 2;
+    overflow-x: hidden;
+}
+.birds-clouds .clouds-1 {
+    position: absolute;
+    left: 344px;
+    top: 175px;
+    display: block;
+    width: 240px;
+    height: 170px;
+}
+.birds-clouds .bird-1 {
+    position: absolute;
+    left: 735px;
+    top: 175px;
+    display: block;
+    width: 57px;
+    height: 76px;
+}
+.birds-clouds .birds-1 {
+    position: absolute;
+    left: 1229px;
+    top: 175px;
+    display: block;
+    width: 197px;
+    height: 103px;
+}
+.birds-clouds .cloud-1 {
+    position: absolute;
+    left: 1229px;
+    top: 525px;
+    display: block;
+    width: 197px;
+    height: 103px;
+}
+
+
 
 
 
