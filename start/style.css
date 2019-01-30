@@ -16,6 +16,10 @@ body {
     letter-spacing: normal;
     color: #808080;
 }
+a, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
 
 .container {
     width: 1410px;
