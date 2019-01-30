@@ -2,12 +2,7 @@ body, div, header, main, footer, section, span, p, a, img, ul, li, h1, h2, h3, h
     padding: 0;
     margin: 0;
 }
-a,
-a:active,
-a:visited {
-    text-decoration: none;
-    color: inherit;
-}
+
 body {
     width: 1920px;
     margin: 0 auto;
@@ -113,6 +108,19 @@ header .container {
     font-weight: bold;
     color: #ffffff;
     padding: 21px 66px;
+    text-decoration: none;
+}
+.request-button:hover,
+.about-text .request-button:hover {
+    background: radial-gradient(at center, #fdbb50, #fda829);
+    box-shadow: 0 0 20px 0 rgba(253, 168, 41, 0.7);
+}
+.first-screen .request-button:active,
+.about-text .request-button:active{
+    transform: scale(0.97);
+    color: white;
+    background: radial-gradient(at center, #fdbb50, #fda829);
+    box-shadow: 0 0 20px 0 rgba(253, 168, 41, 0.7);
 }
 .right-part-bottom {
     display: flex;
@@ -208,6 +216,14 @@ header .container {
 }
 .about-text .request-button {
     margin-left: 240px;
+}
+.about a:active {
+    transform: scale(0.97);
+    /*
+    color: white;
+    background: radial-gradient(at center, #fdbb50, #fda829);
+    box-shadow: 0 0 20px 0 rgba(253, 168, 41, 0.7);*/
+
 }
 
 .features {
@@ -339,7 +355,15 @@ header .container {
     background-image: linear-gradient(to top left, #1de5e2, #1153fc);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
+}
+.more-reviews:hover {
+    border: none;
+    background-color: transparent;
+    background-image: linear-gradient(to bottom right, #1de5e2, #1153fc);
+    color: white;
+    -webkit-background-clip: border-box;
+    -webkit-text-fill-color: white;
+    text-decoration: none;
 }
 .reviews-block {
     position: absolute;
@@ -527,7 +551,7 @@ header .container {
     justify-content: flex-start;
     flex-wrap: wrap;
     width: 570px;
-    height: 697px;
+    height: 699px;
     border-radius: 35px;
     box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.1);
     background: white;
@@ -576,6 +600,16 @@ header .container {
     padding: 21px 67px;
     background: radial-gradient(at center, #ffcb52, #fdbb50);
     height: 70px;
+}
+.request-form input[type="submit"]:hover {
+    background: radial-gradient(at center, #fdbb50, #fda829);
+    box-shadow: 0 0 20px 0 rgba(253, 168, 41, 0.7);
+}
+.request-form input[type="submit"]:active{
+    transform: scale(0.97);
+    color: white;
+    background: radial-gradient(at center, #fdbb50, #fda829);
+    box-shadow: 0 0 20px 0 rgba(253, 168, 41, 0.7);
 }
 footer {
     padding-top: 220px;
@@ -654,7 +688,7 @@ footer .container {
 .parallax-back {
     position: absolute;
     width: 100%;
-    height: 900vh;
+    height: 8000px;
     z-index: 1;
     overflow-x: hidden;
 }
@@ -744,6 +778,14 @@ footer .container {
     display: block;
     width: 197px;
     height: 103px;
+}
+.birds-clouds .bird-2 {
+    position: absolute;
+    left: 999px;
+    top: 666px;
+    display: block;
+    width: 63px;
+    height: 25px;
 }
 
 
