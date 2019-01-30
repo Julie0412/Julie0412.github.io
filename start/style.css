@@ -450,6 +450,9 @@ header .container {
     width: 100%;
     z-index: 3;
 }
+.graduates .section-title {
+    margin-bottom: 100px;
+}
 .graduate {
     display: flex;
     flex-direction: row;
