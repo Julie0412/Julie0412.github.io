@@ -847,7 +847,24 @@ footer .container {
     display: block;
     width: 197px;
     height: 103px;
-    transform: scale(-1, 1)
+    transform: scale(-1, 1);
+}
+.birds-clouds .clouds-3 {
+    position: absolute;
+    left: 375px;
+    top: 3200px;
+    width: 225px;
+    height: 160px;
+
+}
+.birds-clouds .bird-5 {
+    position: absolute;
+    left: 1601px;
+    top: 3630px;
+    display: block;
+    width: 63px;
+    height: 25px;
+    transform: scale(-1, 1);
 }
 
 
