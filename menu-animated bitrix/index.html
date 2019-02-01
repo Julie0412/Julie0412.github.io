@@ -1,0 +1,524 @@
+﻿<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Верстка</title>
+  <meta name="viewport" content="width=device-width, shrink-to-fit=no" /> 
+  <link rel="stylesheet" href="css/fonts.css" />  
+  <link rel="stylesheet" href="css/font-awesome.css" />
+  <link rel="stylesheet" href="libs/slick/slick.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script type="text/javascript" src="https://vk.com/js/api/openapi.js?160"></script>
+  <!-- Переход на страницу со ссылками на современные браузеры для ie9 и ниже -->
+  <!--[if lt IE 10]><script>location.href='/old-ie.html';</script><![endif]-->
+</head>
+<body>
+  <header class="header">
+    <div class="header__topline">
+      <div class="wrapper">
+        <div class="header__location location">
+          <span>Регистрация ООО по <span class="location__current">России</span> (<a href="#">выбрать свой город</a>)</span>
+          <div class="location__form">
+            <div class="location__search">
+              <input type="search" class="location__input" placeholder="Поиск по регионам" />
+            </div>
+            <ul class="location__list">
+              <li>Москва</li>
+              <li>Санкт-Петербург</li>
+              <li>Новосибирск</li>
+              <li>Екатеринбург</li>
+              <li>Нижний Новгород</li>
+              <li>Казань</li>
+              <li>Челябинск</li>
+              <li>Омск</li>
+              <li>Самара</li>
+              <li>Ростов-на-Дону</li>
+              <li>Уфа</li>
+              <li>Красноярск</li>
+              <li>Пермь</li>
+              <li>Воронеж</li>
+              <li>Волгоград</li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__contacts">Звоните нам по России бесплатно: <a href="tel:88002000825">8 800 2000 825</a></div>
+      </div>
+    </div>
+    <div class="header__midline">
+      <div class="wrapper">
+        <a href="/" class="logo header__logo">
+          <img src="img/logo.png" alt="">
+        </a>
+        <form action="#" class="header__search">
+          <input type="search" placeholder="Введите текст для поиска по сайту...">
+        </form>
+        <div class="header__worktime">
+          <strong>09:00 - 18:00</strong>
+          <span>Понедельник - Пятница</span>
+        </div>
+        <a href="#" class="btn btn_scroll header__btn">Заказать услугу</a>
+        <span class="search-btn"></span>
+        <span class="menu-btn"></span>
+      </div>
+    </div>
+    <div class="header__bottomline">
+      <div class="wrapper">
+        <ul class="main-menu">
+          <li><a href="/">Главная</a></li>
+          <li class="has-children"><a href="services.php" data-id="services">Услуги</a></li>
+          <li><a href="#">Стать партнером</a></li>
+          <li><a href="#">Отзывы</a></li>
+          <li><a href="contacts.php">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="dropdown header__dropdown" id="services">
+        <div class="wrapper">
+          <div class="dropdown__column">
+            <h4 class="dropdown__title">Регистрация фирм</h4>
+            <ul class="dropdown__list">
+              <li><a href="service.php">Регистрация ООО (On-Line)</a></li>
+              <li><a href="service.php">Регистрация ООО под ключ</a></li>
+              <li><a href="service.php">Регистрация ПАО (ОАО)</a></li>
+              <li><a href="service.php">Регистрация АО (ЗАО)</a></li>
+              <li><a href="service.php">Регистрация хозяйственного партнерства</a></li>
+              <li><a href="service.php">Регистрация фирм в ОЭЗ</a></li>
+              <li><a href="service.php">Регистрация ИП (On-Line)</a></li>
+              <li><a href="service.php">Получение ИНН</a></li>
+              <li><a href="service.php">Регистрация фирм с иностранным капиталом</a></li>
+              <li><a href="service.php">Готовые фирмы</a></li>
+              <li><a href="service.php">Регистрация микро-финансовой организации</a></li>
+              <li><a href="service.php">Постановка на учет в Пробирной палате</a></li>
+              <li><a href="service.php">Регистрация кассового аппарата</a></li>
+            </ul>
+          </div>
+          <div class="dropdown__column">
+            <h4 class="dropdown__title">Регистрация НКО</h4>
+            <ul class="dropdown__list">
+              <li><a href="service.php">Регистрация НКО</a></li>
+              <li><a href="service.php">Регистрация АНО</a></li>
+              <li><a href="service.php">Регистрация ассоциаций, союзов</a></li>
+              <li><a href="service.php">Регистрация неком-мерческого партнёрства</a></li>
+              <li><a href="service.php">Регистрация общественных объединений</a></li>
+              <li><a href="service.php">Регистрация учреждений</a></li>
+              <li><a href="service.php">Регистрация фонда</a></li>
+              <li><a href="service.php">Регистрация СРО</a></li>
+              <li><a href="service.php">Регистрация кооперативов</a></li>
+              <li><a href="service.php">Регистрация кредитных потребительских кооперативов</a></li>
+              <li><a href="service.php">Регистрация ТСЖ</a></li>
+              <li><a href="service.php">Регистрация садового товарищества</a></li>
+            </ul>
+          </div>
+          <div class="dropdown__column">
+            <h4 class="dropdown__title">Регистрация изменений</h4>
+            <ul class="dropdown__list">
+              <li><a href="service.php">Регистрация изменений</a></li>
+              <li><a href="service.php">Смена наименования</a></li>
+              <li><a href="service.php">Смена адреса юридического лица</a></li>
+              <li><a href="service.php">Смена участников</a></li>
+              <li><a href="service.php">Смена руководителя</a></li>
+              <li><a href="service.php">Изменение размера уставного капитала</a></li>
+              <li><a href="service.php">Регистрация изменений в связи с открытием филиала</a></li>
+              <li><a href="service.php">Смена ОКВЭД</a></li>
+              <li><a href="service.php">Приведение устава ООО в соответствие с ФЗ от 30.12.2008 №312-ФЗ</a></li>
+              <li><a href="service.php">Регистрация изменений ИП</a></li>
+              <li><a href="service.php">Регистрация изменений некоммерческих организаций</a></li>
+            </ul>
+          </div>
+          <div class="dropdown__column">
+            <h4 class="dropdown__title">Ликвидация фирм</h4>
+            <ul class="dropdown__list">
+              <li><a href="service.php">Ликвидация фирм</a></li>
+              <li><a href="service.php">Банкротство</a></li>
+              <li><a href="service.php">Ликвидация ИП</a></li>
+            </ul>
+            <h4 class="dropdown__title">Акции</h4>
+            <ul class="dropdown__list">
+              <li><a href="service.php">Регистрация выпуска акций</a></li>
+              <li><a href="service.php">Ведение реестра акционеров</a></li>
+              <li><a href="service.php">Юридическое сопровождение общих собраний акционеров</a></li>
+              <li><a href="service.php">Дополнительный выпуск акций</a></li>
+            </ul>
+            <ul class="dropdown__list big">
+              <li><a href="service.php">Юридические адреса</a></li>
+              <li><a href="service.php">Регистрация СМИ</a></li>
+              <li><a href="service.php">Образовательные лицензии</a></li>
+            </ul>
+          </div>
+          <div class="dropdown__column">
+            <h4 class="dropdown__title">Филиалы <br>и представительства</h4>
+            <ul class="dropdown__list">
+              <li><a href="service.php">Филиалы и представительства</a></li>
+              <li><a href="service.php">Регистрация филиалов и представительств</a></li>
+              <li><a href="service.php">Регистрация обособленных подразделений</a></li>
+              <li><a href="service.php">Аккредитация филиалов и представительств иностранных компаний</a></li>
+              <li><a href="service.php">Перерегистрация филиала</a></li>
+              <li><a href="service.php">Закрытие филиала</a></li>
+            </ul>
+            <ul class="dropdown__list big">
+              <li><a href="service.php">Постановка на учет в Пробирной палате</a></li>
+              <li><a href="service.php">Разрешения на работу для ВКС</a></li>
+            </ul>
+          </div>
+          <div class="dropdown__column">
+            <h4 class="dropdown__title">Регистрация недвижимости</h4>
+            <ul class="dropdown__list">
+              <li><a href="service.php">Получение правоустанав-ливающих документов</a></li>
+              <li><a href="service.php">Регистрация недвижимости</a></li>
+              <li><a href="service.php">Оформление сделок с недвижимостью</a></li>
+            </ul>
+            <h4 class="dropdown__title">Сдача отчетности</h4>
+            <ul class="dropdown__list">
+              <li><a href="service.php">Электронная отчетность</a></li>
+              <li><a href="service.php">Сдача нулевой отчетности</a></li>
+              <li><a href="service.php">Сдача отчетности такси</a></li>
+              <li><a href="service.php">Сдача книги учета доходов и расходов</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <div class="top-slider">
+      <div class="top-slider__item" style="background-image:url(img/map-slider.svg)">
+        <div class="wrapper">
+          <div class="top-slider__text">Более 800 представительств по всей России <br>и за рубежом</div>
+        </div>
+      </div>
+      <div class="top-slider__item" style="background-image:url(img/map-slider.svg)">
+        <div class="wrapper">
+          <div class="top-slider__text">Более 800 представительств по всей России <br>и за рубежом</div>
+        </div>
+      </div>
+      <div class="top-slider__item" style="background-image:url(img/map-slider.svg)">
+        <div class="wrapper">
+          <div class="top-slider__text">Более 800 представительств по всей России <br>и за рубежом</div>
+        </div>
+      </div>
+      <div class="top-slider__item" style="background-image:url(img/map-slider.svg)">
+        <div class="wrapper">
+          <div class="top-slider__text">Более 800 представительств по всей России <br>и за рубежом</div>
+        </div>
+      </div>
+    </div>
+    <div class="about-block">
+      <div class="wrapper">
+        <div class="about-block__inner">
+          <div class="about-block__head">
+            <h2 class="about-block__title"><em>Решаем</em> задачи Клиента <br>по всей России</h2>
+            <a href="#" class="btn btn_thin btn_arrow">Связаться с нами</a>
+          </div>
+          <article class="about-block__text">
+            <h3>Кто мы?</h3>
+            <p>«Экспресс регистрация» - первая общефедеральная юридическая компания, предоставляющая широкий спектр услуг для юридических и физических лиц в сфере правового и финансового консалтинга.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+    <div class="counter">
+      <div class="wrapper">
+        <div class="counter__box">
+          <div class="counter__item"><strong class="counter__title">6840</strong> Документов <br>оформлено</div>
+          <div class="counter__item"><strong class="counter__title">835</strong> Новых <br>клиентов</div>
+          <div class="counter__item"><strong class="counter__title">835%</strong> Снижение <br>затрат</div>
+        </div>
+      </div>
+    </div>
+    <div class="services-block">
+      <div class="services-block__head">
+        <div class="wrapper">
+          <h2 class="services-block__title">Чем мы сможем вам помочь?</h2>
+          <p>Специалисты компании решают задачи Клиента по всей России. На сегодняшний день компания <br>имеет более 800 представительств по стране и их число постоянно растет</p>
+        </div>
+      </div>
+      <div class="services-block__body">
+        <div class="services-block__item">
+          <span class="services-block__icon"></span>
+          <h3 class="services-block__subtitle">Регистрация организаций</h3>
+          <ul class="services-block__list">
+            <li><a href="#">Регистрация фирм</a></li>
+            <li><a href="#">Регистрация НКО</a></li>
+            <li><a href="#">Регистрация изменений</a></li>
+            <li><a href="#">Ликвидация фирм</a></li>
+            <li><a href="#">Филиалы и представительства</a></li>
+          </ul>
+        </div>
+        <div class="services-block__item">
+          <span class="services-block__icon"></span>
+          <h3 class="services-block__subtitle">Юридические адреса</h3>
+          <ul class="services-block__list">
+            <li><a href="#">Судебно-арбитражная практика</a></li>
+            <li><a href="#">Банкротство</a></li>
+            <li><a href="#">Антимонопольная практика</a></li>
+            <li><a href="#">Защита интеллектуальных прав</a></li>
+            <li><a href="#">Акционерное и корпоративное право</a></li>
+          </ul>
+        </div>
+        <div class="services-block__item">
+          <span class="services-block__icon"></span>
+          <h3 class="services-block__subtitle">Юридические услуги</h3>
+          <ul class="services-block__list">
+            <li><a href="#">Судебно-арбитражная практика</a></li>
+            <li><a href="#">Банкротство</a></li>
+            <li><a href="#">Антимонопольная практика</a></li>
+            <li><a href="#">Защита интеллектуальных прав</a></li>
+            <li><a href="#">Акционерное и корпоративное право</a></li>
+          </ul>
+        </div>
+        <div class="services-block__hr"><!-- Добавлять после каждого третьего элемента, кроме последнего (ну или скрыть последний разделитель css-ом) --></div>
+        <div class="services-block__item">
+          <span class="services-block__icon"></span>
+          <h3 class="services-block__subtitle">Интеллектуальная собственность</h3>
+          <ul class="services-block__list">
+            <li><a href="#">Патентование изобретения</a></li>
+            <li><a href="#">Товарный знак</a></li>
+            <li><a href="#">Полезная модель</a></li>
+            <li><a href="#">Программа для ЭВМ</a></li>
+            <li><a href="#">Авторское изделие</a></li>
+          </ul>
+        </div>
+        <div class="services-block__item">
+          <span class="services-block__icon"></span>
+          <h3 class="services-block__subtitle">Бухгалтерские услуги</h3>
+          <ul class="services-block__list">
+            <li><a href="#">Бухгалтерское обслуживание</a></li>
+            <li><a href="#">Аудит</a></li>
+            <li><a href="#">Судебная бухгалтерская экспертиза</a></li>
+            <li><a href="#">Финансовый анализ при банкротстве</a></li>
+            <li><a href="#">Оценка риска налоговой проверки</a></li>
+          </ul>
+        </div>
+        <div class="services-block__item">
+          <span class="services-block__icon"></span>
+          <h3 class="services-block__subtitle">Оформление разрешений на работу</h3>
+          <ul class="services-block__list">
+            <li><a href="#">Патент</a></li>
+            <li><a href="#">Квоты</a></li>
+            <li><a href="#">Разрешение на работу</a></li>
+            <li><a href="#">Приглашение на въезд в РФ, рабочая виза</a></li>
+            <li><a href="#">Разрешение на работу для ВКС</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="services-block__footer">
+        <div class="wrapper">
+          <a href="#" class="btn">Нужна помощь? Свяжитесь с нами</a>
+          <a href="#" class="btn btn_thin">Посмотреть все наши услуги</a>
+        </div>
+      </div>
+    </div>
+    <div class="line-form">
+      <div class="wrapper">
+        <form action="#" class="line-form__form">
+          <h2 class="line-form__title">Отправить запрос <br>на предоставление услуги</h2>
+          <label class="line-form__field">
+            <span class="line-form__label">Ваше имя</span>
+            <input type="text" placeholder="Имя" />
+          </label>
+          <label class="line-form__field">
+            <span class="line-form__label">Номер телефона</span>
+            <input type="tel" placeholder="+7 ( _ _ _ ) - _ _ _ - _ _ - _ _" />
+          </label>
+          <button class="btn btn_small line-form__btn">Отправить запрос</button>
+        </form>
+      </div>
+    </div>
+    <div class="news-block">
+      <div class="news-block__body">
+        <article class="news-block__item">
+          <h3 class="news-block__subtitle"><a href="#">Когда не нужно платить НДФЛ при продаже доли в ООО?</a></h3>
+          <p>С 2021 году у россиян будет возможность получить электронные паспорта. С их помощью можно будет даже зарегистрировать юридическое лицо(ООО, НКО, АО) или стать индивидуальным предпринимателем.</p>
+        </article>
+        <article class="news-block__item">
+          <h3 class="news-block__subtitle"><a href="#">Регистрация ООО и ИП с помощью электронного паспорта </a></h3>
+          <p>С 2021 году у россиян будет возможность получить электронные паспорта. С их помощью можно будет даже зарегистрировать юридическое лицо(ООО, НКО, АО) или стать индивидуальным предпринимателем.</p>
+        </article>
+        <article class="news-block__item">
+          <h3 class="news-block__subtitle"><a href="#">Самозанятых не будут штрафовать</a></h3>
+          <p>Самозанятость — это форма получения вознаграждения за свой труд от заказчиков без государственной регистрации в качестве ИП или образования юридического лица.</p>
+        </article>
+        <article class="news-block__item">
+          <h3 class="news-block__subtitle"><a href="#">Экспертиза не панацея</a></h3>
+          <p>В очередной раз Верховный Суд Российской Федерации обратил внимание нижестоящих судов на необходимость оценки заключения экспертов по делу наравне с другими доказательствами.</p>
+        </article>
+      </div>
+      <div class="news-block__footer">
+        <a href="news.php">Архив новостей</a>
+      </div>
+    </div>
+    <div class="contacts">
+      <h2 class="contacts__title">Наши контакты</h2>
+      <select class="contacts__select">
+        <option value="Россия, 127055, г.Москва, улица Лесная, дом 43, офис 532">Москва</option>
+        <option value="Россия, Санкт-Петербург, Смольный проезд 1">Санкт-Петербург</option>
+      </select>
+      <div class="contacts__box">
+        <div class="contacts__map" id="map"></div>
+        <div class="contacts__text">
+          <div class="contacts__tab">
+            <div class="contact">
+              <div class="contact__icon"><img src="img/icons/phone.png" alt=""></div>
+              <div class="contact__text">
+                <h3 class="contact__title">Телефон</h3>
+                <a href="tel:+74997098556">+7 (499)709-85-56</a>
+              </div>
+            </div>
+            <div class="contact">
+              <div class="contact__icon"><img src="img/icons/envelope.png" alt=""></div>
+              <div class="contact__text">
+                <h3 class="contact__title">Email</h3>
+                <a href="mailto:post@e-registr.ru">post@e-registr.ru</a>,<br>
+                <a href="mailto:order@e-registr.ru">order@e-registr.ru</a>
+              </div>
+            </div>
+            <div class="contact">
+              <div class="contact__icon"><img src="img/icons/map-marker.png" alt=""></div>
+              <div class="contact__text">
+                <h3 class="contact__title">Наш адрес</h3>
+                <div class="address">Россия, 127055, <br>г.Москва, улица Лесная, <br>дом 43, офис 532</div>
+              </div>
+            </div>
+          </div>
+          <div class="contacts__tab">
+            <div class="contact">
+              <div class="contact__icon"><img src="img/icons/phone.png" alt=""></div>
+              <div class="contact__text">
+                <h3 class="contact__title">Телефон</h3>
+                <a href="tel:+88005553535">+8 (800)555-35-35</a>
+              </div>
+            </div>
+            <div class="contact">
+              <div class="contact__icon"><img src="img/icons/envelope.png" alt=""></div>
+              <div class="contact__text">
+                <h3 class="contact__title">Email</h3>
+                <a href="mailto:post@e-registr.ru">post@e-registr.ru</a>,<br>
+                <a href="mailto:order@e-registr.ru">order@e-registr.ru</a>
+              </div>
+            </div>
+            <div class="contact">
+              <div class="contact__icon"><img src="img/icons/map-marker.png" alt=""></div>
+              <div class="contact__text">
+                <h3 class="contact__title">Наш адрес</h3>
+                <div>Россия, Санкт-Петербург, <br>Смольный проезд 1</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="feedback">
+      <div class="wrapper">
+        <div class="feedback__head">
+          <div class="feedback__text">Если у Вас возник вопрос, Вы можете написать нам. Специалисты «ЭКСПРЕСС РЕГИСТРАЦИИ» свяжутся с Вами в течение рабочего дня* и проконсультируют по интересующей Вас теме.</div>      
+          <div class="feedback__info">*График работы: пн-пт, 9.00 – 18.00 (время московское)</div>
+        </div>
+        <form action="#" class="feedback__form">
+          <div class="feedback__box">
+            <div class="feedback__column">
+              <label class="feedback__field">
+                <span class="feedback__label">Имя</span>
+                <input type="text" placeholder="Введите Ваше имя" required />
+              </label>
+              <label class="feedback__field">
+                <span class="feedback__label">Телефон</span>
+                <input type="tel" placeholder="+7 ( _ _ _ ) _ _ _ - _ _ - _ _" required />
+              </label>
+              <label class="feedback__field">
+                <span class="feedback__label">Email</span>
+                <input type="email" placeholder="my@example.com" required />
+              </label>
+            </div>
+            <div class="feedback__column">
+              <label class="feedback__field">
+                <span class="feedback__label">Интересующая услуга</span>
+                <input type="text" placeholder="Какая услуга Вас заинтересовала?" required />
+              </label>
+              <label class="feedback__field">
+                <span class="feedback__label">Город вашего местонахождения</span>
+                <input type="text" placeholder="Введите название города" required />
+              </label>
+              <label class="feedback__field">
+                <span class="feedback__label">Город, в котором требуется услуга</span>
+                <input type="text" placeholder="Введите название города" required />
+              </label>
+            </div>
+            <div class="feedback__column">
+              <label class="feedback__field">
+                <span class="feedback__label">Сообщение <small>(не обязательное поле)</small></span>
+                <textarea rows="5" placeholder="Введие Ваше сообщение"></textarea>
+              </label>
+            </div>
+          </div>
+          <div class="feedback__footer">
+            <button class="btn btn_dark feedback__btn">Заказать услугу</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__topline">
+        <div class="footer__main">
+          <a href="/" class="logo footer__logo">
+            <img src="img/logo.png" alt="">
+          </a>
+          <div class="footer__social">
+            <a href="#"><img src="img/icons/social/whatsapp.png" alt=""></a>
+            <a href="#"><img src="img/icons/social/viber.png" alt=""></a>
+            <a href="#"><img src="img/icons/social/instagram.png" alt=""></a>
+            <a href="#"><img src="img/icons/social/vk.png" alt=""></a>
+            <a href="#"><img src="img/icons/social/facebook.png" alt=""></a>
+            <a href="#"><img src="img/icons/social/twitter.png" alt=""></a>
+          </div>          
+        </div>
+        <div class="footer__info">
+          <div class="footer__item">
+            <h3 class="footer__title">Контакты</h3>
+            <div class="footer__field"><span class="footer__key">email: </span> post@e-registr.ru, order@e-registr.ru</div>
+            <div class="footer__field"><span class="footer__key">Единая телефонная линия: </span>  8 800 2000 825 (бесплатные звонки по России)</div>
+          </div>
+          <div class="footer__item">
+            <h3 class="footer__title">Рабочее время</h3>
+            <div class="footer__field"><span class="footer__key">понедельник - пятница:</span> 09:00 - 18:00</div>
+            <div class="footer__field"><span class="footer__key">суббота, воскресенье:</span> выходные дни</div>
+          </div>
+        </div>
+        <div class="footer__nav">
+          <h3 class="footer__title">Разделы</h3>
+          <ul>
+            <li><a href="#">Регистрация организаций</a></li>
+            <li><a href="#">Бухгалтерские услуги</a></li>
+            <li><a href="#">Юридические услуги</a></li>
+            <li><a href="#">Интеллектуальная собственность</a></li>
+            <li><a href="#">Оценка</a></li>
+            <li><a href="#">Оформление разрешений на работу</a></li>
+          </ul>
+        </div>
+        <div class="chat footer__chat">
+          <svg class="chat__circle" viewBox="0 0 106 106" preserveAspectRatio="none">
+            <circle cx="53" cy="53" r="52.5" />
+          </svg>
+          <img src="img/icons/chat.png" alt="" class="chat__img" />
+        </div>
+      </div>
+      <div class="footer__midline">Компания «Экспресс регистрация» не является регистрирующим органом и оказывает услуги только в части получения/подачи/подготовки документов (сведений) и/или представительства в соответствующих государственных органах, осуществляющих государственную регистрацию (регистрацию изменений/реорганизацию/ликвидацию) юридических лиц/индивидуальных предпринимателей, регистрацию перехода прав на объекты недвижимости, регистрацию выпуска (дополнительного) выпуска ценных бумаг (акций), регистрацию объектов интеллектуальной собственности и перехода прав на них и пр. <a href="#"><b>Подробнее</b></a></div>
+      <div class="footer__bottomline">
+        <div class="footer__copy">© Copyright 2018. All Rights Reserved.</div>
+        <ul class="footer__menu">
+          <li><a href="#">Вопросы и ответы</a></li>
+          <li><a href="#">Карта сайта</a></li>
+          <li><a href="#">Поиск по сайту</a></li>
+          <li><a href="contacts.php">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" defer></script>
+  <script src="https://code.jquery.com/jquery-latest.min.js" defer></script>
+  <script src="libs/slick/slick.min.js" defer></script>
+  <script src="libs/mask/jquery.inputmask.bundle.js" defer></script>
+  <script src="js/script.js" defer></script>  
+</body>
+</html>
