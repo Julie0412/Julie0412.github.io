@@ -2094,7 +2094,7 @@ ul > li:before {
     margin-top: 10px;
   }
   @keyframes active-link {
-    to {transform:scale(1.5) translateX(40px);}
+    to {transform:scale(1.2) translateX(40px);}
   }
   @keyframes bottom-line {
     from {opacity: 1}
@@ -2103,13 +2103,13 @@ ul > li:before {
   .sidebar-menu > li > a:hover,
   .sidebar-menu > li > a:active {
     animation-name: active-link;
-    animation-duration: 10s;
+    animation-duration: 3s;
     color: black;
   }
   .sidebar-menu > li > a:hover::after,
   .sidebar-menu > li > a:active::after {
     animation-name: bottom-line;
-    animation-duration: 10s;
+    animation-duration: 3s;
   }
 
   .main-menu > li.active > a, .main-menu > li.open > a {
