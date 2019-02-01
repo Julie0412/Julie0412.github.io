@@ -2041,7 +2041,7 @@ ul > li:before {
     left: -270px;
     width: 100%;
     min-width: 260px;
-    max-width: 295px;
+    max-width: 415px;
     height: calc(100vh - 70px);
     padding: 0;
     max-height: 100vh;
@@ -2081,6 +2081,7 @@ ul > li:before {
   .sidebar-menu > li > a {
     background-color: none;
     position: relative;
+    width: auto;
   }
   .sidebar-menu > li:first-of-type {
     padding-top: 20px;
@@ -2103,13 +2104,14 @@ ul > li:before {
   .sidebar-menu > li > a:hover,
   .sidebar-menu > li > a:active {
     animation-name: active-link;
-    animation-duration: 3s;
+    animation-duration: 2s;
     color: black;
   }
+
   .sidebar-menu > li > a:hover::after,
   .sidebar-menu > li > a:active::after {
     animation-name: bottom-line;
-    animation-duration: 3s;
+    animation-duration: 2s;
   }
 
   .main-menu > li.active > a, .main-menu > li.open > a {
