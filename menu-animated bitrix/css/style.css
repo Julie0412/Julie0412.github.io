@@ -2502,115 +2502,154 @@ ul > li:before {
   }
 }
 @media (max-width: 479px) {
-  .sidebar-block__sidebar {
-    min-width: 100%;
-    width: 100%;
-    left: calc(-100% + 25px);
-  }
-  select {
-    padding: 14px 60px 13px 14px;
-    max-width: 100%;
-  }
-  .btn {
-    font-size: 16px;
-  }
-  .menu-btn,
-  .search-btn {
-    font-size: 24px;
-    margin: 0 0 0 20px;
-  }
-  .header__midline {
-    padding: 16px 0;
-  }
-  .header__bottomline {
-    width: 100%;
-  }
-  .top-slider__text {
-    font-size: 30px;
-  }
-  .counter__box {
-    display: block;
-  }
-  .counter__item br {
-    display: none;
-  }
-  .services-block__body {
-    padding: 0 15px;
-  }
-  .services-block__item {
-    padding: 0;
-    margin: 0 0 1.5em;
-    border-left: none;
-  }
-  .services-block__icon {
-    display: none;
-  }
-  .services-block__footer .btn {
-    display: block;
-    width: 100%;
-    margin: 0 0 10px;
-    font-size: 16px;
-  }
-  .line-form__btn {
-    display: block;
-    width: 100%;
-  }
-  .contacts__title {
-    margin: 0 0 .5em;
-    text-align: center;
-  }
-  .contacts__select {
-    display: block;
-    width: 100%;
-  }
-  .contacts__text {
-    padding: 20px 15px;
-  }
-  .contacts__text:before {
-    display: none;
-  }
-  .contact {
-    display: block;
-    margin: 0 0 1em;
-  }
-  .contact__icon {
-    display: none;
-  }
-  .contact__text {
-    width: auto;
-    padding: 0;
-  }
-  .feedback__btn {
-    display: block;
-    width: 100%;
-  }
-  .page-head {
-    background-image: none;
-    padding: 0;
-    min-height: 0;
-  }
-  .page-head__title {
-    padding: 15px;
-  }
+    .sidebar-block__sidebar {
+        min-width: 100%;
+        width: 100%;
+        left: calc(-100% + 25px);
+    }
+
+    select {
+        padding: 14px 60px 13px 14px;
+        max-width: 100%;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+
+    .menu-btn,
+    .search-btn {
+        font-size: 24px;
+        margin: 0 0 0 20px;
+    }
+
+    .header__midline {
+        padding: 16px 0;
+    }
+
+    .header__bottomline {
+        width: 100%;
+    }
+
+    .top-slider__text {
+        font-size: 30px;
+    }
+
+    .counter__box {
+        display: block;
+    }
+
+    .counter__item br {
+        display: none;
+    }
+
+    .services-block__body {
+        padding: 0 15px;
+    }
+
+    .services-block__item {
+        padding: 0;
+        margin: 0 0 1.5em;
+        border-left: none;
+    }
+
+    .services-block__icon {
+        display: none;
+    }
+
+    .services-block__footer .btn {
+        display: block;
+        width: 100%;
+        margin: 0 0 10px;
+        font-size: 16px;
+    }
+
+    .line-form__btn {
+        display: block;
+        width: 100%;
+    }
+
+    .contacts__title {
+        margin: 0 0 .5em;
+        text-align: center;
+    }
+
+    .contacts__select {
+        display: block;
+        width: 100%;
+    }
+
+    .contacts__text {
+        padding: 20px 15px;
+    }
+
+    .contacts__text:before {
+        display: none;
+    }
+
+    .contact {
+        display: block;
+        margin: 0 0 1em;
+    }
+
+    .contact__icon {
+        display: none;
+    }
+
+    .contact__text {
+        width: auto;
+        padding: 0;
+    }
+
+    .feedback__btn {
+        display: block;
+        width: 100%;
+    }
+
+    .page-head {
+        background-image: none;
+        padding: 0;
+        min-height: 0;
+    }
+
+    .page-head__title {
+        padding: 15px;
+    }
 }
+
+
 @media screen and (max-width: 420px) {
   .sidebar-p .sidebar-block__sidebar {
     left: -390px;
   }
+    .sidebar-p .sidebar-block__sidebar.open {
+        left: 0;
+    }
 }
+
 @media screen and (max-width: 380px) {
   .sidebar-p .sidebar-block__sidebar {
     left: -350px;
   }
+    .sidebar-p .sidebar-block__sidebar.open {
+        left: 0;
+    }
+
 }
 @media screen and (max-width: 360px) {
   .sidebar-p .sidebar-block__sidebar {
     left: -335px;
   }
+   .sidebar-p .sidebar-block__sidebar.open {
+        left: 0;
+    }
 }
 
 @media screen and (max-width: 320px) {
   .sidebar-p .sidebar-block__sidebar {
     left: -298px;
   }
+    .sidebar-p .sidebar-block__sidebar.open {
+        left: 0;
+    }
 }
