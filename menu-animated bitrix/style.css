@@ -2103,13 +2103,13 @@ ul > li:before {
   .sidebar-menu > li > a:hover,
   .sidebar-menu > li > a:active {
     animation-name: active-link;
-    animation-duration: 3s;
+    animation-duration: 10s;
     color: black;
   }
   .sidebar-menu > li > a:hover::after,
   .sidebar-menu > li > a:active::after {
     animation-name: bottom-line;
-    animation-duration: 3s;
+    animation-duration: 10s;
   }
 
   .main-menu > li.active > a, .main-menu > li.open > a {
