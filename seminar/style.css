@@ -33,12 +33,17 @@ body, header, footer, main, section, div, h1, h2, h3, p, a, img, ul, li {
     padding: 0;
     margin: 0;
 }
+a, a[href="tel"] {
+    color: inherit;
+    text-decoration: none;
+}
 ul {
     list-style: none;
 }
 main {
     font-family: "Myriad Pro", sans-serif;
     font-weight: 600;
+    overflow-x: hidden;
 }
 .first-screen {
 
@@ -2097,16 +2102,16 @@ footer {
         margin-top: 75px;
     }
     .first-screen__right-part h1 {
-        font-size: 40px;
+        font-size: 37px;
         font-weight: bold;
-        line-height: 57px;
+        line-height: 44px;
         color: #ffffff;
         text-align: center;
     }
     .first-screen__right-part .description {
         font-size: 27px;
         line-height: 30px;
-        margin-top: 10px;
+        margin-top: 15px;
         max-width: 340px;
         text-align: center;
     }
@@ -2255,7 +2260,7 @@ footer {
         width: 250px;
     }
     .lecturer__left-part h3 {
-        font-size: 25px;
+        font-size: 24px;
         margin-bottom: 40px;
     }
     .lecturer__left-part p {
@@ -2275,7 +2280,8 @@ footer {
         text-align: center;
     }
     .ask__left-part .section-title {
-        font-size: 31px;
+        font-size: 30px;
+        line-height: 36px;
         margin-bottom: 40px;
         margin-top: 0;
     }
@@ -2309,7 +2315,7 @@ footer {
         text-align: center;
     }
     .price__left-part .section-title {
-        font-size: 28px;
+        font-size: 27px;
         line-height: 40px;
         margin-top: 55px;
     }
@@ -2341,6 +2347,7 @@ footer {
     .request__top h3 {
         margin: 0 auto;
         max-width: 340px;
+        font-size: 34px;
     }
     .request__top p {
         margin: 0 auto;
@@ -2398,7 +2405,7 @@ footer {
     }
     .request__form-fourth-line input[type="submit"] {
         width: 340px;
-        font-size: 32px;
+        font-size: 30px;
     }
 
 
