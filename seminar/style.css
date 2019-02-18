@@ -353,6 +353,15 @@ main .first-screen .wrapper {
     font-size: 31px;
     line-height: 40px;
 }
+.lecturer .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    margin-top: 30px;
+}
+
 .ask {
     background: url('img/ask-bg.png') no-repeat;
     background-size: cover;
@@ -2260,7 +2269,7 @@ footer {
         width: 250px;
     }
     .lecturer__left-part h3 {
-        font-size: 22px;
+        font-size: 24px;
         margin-bottom: 40px;
     }
     .lecturer__left-part p {
