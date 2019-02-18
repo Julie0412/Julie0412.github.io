@@ -63,6 +63,7 @@ body {
 main {
     background: url('images/background.png') no-repeat;
     background-size: cover;
+    min-height: 100vh;
 }
 .container {
     width: 1440px;
@@ -98,8 +99,16 @@ main {
     text-decoration: none;
     color: #656b72;
 }
-.header__menu li:first-child a{
-    color:#ff80b2;
+.header__menu a:hover {
+    animation-name: menu-link-hover;
+    animation-duration: 700ms;
+    animation-fill-mode: forwards;
+}
+@keyframes menu-link-hover {
+
+    to {
+        color: #ff80b2;
+    }
 }
 .header__menu li:not(:first-child) {
     margin-left: 30px;
@@ -167,12 +176,11 @@ main {
     font-size: 15px;
     font-weight: 400;
     color: #656b72;
-    text-transform: uppercase;
-    padding-left: 25px;
-}
-.form__login input[type="password"] {
     text-transform: none;
+    padding-left: 25px;
+    -moz-appearance: none;
 }
+
 .form__login .show-password {
     display: block;
     position: absolute;
@@ -186,12 +194,31 @@ main {
 
 
 .form__login input[type="text"]::-webkit-input-placeholder,
-.form__login input[type="password"]::-webkit-input-placeholder {
+.form__login input[type="password"]::-webkit-input-placeholder,
+.form__login input[type="text"]:-moz-placeholder,
+.form__login input[type="text"]::-moz-placeholder,
+.form__login input[type="text"]:-ms-input-placeholder,
+.form__login input[type="password"]:-moz-placeholder,
+.form__login input[type="password"]::-moz-placeholder,
+.form__login input[type="password"]:-ms-input-placeholder {
     font-size: 15px;
     font-weight: 400;
     color: #656b72;
     text-transform: uppercase;
 }
+.form__login input[type="text"]:focus::-webkit-input-placeholder,
+.form__login input[type="password"]:focus::-webkit-input-placeholder
+{ color:transparent; }
+.form__login input[type="text"]:focus:-moz-placeholder,
+.form__login input[type="password"]:focus:-moz-placeholder
+{ color:transparent; } /* FF 4-18 */
+.form__login input[type="text"]:focus::-moz-placeholder,
+.form__login input[type="password"]:focus::-moz-placeholder
+{ color:transparent; } /* FF 19+ */
+.form__login input[type="text"]:focus:-ms-input-placeholder,
+.form__login input[type="password"]:focus:-ms-input-placeholder
+{ color:transparent; } /* IE 10+ */
+
 input[type="checkbox"]:checked,
 input[type="checkbox"]:not(:checked) {
     position: absolute;
@@ -260,7 +287,18 @@ input[type="checkbox"]:checked + label:after {
     display: block;
     font-family: Oswald, sans-serif;
     text-align: center;
+    cursor: pointer;
 
+}
+.form__login input[type="submit"]:hover {
+    animation-name: submit-hover;
+    animation-duration: 900ms;
+    animation-fill-mode: forwards;
+}
+@keyframes submit-hover {
+    to {
+        transform: scale(1.1);
+    }
 }
 .form__login a {
     color: #656b72;
@@ -271,6 +309,12 @@ input[type="checkbox"]:checked + label:after {
     display: block;
     width: auto;
     text-align: center;
+}
+.form__login a:hover,
+.form__bottom a:hover {
+    animation-name: submit-hover;
+    animation-duration: 900ms;
+    animation-fill-mode: forwards;
 }
 
 .content__right-part {
@@ -379,7 +423,19 @@ input[type="checkbox"]:checked + label:after {
     height: 43px;
     border-radius: 100%;
     box-sizing: border-box;
-    border: 1px solid rgba(255,255,255,0.6);
+    border: 1px solid #fff;
+    opacity: 0.6;
+}
+.social a:hover {
+    animation-name: social-hover;
+    animation-duration: 700ms;
+    animation-fill-mode: forwards;
+}
+@keyframes social-hover {
+    to {
+        transform: scale(1.1);
+        opacity: 1;
+    }
 }
 .social a:not(:last-child) {
     margin-right: 17px;
@@ -548,7 +604,13 @@ font-size: 17px;
         left: 147px;
     }
     .form__login input[type="text"]::-webkit-input-placeholder,
-    .form__login input[type="password"]::-webkit-input-placeholder {
+    .form__login input[type="password"]::-webkit-input-placeholder,
+    .form__login input[type="text"]:-moz-placeholder,
+    .form__login input[type="text"]::-moz-placeholder,
+    .form__login input[type="text"]:-ms-input-placeholder,
+    .form__login input[type="password"]:-moz-placeholder,
+    .form__login input[type="password"]::-moz-placeholder,
+    .form__login input[type="password"]:-ms-input-placeholder {
         font-size: 12px;
         padding-left: 0;
     }
@@ -706,7 +768,13 @@ font-size: 17px;
         margin-bottom: 0;
     }
     .form__login input[type="text"]::-webkit-input-placeholder,
-    .form__login input[type="password"]::-webkit-input-placeholder {
+    .form__login input[type="password"]::-webkit-input-placeholder,
+    .form__login input[type="text"]:-moz-placeholder,
+    .form__login input[type="text"]::-moz-placeholder,
+    .form__login input[type="text"]:-ms-input-placeholder,
+    .form__login input[type="password"]:-moz-placeholder,
+    .form__login input[type="password"]::-moz-placeholder,
+    .form__login input[type="password"]:-ms-input-placeholder {
         font-size: 10px;
         font-weight: 400;
         color: #656b72;
