@@ -88,12 +88,17 @@ main {
     margin-right: 90px;
 }
 .header__menu li {
+
+    padding-top: 19px;
+}
+.header__menu a {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 17px;
-    padding-top: 19px;
+    text-decoration: none;
+    color: #656b72;
 }
-.header__menu li:first-child {
+.header__menu li:first-child a{
     color:#ff80b2;
 }
 .header__menu li:not(:first-child) {
@@ -423,8 +428,11 @@ font-size: 17px;
         width: 156px;
     }
     .header__menu li {
-        font-size: 16px;
+
         padding-top: 9px;
+    }
+    .header__menu a {
+        font-size: 16px;
     }
     .header__menu li:not(:first-child) {
         margin-left: 20px;
@@ -483,9 +491,13 @@ font-size: 17px;
         padding-top: 14px;
     }
     .header__menu li {
-        font-size: 12px;
+
         padding-top: 9px;
     }
+    .header__menu a {
+        font-size: 12px;
+    }
+
     .header__menu li:not(:first-child) {
         margin-left: 16px;
     }
@@ -644,8 +656,11 @@ font-size: 17px;
         margin-right: 0;
     }
     .header__menu li {
-        font-size: 10px;
+
         font-weight: 500;
+    }
+    .header__menu a {
+        font-size: 10px;
     }
     .header__menu li:not(:first-child) {
         margin-left: 12px;
