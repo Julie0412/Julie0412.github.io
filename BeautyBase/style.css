@@ -64,6 +64,9 @@ main {
     background: url('images/background.png') no-repeat;
     background-size: cover;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .container {
     width: 1440px;
@@ -98,18 +101,16 @@ main {
     font-size: 17px;
     text-decoration: none;
     color: #656b72;
+    transition-property: color;
+    transition-duration: 500ms;
 }
 .header__menu a:hover {
-    animation-name: menu-link-hover;
-    animation-duration: 700ms;
-    animation-fill-mode: forwards;
-}
-@keyframes menu-link-hover {
 
-    to {
-        color: #ff80b2;
-    }
+    color: #ff80b2;
+
 }
+
+
 .header__menu li:not(:first-child) {
     margin-left: 30px;
 }
@@ -165,8 +166,21 @@ main {
 }
 
 .form__login input[type="text"]::-webkit-input-placeholder,
-.form__login input[type="password"]::-webkit-input-placeholder,
-.form__login input[type="text"]:-ms-input-placeholder,
+.form__login input[type="password"]::-webkit-input-placeholder
+ {
+    font-size: 15px;
+    font-weight: 400;
+    color: #656b72;
+    text-transform: uppercase;
+    opacity: 1;
+}
+.form__login input[type="text"]:-ms-input-placeholder {
+    font-size: 15px;
+    font-weight: 400;
+    color: #656b72;
+    text-transform: uppercase;
+    opacity: 1;
+}
 .form__login input[type="password"]:-ms-input-placeholder {
     font-size: 15px;
     font-weight: 400;
@@ -240,6 +254,7 @@ input[type="checkbox"]:not(:checked) {
 input[type="checkbox"]:checked + label,
 input[type="checkbox"]:not(:checked) + label {
     display: inline-block;
+    font-family: Oswald, sans-serif;
     position: relative;
     padding-left: 25px;
     cursor: pointer;
@@ -301,18 +316,14 @@ input[type="checkbox"]:checked + label:after {
     font-family: Oswald, sans-serif;
     text-align: center;
     cursor: pointer;
+    transition-property: transform;
+    transition-duration: 500ms;
 
 }
 .form__login input[type="submit"]:hover {
-    animation-name: submit-hover;
-    animation-duration: 900ms;
-    animation-fill-mode: forwards;
+   transform: scale(1.1);
 }
-@keyframes submit-hover {
-    to {
-        transform: scale(1.1);
-    }
-}
+
 .form__login a {
     color: #656b72;
     font-size: 14px;
@@ -322,12 +333,12 @@ input[type="checkbox"]:checked + label:after {
     display: block;
     width: auto;
     text-align: center;
+    transition-property: transform;
+    transition-duration: 500ms;
 }
 .form__login a:hover,
 .form__bottom a:hover {
-    animation-name: submit-hover;
-    animation-duration: 900ms;
-    animation-fill-mode: forwards;
+    transform: scale(1.1);
 }
 
 .content__right-part {
@@ -438,18 +449,15 @@ input[type="checkbox"]:checked + label:after {
     box-sizing: border-box;
     border: 1px solid #fff;
     opacity: 0.6;
+    transition-property: transform, opacity;
+    transition-duration: 500ms;
 }
 .social a:hover {
-    animation-name: social-hover;
-    animation-duration: 700ms;
-    animation-fill-mode: forwards;
+    transform: scale(1.1);
+    opacity: 1;
+
 }
-@keyframes social-hover {
-    to {
-        transform: scale(1.1);
-        opacity: 1;
-    }
-}
+
 .social a:not(:last-child) {
     margin-right: 17px;
 }
@@ -617,16 +625,30 @@ font-size: 17px;
         left: 147px;
     }
     .form__login input[type="text"]::-webkit-input-placeholder,
-    .form__login input[type="password"]::-webkit-input-placeholder,
+    .form__login input[type="password"]::-webkit-input-placeholder {
+        font-size: 12px;
+        padding-left: 0;
+    }
     .form__login input[type="text"]:-moz-placeholder,
-    .form__login input[type="text"]::-moz-placeholder,
+    .form__login input[type="password"]:-moz-placeholder {
+        font-size: 12px;
+        padding-left: 0;
+    }
+
     .form__login input[type="text"]:-ms-input-placeholder,
-    .form__login input[type="password"]:-moz-placeholder,
-    .form__login input[type="password"]::-moz-placeholder,
     .form__login input[type="password"]:-ms-input-placeholder {
         font-size: 12px;
         padding-left: 0;
     }
+
+    .form__login input[type="text"]::-moz-placeholder,
+    .form__login input[type="password"]::-moz-placeholder {
+        font-size: 12px;
+        padding-left: 0;
+    }
+
+
+
     input[type="checkbox"]:checked + label, input[type="checkbox"]:not(:checked) + label {
         font-size: 12px;
         padding-left: 20px;
@@ -781,12 +803,28 @@ font-size: 17px;
         margin-bottom: 0;
     }
     .form__login input[type="text"]::-webkit-input-placeholder,
-    .form__login input[type="password"]::-webkit-input-placeholder,
+    .form__login input[type="password"]::-webkit-input-placeholder {
+        font-size: 10px;
+        font-weight: 400;
+        color: #656b72;
+        text-transform: uppercase;
+    }
     .form__login input[type="text"]:-moz-placeholder,
+    .form__login input[type="password"]:-moz-placeholder {
+        font-size: 10px;
+        font-weight: 400;
+        color: #656b72;
+        text-transform: uppercase;
+    }
     .form__login input[type="text"]::-moz-placeholder,
+    .form__login input[type="password"]::-moz-placeholder {
+        font-size: 10px;
+        font-weight: 400;
+        color: #656b72;
+        text-transform: uppercase;
+    }
+
     .form__login input[type="text"]:-ms-input-placeholder,
-    .form__login input[type="password"]:-moz-placeholder,
-    .form__login input[type="password"]::-moz-placeholder,
     .form__login input[type="password"]:-ms-input-placeholder {
         font-size: 10px;
         font-weight: 400;
