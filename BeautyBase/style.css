@@ -130,6 +130,9 @@ main {
     padding: 60px 30px;
 
 }
+.form__login form {
+    position: relative;
+}
 
 .form__bottom {
     background-color: rgba(100,100,100,0.6);
@@ -170,6 +173,17 @@ main {
 .form__login input[type="password"] {
     text-transform: none;
 }
+.form__login .show-password {
+    display: block;
+    position: absolute;
+    background: url('images/show-password.png') no-repeat;
+    background-size: cover;
+    width: 24px;
+    height: 19px;
+    top: 68px;
+    left: 220px;
+}
+
 
 .form__login input[type="text"]::-webkit-input-placeholder,
 .form__login input[type="password"]::-webkit-input-placeholder {
@@ -452,6 +466,9 @@ font-size: 17px;
         margin: 6px auto;
         margin-bottom: 19px;
     }
+    .form__login .show-password {
+        left: 210px;
+    }
     .form__bottom {
         width: 280px;
         height: 340px;
@@ -522,6 +539,13 @@ font-size: 17px;
     }
     .form__login input[type="password"] {
         margin-bottom: 0;
+    }
+    .form__login .show-password {
+
+        width: 20px;
+        height: 16px;
+        top: 51px;
+        left: 147px;
     }
     .form__login input[type="text"]::-webkit-input-placeholder,
     .form__login input[type="password"]::-webkit-input-placeholder {
@@ -687,6 +711,14 @@ font-size: 17px;
         font-weight: 400;
         color: #656b72;
         text-transform: uppercase;
+    }
+    .form__login .show-password {
+
+        width: 17px;
+        height: 13px;
+        top: 46px;
+        left: 120px;
+
     }
     .form__login input[type="submit"] {
         width: 100px;
