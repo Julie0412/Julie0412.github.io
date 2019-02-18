@@ -164,6 +164,33 @@ main {
     padding-bottom: 13px;
 }
 
+.form__login input[type="text"]::-webkit-input-placeholder,
+.form__login input[type="password"]::-webkit-input-placeholder,
+.form__login input[type="text"]:-ms-input-placeholder,
+.form__login input[type="password"]:-ms-input-placeholder {
+    font-size: 15px;
+    font-weight: 400;
+    color: #656b72;
+    text-transform: uppercase;
+    opacity: 1;
+}
+.form__login input[type="text"]:-moz-placeholder,
+.form__login input[type="password"]:-moz-placeholder {
+    font-size: 15px;
+    font-weight: 400;
+    color: #656b72;
+    text-transform: uppercase;
+    opacity: 1;
+}
+.form__login input[type="text"]::-moz-placeholder,
+.form__login input[type="password"]::-moz-placeholder {
+    font-size: 15px;
+    font-weight: 400;
+    color: #656b72;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
 .form__login input[type="text"],
 .form__login input[type="password"] {
     width: 100%;
@@ -192,20 +219,6 @@ main {
     left: 220px;
 }
 
-
-.form__login input[type="text"]::-webkit-input-placeholder,
-.form__login input[type="password"]::-webkit-input-placeholder,
-.form__login input[type="text"]:-moz-placeholder,
-.form__login input[type="text"]::-moz-placeholder,
-.form__login input[type="text"]:-ms-input-placeholder,
-.form__login input[type="password"]:-moz-placeholder,
-.form__login input[type="password"]::-moz-placeholder,
-.form__login input[type="password"]:-ms-input-placeholder {
-    font-size: 15px;
-    font-weight: 400;
-    color: #656b72;
-    text-transform: uppercase;
-}
 .form__login input[type="text"]:focus::-webkit-input-placeholder,
 .form__login input[type="password"]:focus::-webkit-input-placeholder
 { color:transparent; }
