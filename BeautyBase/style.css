@@ -573,6 +573,16 @@ font-size: 17px;
         margin-bottom: 15px;
     }
 }
+@media screen and (min-width: 1363px) and (max-width: 1367px) {
+    input[type="checkbox"]:checked + label:before, input[type="checkbox"]:not(:checked) + label:before {
+        top:0;
+
+    }
+    input[type="checkbox"]:checked + label:after, input[type="checkbox"]:not(:checked) + label:after {
+      top: 1px;
+
+    }
+}
 @media screen and (min-width: 1279px) and (max-width: 1439px) {
     .container {
         width: 1000px;
@@ -656,10 +666,12 @@ font-size: 17px;
     input[type="checkbox"]:checked + label:before, input[type="checkbox"]:not(:checked) + label:before {
         width: 10px;
         height: 10px;
+
     }
     input[type="checkbox"]:checked + label:after, input[type="checkbox"]:not(:checked) + label:after {
         width: 10px;
         height: 10px;
+
     }
     .form__login input[type="submit"] {
         width: 120px;
@@ -667,6 +679,7 @@ font-size: 17px;
         margin: 6px auto;
         margin-bottom: 14px;
         font-size: 12px;
+
     }
     .form__login a {
         font-size: 10px;
