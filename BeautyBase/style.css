@@ -164,7 +164,10 @@ main {
     padding-top: 3px;
     padding-bottom: 13px;
 }
-
+.form__bottom a {
+    transition-property: transform;
+    transition-duration: 500ms;
+}
 .form__login input[type="text"]::-webkit-input-placeholder,
 .form__login input[type="password"]::-webkit-input-placeholder
  {
@@ -573,7 +576,7 @@ font-size: 17px;
         margin-bottom: 15px;
     }
 }
-@media screen and (min-width: 1359px) and (max-width: 1370px) {
+@media screen and (min-width: 1363px) and (max-width: 1367px) {
     input[type="checkbox"]:checked + label:before, input[type="checkbox"]:not(:checked) + label:before {
         top:0;
 
