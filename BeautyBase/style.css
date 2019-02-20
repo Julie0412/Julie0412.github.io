@@ -559,6 +559,8 @@ font-size: 17px;
     align-items: flex-start;
     color:#656b72;
     margin-right: 70px;
+    font-family: Oswald, sans-serif;
+    -moz-appearance: none;
 }
 .registration__window form h2 {
     text-transform: uppercase;
@@ -588,6 +590,7 @@ font-size: 17px;
     text-transform: none;
     text-align: center;
     -moz-appearance: none;
+
 }
 .registration__window form[type="tel"]::-webkit-input-placeholder,
 .registration__window form input[type="password"]::-webkit-input-placeholder
