@@ -224,14 +224,16 @@ main {
     padding-left: 25px;
     -moz-appearance: none;
 }
-
-.form__login .show-password {
+.show-password {
     display: block;
     position: absolute;
     background: url('images/show-password.png') no-repeat;
     background-size: cover;
     width: 24px;
     height: 19px;
+}
+
+.form__login .show-password {
     top: 68px;
     left: 220px;
 }
@@ -295,10 +297,12 @@ input[type="checkbox"]:not(:checked) + label:after {
 input[type="checkbox"]:checked + label:after,
 input[type="checkbox"]:not(:checked) + label:after {
     left: 1px;
-    top: 5px;
-    width: 14px;
-    height: 14px;
-    background-color: #ff80b2;
+    top: 8px;
+    background: url('images/checked.png') no-repeat;
+    background-size: cover;
+    width: 12px;
+    height: 9px;
+
 
 }
 input[type="checkbox"]:not(:checked) + label:after {
@@ -514,6 +518,195 @@ font-size: 17px;
 .footer__contacts a{
     font-size: 17px; font-weight: 200; color: #fff; text-decoration: none;
 }
+.hidden {
+    display: none !important;
+}
+.main__registration {
+    background: url('images/registration-bg.png') no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.registration__window {
+    width: 445px;
+    height: 445px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    font-weight: 400;
+    font-size: 14px;
+    position: relative;
+
+}
+.registration__window .registration__close {
+    display: block;
+    background: url('images/close.png') no-repeat;
+    width: 16px;
+    height: 16px;
+    background-size: cover;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.registration__window form {
+    margin-left: 75px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color:#656b72;
+    margin-right: 70px;
+}
+.registration__window form h2 {
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: 400;
+    margin: 0;
+
+}
+.registration__window form p {
+    font-size: 14px;
+    font-weight: 200;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.registration__window form p:last-of-type {
+    margin: 0 auto;
+}
+.registration__window form input {
+    width: 303px;
+    box-sizing: border-box;
+    height: 45px;
+    margin-top: 8px;
+    font-family: Oswald, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #656b72;
+    text-transform: none;
+    text-align: center;
+    -moz-appearance: none;
+}
+.registration__window form[type="tel"]::-webkit-input-placeholder,
+.registration__window form input[type="password"]::-webkit-input-placeholder
+{
+    font-size: 15px;
+    font-weight: 400;
+    color: #656b72;
+    text-transform: uppercase;
+    opacity: 1;
+}
+.registration__window form input[type="tel"]:-ms-input-placeholder {
+    font-size: 15px;
+    font-weight: 400;
+    color: #656b72;
+    text-transform: uppercase;
+    opacity: 1;
+}
+.registration__window form input[type="password"]:-ms-input-placeholder {
+    font-size: 15px;
+    font-weight: 400;
+    color: #656b72;
+    text-transform: uppercase;
+    opacity: 1;
+}
+.registration__window form input[type="tel"]:-moz-placeholder,
+.registration__window form input[type="password"]:-moz-placeholder {
+    font-size: 18px;
+    font-weight: 400;
+    color: #656b72;
+    text-transform: uppercase;
+    opacity: 1;
+}
+.registration__window form input[type="tel"]::-moz-placeholder,
+.registration__window form input[type="password"]::-moz-placeholder {
+    font-size: 18px;
+    font-weight: 400;
+    color: #656b72;
+    text-transform: uppercase;
+    opacity: 1;
+    text-align: center;
+}
+
+.registration__window form label {
+    text-align: center;
+    margin:0 auto;
+    font-size: 15px;
+}
+.registration__window form label[for="reg-agree"] {
+    text-align: left;
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.registration__window .link {
+    color: #ff80b2;
+    text-decoration: none;
+    border-bottom: 1px solid #ff80b2;
+    text-transform: none;
+}
+.registration__window form input[type="submit"] {
+    border: none;
+    margin: 20px auto;
+    display: block;
+    font-family: Oswald, sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    transition-property: transform;
+    transition-duration: 500ms;
+    width: 175px;
+    font-size: 15px;
+    height: 50px;
+    padding: 0;
+}
+.registration__window form input[type="submit"]:hover {
+    transform: scale(1.1);
+}
+.registration__password {
+    height: auto;
+
+}
+.registration__password form {
+    margin-bottom: 20px;
+}
+.registration__window .registration__step-2 h2 {
+    margin-bottom: 20px;
+}
+.registration__window .registration__step-2 input {
+    margin-bottom: 10px;
+}
+.registration__window form input[type="tel"]:focus::-webkit-input-placeholder,
+.registration__window form input[type="password"]:focus::-webkit-input-placeholder
+{ color:transparent; }
+.registration__window form input[type="tel"]:focus:-moz-placeholder,
+.registration__window form input[type="password"]:focus:-moz-placeholder
+{ color:transparent; } /* FF 4-18 */
+.registration__window form input[type="tel"]:focus::-moz-placeholder,
+.registration__window form input[type="password"]:focus::-moz-placeholder
+{ color:transparent; } /* FF 19+ */
+.registration__window form input[type="tel"]:focus:-ms-input-placeholder,
+.registration__window form input[type="password"]:focus:-ms-input-placeholder
+{ color:transparent; } /* IE 10+ */
+
+.registration__window .registration__step-2 label {
+    position: relative;
+}
+.registration__window .registration__step-2 .show-password {
+    right: 15px;
+    top: 45px;
+}
+.registration__window form input[type="checkbox"]:checked + label:after,
+.registration__window form input[type="checkbox"]:not(:checked) + label:after {
+    left: 2px;
+    width: 11px;
+    height: 8px;
+}
+
+
 @media screen and (min-width: 1440px) and (max-width: 1919px) {
     .container {
         width: 1300px;
@@ -672,8 +865,9 @@ font-size: 17px;
 
     }
     input[type="checkbox"]:checked + label:after, input[type="checkbox"]:not(:checked) + label:after {
-        width: 10px;
-        height: 10px;
+        width: 9px;
+        height: 7px;
+        top: 7px;
 
     }
     .form__login input[type="submit"] {
@@ -777,6 +971,83 @@ font-size: 17px;
         background-size: 9px 11px;
         left: -30px;
     }
+    .registration__window {
+        height: auto;
+        width: 300px;
+        font-size: 10px;
+    }
+    .registration__window .registration__close {
+        width: 10px;
+        height: 10px;
+        top: 13px;
+        right: 13px;
+    }
+    .registration__window form {
+        margin-left: 47px;
+        margin-top: 23px;
+        margin-bottom: 30px;
+        margin-right: 47px;
+    }
+    .registration__window form h2 {
+        font-size: 14px;
+    }
+    .registration__window form p {
+        font-size: 10px;
+        margin-top: 7px;
+        margin-bottom: 13px;
+    }
+    .registration__window form label {
+        font-size: 10px;
+    }
+    .registration__window form input {
+        width: 204px;
+        box-sizing: border-box;
+        height: 32px;
+        margin-top: 5px;
+        font-size: 12px;
+    }
+    .registration__window form label[for="reg-agree"] {
+        margin-top: 8px;
+    }
+    .registration__window form input[type="checkbox"]:checked + label,
+    .registration__window form input[type="checkbox"]:not(:checked) + label {
+        font-size: 10px;
+    }
+    .registration__window form input[type="checkbox"]:checked + label:before,
+    .registration__window form input[type="checkbox"]:not(:checked) + label:before {
+        width: 8px;
+        height: 8px;
+    }
+    .registration__window form input[type="submit"] {
+        margin: 7px auto;
+        margin-bottom: 9px;
+        width: 120px;
+        font-size: 11px;
+        height: 35px;
+    }
+    .registration__password {
+        height: auto;
+    }
+    .registration__window .registration__step-2 h2 {
+        margin-bottom: 10px;
+    }
+    .registration__window .registration__step-2 input {
+        margin-bottom: 7px;
+    }
+    .registration__window .registration__step-2 .show-password {
+        right: 11px;
+        top: 29px;
+        width: 20px;
+        height: 15px;
+    }
+    .registration__password form {
+        margin-bottom: 25px;
+    }
+    .registration__window form input[type="checkbox"]:checked + label:after, .registration__window form input[type="checkbox"]:not(:checked) + label:after {
+        left: 1px;
+        width: 7px;
+        height: 5px;
+    }
 }
 @media screen and (min-width: 1023px) and (max-width: 1278px) {
     .container {
@@ -873,9 +1144,10 @@ font-size: 17px;
         top: 2px;
     }
     input[type="checkbox"]:checked + label:after, input[type="checkbox"]:not(:checked) + label:after {
-        width: 10px;
-        height: 10px;
-        top: 3px;
+        width: 8px;
+        height: 6px;
+        top: 5px;
+        left: 2px;
     }
     .form__login a {
         font-size: 9px;
@@ -983,5 +1255,86 @@ font-size: 17px;
         height: 15px;
         left: -22px;
         background-size: 7px 9px;
+    }
+    .registration__window {
+        height: auto;
+        width: 250px;
+        font-size: 10px;
+    }
+    .registration__window .registration__close {
+        width: 8px;
+        height: 8px;
+        top: 10px;
+        right: 12px;
+    }
+    .registration__window form {
+        margin-left: 40px;
+        margin-top: 19px;
+        margin-bottom: 25px;
+        margin-right: 40px;
+    }
+    .registration__window form h2 {
+        font-size: 11px;
+    }
+    .registration__window form p {
+        font-size: 8px;
+        margin-top: 4px;
+        margin-bottom: 11px;
+    }
+    .registration__window form label {
+        font-size: 9px;
+    }
+    .registration__window form input {
+        width: 170px;
+        box-sizing: border-box;
+        height: 26px;
+        margin-top: 3px;
+        font-size: 10px;
+    }
+    .registration__window form label[for="reg-agree"] {
+        margin-top: 8px;
+    }
+    .registration__window form input[type="checkbox"]:checked + label,
+    .registration__window form input[type="checkbox"]:not(:checked) + label {
+        font-size: 8px;
+        padding-left: 15px;
+    }
+    .registration__window form input[type="checkbox"]:checked + label:before,
+    .registration__window form input[type="checkbox"]:not(:checked) + label:before {
+        width: 6px;
+        height: 6px;
+        top: 3px;
+    }
+    .registration__window form input[type="submit"] {
+        margin: 6px auto;
+        width: 94px;
+        font-size: 9px;
+        height: 28px;
+
+    }
+
+    .registration__window .registration__step-2 h2 {
+        margin-bottom: 10px;
+    }
+    .registration__window .registration__step-2 input {
+        margin-bottom: 7px;
+    }
+    .registration__window .registration__step-2 .show-password {
+        right: 8px;
+        top: 24px;
+        width: 16px;
+        height: 12px;
+    }
+    .registration__password form {
+        margin-bottom:  15px;
+    }
+    .registration__password form .link {
+        font-size: 8px;
+        margin-bottom: 5px;
+    }
+    .registration__window form input[type="checkbox"]:checked + label:after, .registration__window form input[type="checkbox"]:not(:checked) + label:after {
+        left: 1px;
+        width: 6px;
+        height: 4px;
     }
 }

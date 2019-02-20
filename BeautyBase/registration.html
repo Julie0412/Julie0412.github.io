@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>BeautyBase - регистрация</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="main__registration">
+    <div class="registration__window registration__phone ">
+        <a class="registration__close" href="index.html"></a>
+        <form class="registration__step-1">
+
+        <h2>Регистрация</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
+
+        <label> введите ваш телефон
+        <input type="tel" name="reg-tel" id="reg-tel" placeholder="+495 ___ ___ __">
+            </label>
+        <input type="checkbox" name="reg-agree" id="reg-agree">
+        <label for="reg-agree">я согласен (а) с <a href="#" class="link">условиями</a> сервиса “Beauty Base</label>
+        <input class="button" type="submit" name="reg-confirm-tel" id="reg-confirm-tel" value="Подтвердить">
+        <p>Уже зарегистрированы? <a href="#" class="link">Войдите здесь</a></p>
+            </form>
+        </div>
+
+    <div class=" registration__window registration__password hidden">
+        <a class="registration__close" href="index.html"></a>
+
+
+        <form class="registration__step-2">
+            <h2>Регистрация</h2>
+
+            <label>Введите полученный код
+            <input type="number" id="reg-code">
+                </label>
+            <a href="#" class="link">Не пришел код?</a>
+            <label>Имя пользователя
+                <input type="text" name="reg-login" id="reg-login">
+                </label>
+            <label>Пароль
+                <input type="password" name="reg-pass" id="reg-pass">
+                <a class="show-password"></a>
+                </label>
+            <label>Подтверждение пароля
+                <input type="password" name="reg-confirm-pass" id="reg-confirm-pass">
+                <a class="show-password"></a>
+                </label>
+            <input class="button" type="submit" name="reg-complete" id="reg-complete" value="Зарегистрироваться">
+            </form>
+    </div>
+    </main>
+
+</body>
+<script src="jquery-3.3.1.min.js"></script>
+<script src="script.js"></script>
+</html>
