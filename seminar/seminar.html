@@ -1353,7 +1353,7 @@
         <h2 class="section-title">Остались вопросы?</h2>
         <p>Наши специалисты ответят на любой интересующий
             вопрос относительно предстоящего семинара</p>
-        <a class="button">Заказать звонок</a>
+        <a class="button show-call-modal">Заказать звонок</a>
                 </div>
             <div class="ask__right-part">
         <img src="img/ask.png" alt="">
@@ -1804,6 +1804,20 @@
         </div>
     </div>
 </footer>
+<div class="call-form-modal modal-hidden">
+    <div class="call-form-modal-content">
+        <form class="call-form">
+            <a class="close-call-modal"></a>
+            <input type="text" name="call-name" id="call-name" placeholder="Ваше имя*" required>
+            <input type="tel" name="call-tel" id="call-tel" placeholder="Телефон*" required>
+            <input type="text" name="call-city" id="call-city" placeholder="Город*" required>
+            <input class="checkbox" type="checkbox" name="call-agree" id="call-agree" required>
+            <label for="call-agree">Я согласен на обработку персональных данных</label>
+            <input type="submit" value="Заказать звонок">
+            </form>
+        </div>
+
+    </div>
 <script src="jquery-3.3.1.min.js"></script>
 <script src="script.js"></script>
 <script src="page.js"></script>
