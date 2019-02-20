@@ -701,7 +701,16 @@ font-size: 17px;
 .registration__window .registration__step-2 .show-password {
     right: 15px;
     top: 45px;
+
 }
+.registration__window .registration__step-2 .hide-password  {
+    background-image: url('images/hide-password.png');
+   width: 24px;
+    height: 14px;
+    background-size: cover;
+    opacity: 0.4;
+}
+
 .registration__window form input[type="checkbox"]:checked + label:after,
 .registration__window form input[type="checkbox"]:not(:checked) + label:after {
     left: 2px;
@@ -1051,6 +1060,10 @@ font-size: 17px;
         width: 7px;
         height: 5px;
     }
+    .registration__window .registration__step-2 .hide-password {
+        width: 19px;
+        height: 11px;
+    }
 }
 @media screen and (min-width: 1023px) and (max-width: 1278px) {
     .container {
@@ -1339,5 +1352,10 @@ font-size: 17px;
         left: 1px;
         width: 6px;
         height: 4px;
+    }
+    .registration__window .registration__step-2 .hide-password {
+        top: 25px;
+        width: 15px;
+        height: 9px;
     }
 }
