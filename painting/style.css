@@ -1306,6 +1306,7 @@ footer .container {
 
     .gallery img {
         width: 337px;
+        height: auto;
     }
     .gallery .owl-dots {
         width: 96px;
@@ -1378,6 +1379,7 @@ footer .container {
     }
     .testimonial img {
         max-width: 98px;
+        height: auto;
     }
     .testimonial-content {
         max-width: 217px;
@@ -1411,6 +1413,7 @@ footer .container {
     }
     .price .container {
         margin-bottom: 60px;
+        margin-top: 40px;
     }
     .pricelist {
         padding-bottom: 10px;
