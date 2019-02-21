@@ -1187,12 +1187,13 @@ footer .container {
         max-width: 335px;
 
     }
-    .teachers .more {
+    .teachers-more {
         top: 296px;
         width: 22px;
         height: 22px;
         background-size: cover;
         right: 0;
+        cursor: pointer;
     }
     .teacher-profession::after {
         width: 335px;
