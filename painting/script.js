@@ -8,6 +8,10 @@ $(document).ready(function(){
     });
 });
 
+$(document).on('click', '.footer-logo', function(){
+    $('body,html').animate({scrollTop: 0}, 1500);
+});
+
 $(document).on('click', '.signup-button', function() {
     $('.modal-signup').removeClass('hidden');
 

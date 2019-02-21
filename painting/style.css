@@ -683,6 +683,7 @@ body {
     -ms-flex-align: center;
     align-items: center;
     margin-bottom: 150px;
+    margin-top: 60px;
 }
 .price-lists {
     width: 536px;
@@ -697,6 +698,7 @@ body {
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin-bottom: 60px;
+
 }
 .pricelist {
     display: -webkit-box;
@@ -883,7 +885,7 @@ footer .container {
 .footer-logo {
     position: absolute;
     top: 41px;
-
+    cursor: pointer;
     left: 0;
 }
 .footer-contacts {
@@ -927,12 +929,18 @@ footer .container {
     height: 45px;
     margin-top: 1px;
 }
+.vk:hover {
+    background: url('images/vk-yellow.png') no-repeat;
+}
 .ig {
     display: block;
     background: url('images/ig.png') no-repeat;
     background-size: cover;
     width: 47px;
     height: 47px;
+}
+.ig:hover {
+    background: url('images/ig-yellow.png') no-repeat;
 }
 .copyright {
     font-size: 12px;
@@ -966,6 +974,7 @@ footer .container {
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,0.3);
+    z-index: 9999999;
 }
 .close-form {
     position: absolute;
@@ -1031,6 +1040,12 @@ footer .container {
     margin-bottom: 0;
     cursor: pointer;
 }
+.request-form input[type="submit"]:hover {
+    background: -webkit-gradient(linear, left top, right top, color-stop(0.29%, #FBB13C), color-stop(52.49%, #FFD087), to(#FFAC28)), #FBB13C;
+    background: -webkit-linear-gradient(left, #FBB13C 0.29%, #FFD087 52.49%, #FFAC28 100%), #FBB13C;
+    background: -o-linear-gradient(left, #FBB13C 0.29%, #FFD087 52.49%, #FFAC28 100%), #FBB13C;
+    background: linear-gradient(90deg, #FBB13C 0.29%, #FFD087 52.49%, #FFAC28 100%), #FBB13C;
+}
 .request-form img {
     margin-top: 70px;
     margin-bottom: 20px;
@@ -1044,7 +1059,7 @@ footer .container {
     width: 286px;
 }
 @media screen and (min-width: 421px) {
-    .teachers-more {
+    .desktop-hidden {
         display: none;
     }
 }
@@ -1078,6 +1093,8 @@ footer .container {
     .header {
         padding-top: 29px;
         padding-bottom: 14px;
+        position: fixed;
+        z-index:9999998;
     }
 
     .header-menu {
@@ -1194,6 +1211,7 @@ footer .container {
         background-size: cover;
         right: 0;
         cursor: pointer;
+
     }
     .teacher-profession::after {
         width: 335px;
@@ -1437,6 +1455,7 @@ footer .container {
     }
     .faq .more {
         background-size: cover;
+        cursor: pointer;
     }
     .question {
         padding-top: 12px;
