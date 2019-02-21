@@ -205,7 +205,7 @@ body {
     font-family: Roboto, sans-serif;
 }
 .feature:nth-child(2) .feature-title::before {
-    background: url('images/icon-2.png') no-repeat;
+    background: url('images/icon-1-2x.png') no-repeat;
 }
 .feature:nth-child(3) .feature-title::before {
     background: url('images/icon-3.png') no-repeat;
