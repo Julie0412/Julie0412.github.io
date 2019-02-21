@@ -80,7 +80,13 @@ body {
 }
 .header-logo img:first-child {
     margin-right: 12px;
+    width: 51px;
+
 }
+.header-logo img:last-child {
+    widtH: 144px;
+}
+
 .header-menu {
     list-style: none;
     display: -webkit-box;
@@ -265,6 +271,9 @@ body {
     align-items: flex-start;
     text-align: left;
 }
+.teachers img {
+    width: 100%;
+}
 .teacher-name {
     font-size: 36px;
     font-weight: 400;
@@ -411,6 +420,7 @@ body {
 }
 .timetable img {
     margin-bottom: 40px;
+    width: 372px;
 }
 .timetable .signup-button {
     margin: 0 auto;
@@ -793,6 +803,7 @@ p.price-big {
 }
 .announcement .container img {
     margin-bottom: 40px;
+    width:372px;
 }
 .announcement .signup-button {
     margin: 0 auto;
@@ -939,6 +950,7 @@ footer .container {
 }
 .vk:hover {
     background: url('images/vk-yellow.png') no-repeat;
+    background-size: cover;
 }
 .ig {
     display: block;
@@ -949,7 +961,8 @@ footer .container {
 }
 .ig:hover {
     background: url('images/ig-yellow.png') no-repeat;
-}
+    background-size: cover;
+    }
 .copyright {
     font-size: 12px;
     margin-top: 56px;
@@ -1471,8 +1484,9 @@ footer .container {
     .show-menu {
         display: block;
         background: url('images/menu.png') no-repeat;
-        width: 32px;
-        height: 32px;
+        width: 24px;
+        height: 16px;
+        background-size: cover;
         cursor: pointer;
     }
     .header {
@@ -1516,11 +1530,11 @@ footer .container {
     }
     .header-logo img:first-child {
         height: auto;
-        width: 50px;
+        width: 51px;
     }
     .header-logo img:last-child {
         height: auto;
-        width: 120px;
+        width: 143px;
     }
     .first-screen .container {
         -webkit-box-align: center;
@@ -1906,12 +1920,12 @@ footer .container {
     .request-form {
         width: 375px;
         height: 436px;
-        padding-top: 147px;
-        padding-bottom: 84px;
+        padding-top: 100px;
+        padding-bottom: 70px;
         border-radius: 0;
     }
     .close-form {
-        top: 50px;
+        top: 35px;
         right: 19px;
     }
     .request-form input {
