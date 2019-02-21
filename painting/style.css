@@ -1502,8 +1502,10 @@ footer .container {
         max-width: 269px;
     }
     footer {
-        background: url('images/footer-mobile-bg.png');
+        background: url('images/footer-mobile-bg.png') no-repeat;
         margin-top: 60px;
+        background-size: cover;
+
     }
     footer .container {
         -webkit-box-orient: vertical;
