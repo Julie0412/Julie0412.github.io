@@ -1919,7 +1919,7 @@ footer .container {
     }
     .request-form {
         width: 375px;
-        height: 436px;
+        min-height: 436px;
         padding-top: 100px;
         padding-bottom: 70px;
         border-radius: 0;
@@ -1930,7 +1930,7 @@ footer .container {
     }
     .request-form input {
         width: 335px;
-        height: 56px;
+        min-height: 56px;
         font-size: 18px;
         margin-bottom: 20px;
     }
