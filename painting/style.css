@@ -1078,22 +1078,379 @@ footer .container {
         height: auto;
         width: 130px;
     }
+    .header-phone {
+        font-size: 31px;
+    }
+    .header-menu a {
+        font-size: 16px;
+    }
+    .header-menu li:not(:last-of-type) {
+        margin-right: 16px;
+    }
+    .first-screen-content h1 {
+        font-size: 37px;
+        margin-top: 90px;
+        max-width: 659px;
+        margin-bottom: 50px;
+    }
+    .first-screen .signup-button {
+        margin-bottom: 311px;
+    }
+    .signup-button {
+        font-size: 16px;
+        width: 241px;
+        height: 47px;
+    }
+    .features .container {
+
+        width: 650px;
+        margin-top: 125px;
+        margin-bottom: 20px;
+    }
+    .section-title {
+        font-size: 32px;
+    }
+    .teacher-left, .teacher-right {
+        width: 505px;
+    }
+    .teacher img {
+        width: 100%;
+    }
+    .teacher-name {
+        font-size: 32px;
+    }
+    .timetable img {
+        width: 340px;
+    }
+    .gallery img {
+        max-width: 758px;
+    }
+    .certificate .signup-button {
+        margin-bottom: 246px;
+    }
+    .certificate-description {
+        font-size: 37px;
+    }
+    .announcement .container img {
+        width: 340px;
+    }
+    .request-form {
+        width: 475px;
+        height: 368px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
 }
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .container {
+        width: 860px;
+    }
+
+    .header-logo img:first-child {
+        height: auto;
+        width: 41px;
+    }
+    .header {
+        padding-top: 12px;
+        padding-bottom: 16px;
+    }
+    .header-logo img:last-child {
+        height: auto;
+        width: 98px;
+    }
+    .header-phone {
+        font-size: 24px;
+    }
+    .header-menu a {
+        font-size: 13px;
+    }
+    .header-menu li:not(:last-of-type) {
+        margin-right: 14px;
+    }
+    .first-screen-content h1 {
+        font-size: 30px;
+        margin-top: 81px;
+        max-width: 536px;
+        margin-bottom: 49px;
+        line-height: 34px;
+    }
+    .first-screen .signup-button {
+        margin-bottom: 253px;
+    }
+    .signup-button {
+        font-size: 14px;
+        width: 203px;
+        height: 38px;
+    }
+    .features .container {
+
+        width: 650px;
+        margin-top: 125px;
+        margin-bottom: 20px;
+    }
+    .section-title {
+        font-size: 32px;
+    }
+    .teacher-left, .teacher-right {
+        width: 400px;
+    }
+    .teacher img {
+        width: 100%;
+    }
+    .teacher-name {
+        font-size: 32px;
+    }
+    .timetable img {
+        width: 270px;
+        margin-bottom: 29px;
+    }
+    .gallery img {
+        max-width: 700px;
+    }
+    .gallery .owl-nav {
+        width: 800px;
+    }
+    .certificate .signup-button {
+        margin-bottom: 246px;
+    }
+    .certificate-description {
+        font-size: 37px;
+    }
+    .announcement .container img {
+        width: 270px;
+        margin-bottom: 29px;
+    }
+    .request-form {
+        width: 470px;
+        height: 390px;
+        padding-top: 40px;
+        padding-bottom: 45px;
+    }
+
 
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        width: 650px;
+    }
+
+    .header-logo img:first-child {
+        height: auto;
+        width: 33px;
+    }
+    .header {
+        padding-top: 12px;
+        padding-bottom: 9px;
+    }
+    .header-logo img:last-child {
+        height: auto;
+        width: 60px;
+    }
+    .header-phone {
+        font-size: 18px;
+    }
+    .header-menu a {
+        font-size: 10px;
+    }
+    .header-menu li:not(:last-of-type) {
+        margin-right: 7px;
+    }
+    .first-screen-content h1 {
+        font-size: 23px;
+        margin-top: 55px;
+        max-width: 410px;
+        margin-bottom: 35px;
+        line-height: 28px;
+    }
+    .first-screen .signup-button {
+        margin-bottom: 189px;
+    }
+    .signup-button {
+        font-size: 14px;
+        width: 205px;
+        height: 33px;
+    }
+    .features .container {
+
+        width: 650px;
+        margin-top: 125px;
+        margin-bottom: 20px;
+    }
+    .section-title {
+        font-size: 32px;
+    }
+    .teacher-left, .teacher-right {
+        width: 300px;
+    }
+    .teacher img {
+        width: 100%;
+    }
+    .teacher-name {
+        font-size: 32px;
+    }
+    .timetable img {
+        width: 200px;
+        margin-bottom: 25px;
+    }
+    .gallery img {
+        max-width: 600px;
+    }
+    .gallery .owl-nav {
+        width: 700px;
+    }
+    .certificate .signup-button {
+        margin-bottom: 146px;
+    }
+    .certificate-description {
+        font-size: 37px;
+    }
+    .announcement .container img {
+        width: 200px;
+        margin-bottom: 25px;
+    }
+    .request-form {
+        width: 470px;
+        height: 390px;
+        padding-top: 40px;
+        padding-bottom: 45px;
+    }
+
+
+}
+@media screen and (min-width: 640px) and (max-width: 767px) {
+    .container {
+        width: 600px;
+    }
+
+    .header-logo img:first-child {
+        height: auto;
+        width: 33px;
+    }
+    .header {
+        padding-top: 12px;
+        padding-bottom: 9px;
+    }
+    .header-logo img:last-child {
+        height: auto;
+        width: 60px;
+    }
+    .header-phone {
+        font-size: 18px;
+    }
+    .header-menu a {
+        font-size: 10px;
+    }
+    .header-menu li:not(:last-of-type) {
+        margin-right: 7px;
+    }
+    .first-screen-content h1 {
+        font-size: 23px;
+        margin-top: 55px;
+        max-width: 410px;
+        margin-bottom: 35px;
+        line-height: 28px;
+    }
+    .first-screen .signup-button {
+        margin-bottom: 189px;
+    }
+    .signup-button {
+        font-size: 14px;
+        width: 205px;
+        height: 33px;
+    }
+    .features .container {
+
+        width: 650px;
+        margin-top: 125px;
+        margin-bottom: 20px;
+    }
+    .section-title {
+        font-size: 32px;
+    }
+    .teacher-left, .teacher-right {
+        width: 290px;
+    }
+    .teacher img {
+        width: 100%;
+    }
+    .teacher-name {
+        font-size: 32px;
+    }
+    .timetable img {
+        width: 190px;
+        margin-bottom: 15px;
+    }
+    .gallery img {
+        max-width: 600px;
+    }
+    .gallery .owl-nav {
+        width: 700px;
+    }
+    .certificate .signup-button {
+        margin-bottom: 146px;
+    }
+    .certificate-description {
+        font-size: 37px;
+    }
+    .announcement .container img {
+        width: 190px;
+        margin-bottom: 15px;
+    }
+    footer {
+
+        margin-top: 60px;
+        background-size: cover;
+
+    }
+    footer .container {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .footer-logo {
+        position: relative;
+        margin-top: 20px;
+        top: 0;
+        margin-bottom: 29px;
+
+    }
+    .social {
+        margin-top: 0;
+        margin-bottom: 18px;
+    }
+    .copyright {
+        margin-top: 41px;
+        margin-bottom: 30px;
+    }
+    .request-form {
+        width: 470px;
+        height: 390px;
+        padding-top: 40px;
+        padding-bottom: 45px;
+    }
+
+
 
 }
 
-
-
-@media screen and (min-width: 421px) {
+@media screen and (min-width: 639px) {
     .desktop-hidden {
         display: none;
     }
+    .teachers-more {
+        display: none;
+    }
 }
-@media screen and (min-width:320px) and (max-width:420px) {
+
+@media screen and (min-width:320px) and (max-width:639px) {
 
     .desktop {
         display: none;
@@ -1156,6 +1513,14 @@ footer .container {
     }
     .header-menu li:not(:last-child) {
         margin-bottom: 40px;
+    }
+    .header-logo img:first-child {
+        height: auto;
+        width: 50px;
+    }
+    .header-logo img:last-child {
+        height: auto;
+        width: 120px;
     }
     .first-screen .container {
         -webkit-box-align: center;
@@ -1422,6 +1787,7 @@ footer .container {
     }
     .certificate {
         background: url('images/certificate-mobile-bg.png') no-repeat;
+        background-size: cover;
     }
     .certificate-description {
         font-size: 34px;
@@ -1569,5 +1935,162 @@ footer .container {
     .request-form p {
         font-size: 18px;
     }
+
+}
+@media screen and (max-width: 320px) {
+    .container {
+        width: 290px;
+    }
+    .header-logo img:first-child {
+        height: auto;
+        width: 40px;
+    }
+    .header {
+        padding-top: 15px;
+        padding-bottom: 9px;
+    }
+    .section-title {
+        font-size: 30px;
+    }
+    .header .container {
+        width: 290px;
+    }
+    .header-logo img:last-child {
+        height: auto;
+        width: 100px;
+    }
+    .header-menu {
+        width: 237px;
+        height: 518px;
+        padding-top: 20px;
+        padding-bottom: 95px;
+        padding-left: 30px;
+    }
+    .header-menu li:first-child {
+        font-size: 30px;
+    }
+    .header-menu a {
+        font-size: 20px;
+    }
+    .first-screen-content h2 {
+        margin-top: 385px;
+    }
+    .signup-button {
+        width: 290px;
+        height: 57px;
+    }
+    .features .container {
+        width: 290px;
+    }
+    .feature {
+        width: 145px;
+    }
+    .teacher-left, .teacher-right {
+        width: 290px;
+    }
+    .teachers img
+    {
+        width: 100%;
+    }
+    .teacher-profession::after {
+        width: 290px;
+    }
+    .teachers-more {
+        top: 255px;
+        width: 18px;
+        height: 18px;
+    }
+    .teacher-name {
+        font-size: 32px;
+    }
+    .steps .container {
+        width: 290px;
+    }
+    .step {
+        width: 100%;
+    }
+    .timetable img {
+        width: 290px;
+    }
+    .facts .container {
+        width: 290px;
+    }
+    .fact {
+        width: 140px;
+    }
+    .gallery .container {
+        width: 290px;
+    }
+    .testimonial {
+        width: 290px;
+    }
+    .testimonials .container {
+        width: 290px;
+    }
+    .testimonial-content p {
+        font-size: 10px;
+    }
+    .testimonial img {
+        max-width: 65px;
+        margin-right: 20px;
+    }
+    .testimonial-content p:last-child {
+        top: 60px;
+        left: 12px;
+    }
+    .price-lists {
+        width: 290px;
+    }
+    .pricelist {
+        width: 140px;
+    }
+    .extra-prices {
+        width: 290px;
+    }
+    .announcement .container img {
+        width: 290px;
+    }
+    .footer-contacts {
+        font-size: 16px;
+    }
+    .faqs .container {
+        width: 290px;
+    }
+    .answer, .question {
+        max-width: 220px;
+
+    }
+    .question {
+        font-size: 14px;
+    }
+    .faq .more {
+        top: 24px;
+        right: 18px;
+    }
+    .request-form {
+        width: 320px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .request-form input {
+        width: 290px;
+    }
+    .request-form input[type="submit"] {
+        font-size: 18px;
+        width:290px;
+    }
+    .close-form {
+        background-size: cover;
+        width: 20px;
+        height: 19px;
+        top: 14px;
+    }
+    .request-form p {
+        width: 290px;
+    }
+    .request-form #submit-2 {
+        width: 290px;
+    }
+
 
 }

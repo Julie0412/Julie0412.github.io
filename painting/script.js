@@ -79,14 +79,14 @@ function owl3_init() {
 }
 
 $(document).ready(function(){
-    if ( $(window).width() <= 889 ) {
+    if ( $(window).width() <= 420 ) {
         owl3_init();
     }
 });
 
 
 $(window).resize(function() {
-    if ( $(window).width() > 889 ) {
+    if ( $(window).width() > 420 ) {
         $('.oc-3').owlCarousel('destroy');
     } else {
         owl3_init();
