@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>BeautyBase - профиль</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/jquery-ui-timepicker-addon.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="inside__body">
+<header class="inside__header">
+    <div class="container">
+        <img class="header__logo" src="images/logo.png" alt="BeautyBase">
+        <ul class="header__menu">
+            <li><a href="#">Расписание</a></li>
+            <li><a href="#">Клиенты</a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Статьи</a></li>
+        </ul>
+        <div class="header__profile">
+            <div class="header__profile-name">
+                <p class="profile-name">Светлана Иванова</p>
+                <p class="profile-type">Мастер</p>
+            </div>
+            <img class="header__profile-photo" src="images/personal-avatar.png" alt="">
+            <a class="show-profile-menu"></a>
+            <ul class="profile-menu hidden">
+                <li><a>Личный кабинет</a></li>
+                <li><a>Клиенты</a></li>
+                <li><a>Записи</a></li>
+                <li><a>Выход</a></li>
+            </ul>
+        </div>
+
+    </div>
+</header>
+<main class="inside__main">
+    <div class="inside__filter">
+        <div class="container">
+        <a class="button-arrow button-arrow-left"></a>
+        <label>Дата
+            <input type="text" id="date" name="date" value="23.07.2019">
+        </label>
+        <a class="button-arrow button-arrow-right"></a>
+        <label class="label-time time-from">Время с
+            <input type="text" id="time-from" name="time-from" value="08:00">
+        </label>
+        <label class="label-time time-to">Время до
+            <input type="text" id="time-to" name="time-to" value="22:00">
+        </label>
+        <label class="select">Период
+            <select id="select-duration" name="select-duration">
+                <option selected>30 минут</option>
+                <option>1 час</option>
+                <option>1 час 30 минут</option>
+                <option>2 часа</option>
+            </select>
+        </label>
+            </div>
+    </div>
+
+    <div class="inside__content">
+        <div class="container">
+
+            <ul class="inside__content-menu">
+                <li class="active"><a>Запись клиентов на сегодня</a></li>
+                <li><a>Ближайшие 10 свободных мест</a></li>
+                <li><a>Пункт 1</a></li>
+                <li><a>Пункт 2</a></li>
+            </ul>
+            <div class="inside__content-shedule">
+                <div class="time-column">
+                    <p class="time">8:00</p>
+                    <p class="time">9:00</p>
+                    <p class="time">10:00</p>
+                    <p class="time">11:00</p>
+                    <p class="time">12:00</p>
+                    <p class="time">13:00</p>
+                    <p class="time">14:00</p>
+                    <p class="time">15:00</p>
+                    <p class="time">16:00</p>
+                    <p class="time">17:00</p>
+                    <p class="time">18:00</p>
+                    <p class="time">19:00</p>
+                    <p class="time">20:00</p>
+                    <p class="time">21:00</p>
+                    <p class="time">22:00</p>
+                </div>
+                <div class="appointments-column">
+                    <div class="appointment taken" style="height: 108px">
+                        <img class="customer-avatar" src="images/avatar.png" alt="">
+                        <div class="appointment-info">
+                            <span class="appointment-time-start">8:00</span><span> - </span><span
+                                class="appointment-time-to">9:30</span>
+                            <p class="customer-name">Елена Иванова </p>
+                            <p class="service-type">Стрижка</p>
+                        </div>
+                        <p class="customer-phone">+ 7 495 123 456 34</p>
+                        <span class="appointment-price">4500 р</span>
+                        <div class="appointment-settings">
+                            <a class="appointment-call appointment-button"></a>
+                            <a class="appointment-comment appointment-button"></a>
+                            <a class="appointment-delete appointment-button"></a>
+
+                        </div>
+                    </div>
+                    <div class="appointment empty" style="height: 108px">
+                        <div class="appointment-info">
+                            <span class="appointment-time-start">9:30</span><span> - </span><span
+                                class="appointment-time-to">11:10</span>
+                            <p>Свободно</p>
+                        </div>
+
+                        <input type="checkbox" id="hot-time-check" name="hot-time-check" checked>
+                        <label for="hot-time-check">Горящее место</label>
+                        <a class="make-an-appointment">Записать</a>
+                    </div>
+                    <div class="appointment taken" style="height: 144px;">
+                        <img class="customer-avatar" src="images/avatar.png" alt="">
+                        <div class="appointment-info">
+                            <span class="appointment-time-start">11:00</span><span> - </span><span
+                                class="appointment-time-to">15:30</span>
+                            <p class="customer-name">Елена Иванова </p>
+                            <p class="service-type">Стрижка</p>
+                        </div>
+                        <p class="customer-phone">+ 7 495 123 456 34</p>
+                        <span class="appointment-price">4500 р</span>
+                        <div class="appointment-settings">
+                            <a class="appointment-call appointment-button"></a>
+                            <a class="appointment-comment appointment-button"></a>
+                            <a class="appointment-delete appointment-button"></a>
+
+                        </div>
+
+                    </div>
+                    <div class="appointment taken" style="height: 180px;">
+                        <img class="customer-avatar" src="images/avatar.png" alt="">
+                        <div class="appointment-info">
+                            <span class="appointment-time-start">13:00</span><span> - </span><span
+                                class="appointment-time-to">15:30</span>
+                            <p class="customer-name">Елена Иванова </p>
+                            <p class="service-type">Стрижка</p>
+                        </div>
+                        <p class="customer-phone">+ 7 495 123 456 34</p>
+                        <span class="appointment-price">4500 р</span>
+                        <div class="appointment-settings">
+                            <a class="appointment-call appointment-button"></a>
+                            <a class="appointment-comment appointment-button"></a>
+                            <a class="appointment-delete appointment-button"></a>
+
+                        </div>
+                    </div>
+
+                    <div class="appointment empty" style="height: 108px">
+                        <div class="appointment-info">
+                            <span class="appointment-time-start">15:30</span><span> - </span><span
+                                class="appointment-time-to">17:10</span>
+                            <p>Свободно</p>
+                        </div>
+                        <label> Горящее место
+                            <input type="checkbox" name="hot-time-check" checked>
+                        </label>
+                        <a class="make-an-appointment">Записать</a>
+                    </div>
+                    <div class="appointment taken" style="height: 84px">
+                        <img class="customer-avatar" src="images/avatar.png" alt="">
+                        <div class="appointment-info">
+                            <span class="appointment-time-start">17:00</span><span> - </span><span
+                                class="appointment-time-to">18:10</span>
+                            <p class="customer-name">Елена Иванова </p>
+                            <p class="service-type">Стрижка</p>
+                        </div>
+                        <p class="customer-phone">+ 7 495 123 456 34</p>
+                        <span class="appointment-price">4500 р</span>
+                        <div class="appointment-settings">
+                            <a class="appointment-call appointment-button"></a>
+                            <a class="appointment-comment appointment-button"></a>
+                            <a class="appointment-delete appointment-button"></a>
+
+                        </div>
+                    </div>
+
+                    <div class="appointment empty" style="height: 60px">
+                        <div class="appointment-info">
+                            <span class="appointment-time-start">18:10</span><span> - </span><span
+                                class="appointment-time-to">19:00</span>
+                            <p>Свободно</p>
+                        </div>
+                        <label> Горящее место
+                            <input type="checkbox" name="hot-time-check" checked>
+                        </label>
+                        <a class="make-an-appointment">Записать</a>
+                    </div>
+
+
+                    <div class="appointment taken">
+                        <img class="customer-avatar" src="images/avatar.png" alt="">
+                        <div class="appointment-info">
+                            <span class="appointment-time-start">19:00</span><span> - </span><span
+                                class="appointment-time-to">20:00</span>
+                            <p class="customer-name">Елена Иванова </p>
+                            <p class="service-type">Стрижка</p>
+                        </div>
+                        <p class="customer-phone">+ 7 495 123 456 34</p>
+                        <span class="appointment-price">4500 р</span>
+                        <div class="appointment-settings">
+                            <a class="appointment-call appointment-button"></a>
+                            <a class="appointment-comment appointment-button"></a>
+                            <a class="appointment-delete appointment-button"></a>
+
+                        </div>
+                    </div>
+
+                    <div class="appointment taken">
+                        <img class="customer-avatar" src="images/avatar.png" alt="">
+                        <div class="appointment-info">
+                            <span class="appointment-time-start">20:00</span><span> - </span><span
+                                class="appointment-time-to">21:00</span>
+                            <p class="customer-name">Елена Иванова </p>
+                            <p class="service-type">Стрижка</p>
+                        </div>
+                        <p class="customer-phone">+ 7 495 123 456 34</p>
+                        <span class="appointment-price">4500 р</span>
+                        <div class="appointment-settings">
+                            <a class="appointment-call appointment-button"></a>
+                            <a class="appointment-comment appointment-button"></a>
+                            <a class="appointment-delete appointment-button"></a>
+
+                        </div>
+                    </div>
+
+                    <div class="appointment taken">
+                        <img class="customer-avatar" src="images/avatar.png" alt="">
+                        <div class="appointment-info">
+                            <span class="appointment-time-start">21:00</span><span> - </span><span
+                                class="appointment-time-to">22:00</span>
+                            <p class="customer-name">Елена Иванова </p>
+                            <p class="service-type">Стрижка</p>
+                        </div>
+                        <p class="customer-phone">+ 7 495 123 456 34</p>
+                        <span class="appointment-price">4500 р</span>
+                        <div class="appointment-settings">
+                            <a class="appointment-call appointment-button"></a>
+                            <a class="appointment-comment appointment-button"></a>
+                            <a class="appointment-delete appointment-button"></a>
+
+                        </div>
+                    </div>
+
+                    <div class="appointment taken">
+                        <img class="customer-avatar" src="images/avatar.png" alt="">
+                        <div class="appointment-info">
+                            <span class="appointment-time-start">22:00</span><span> - </span><span
+                                class="appointment-time-to">23:00</span>
+                            <p class="customer-name">Елена Иванова </p>
+                            <p class="service-type">Стрижка</p>
+                        </div>
+                        <p class="customer-phone">+ 7 495 123 456 34</p>
+                        <span class="appointment-price">4500 р</span>
+                        <div class="appointment-settings">
+                            <a class="appointment-call appointment-button"></a>
+                            <a class="appointment-comment appointment-button"></a>
+                            <a class="appointment-delete appointment-button"></a>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer inside__footer">
+    <div class="container">
+        <div class="footer__column footer__company-info">
+            <span class="copyright">© 1997–2019 Beauty Base</span>
+            <p>Россия, Москва, 117997, ул. Вавилова 19. Генеральная лицензия на осуществление деятельности от 11
+                августа 2015 года. Регистрационный номер — 1481.</p>
+            <div class="social">
+                <a href="https://facebook.com" class="fb"></a>
+                <a href="https://twitter.com" class="tw"></a>
+                <a href="https://vk.com" class="vk"></a>
+                <a href="https://plus.google.com" class="gp"></a>
+                <a href="https://instagram.com" class="ig"></a>
+            </div>
+        </div>
+        <div class="footer__column">
+            <a class="link column-title" href="#">Как это работает?</a>
+            <p>Просила и подезные ссылки о сервисе</p>
+        </div>
+        <div class="footer__column">
+            <a class="link column-title" href="#">Правила сервиса</a>
+            <p>Просила и подезные ссылки о сервисе</p>
+        </div>
+        <div class="footer__column footer__contacts">
+            <span class="column-title">Контактный центр</span>
+            <a class="phone">+ 7 8 888 123 45 67</a>
+            <a class="email" href="mailto:mail@mail.ru">mail@mail.ru</a>
+
+        </div>
+    </div>
+</footer>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery-ui-timepicker-addon.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

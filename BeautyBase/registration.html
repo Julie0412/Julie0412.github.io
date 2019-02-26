@@ -45,14 +45,15 @@
                 </label>
             <label>Подтверждение пароля
                 <input type="password" name="reg-confirm-pass" id="reg-confirm-pass">
-                <a class="show-password"></a>
+                <a class="show-password hide-password"></a>
                 </label>
-            <input class="button" type="submit" name="reg-complete" id="reg-complete" value="Зарегистрироваться">
+            <div class="form-buttons">
+            <input class="button" type="submit" name="reg-complete-master" id="reg-complete-master" value="Я мастер"><input class="button" type="submit" name="reg-complete-client" id="reg-complete-client" value="Я клиент">
+                </div>
             </form>
     </div>
     </main>
-
 </body>
-<script src="jquery-3.3.1.min.js"></script>
-<script src="script.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/script.js"></script>
 </html>
