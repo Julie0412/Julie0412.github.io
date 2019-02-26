@@ -1280,6 +1280,70 @@ font-size: 19px;
     .footer .footer__company-info p {
         margin-bottom: 15px;
     }
+    .inside__header .header__logo,
+    .inside__content-menu{
+        margin-left: 100px;
+    }
+    .inside__header .header__menu a {
+        font-size: 16px;
+    }
+    .inside__header .profile-name {
+        font-size: 18px;
+    }
+    .inside__header .profile-type {
+        font-size: 15px;
+    }
+    .header__profile-photo {
+        width: 60px;
+    }
+    .inside__header .show-profile-menu {
+        background-size: cover;
+        width: 14px;
+        height: 8px;
+        margin-left: 10px;
+    }
+    .inside__header .profile-menu {
+        width: 215px;
+        height: 200px;
+        font-size: 16px;
+    }
+    .inside__header .profile-menu li:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    .profile-menu li::before {
+        top: 1px;
+    }
+    .inside__filter input, .inside__filter select {
+        font-size: 15px;
+        height: 38px;
+    }
+    .inside__filter select {
+        height: 43px;
+    }
+    .button-arrow {
+        width: 47px;
+        height: 43px;
+    }
+    .inside__filter .ui-datepicker-trigger {
+        top: 38px;
+    }
+    .inside__filter .time-from::before, .inside__filter .time-to::after {
+        top: 36px;
+    }
+    .inside__body {
+        font-size: 15px;
+    }
+    .customer-phone {
+        margin-left: 15px;
+        margin-right: 50px;
+    }
+    .appointment.empty .appointment-info {
+        margin-right: 165px;
+    }
+    .inside__content-menu {
+        font-size: 16px;
+    }
+
 }
 @media screen and (min-width: 1363px) and (max-width: 1367px) {
     input[type="checkbox"]:checked + label:before, input[type="checkbox"]:not(:checked) + label:before {
@@ -1379,7 +1443,7 @@ font-size: 19px;
     input[type="checkbox"]:checked + label:after, input[type="checkbox"]:not(:checked) + label:after {
         width: 9px;
         height: 7px;
-        top: 7px;
+        top: 9px;
 
     }
     .form__login input[type="submit"] {
@@ -1529,6 +1593,8 @@ font-size: 19px;
     .registration__window form input[type="checkbox"]:not(:checked) + label:before {
         width: 8px;
         height: 8px;
+        top: 5px;
+        left: 1px;
     }
     .registration__window form input[type="submit"] {
         margin: 7px auto;
@@ -1585,6 +1651,85 @@ font-size: 19px;
     }
     .inside__header .profile-type {
         font-size: 14px;
+    }
+    /*
+
+.inside__header .header__logo,
+.inside__content-menu{
+    margin-left: 100px;
+}
+*/
+.inside__header .header__menu a {
+    font-size: 15px;
+}
+.inside__header .profile-name {
+    font-size: 16px;
+}
+.inside__header .profile-type {
+    font-size: 15px;
+}
+.header__profile-photo {
+    width: 60px;
+}
+.inside__header .show-profile-menu {
+    background-size: cover;
+    width: 14px;
+    height: 8px;
+    margin-left: 10px;
+}
+.inside__header .profile-menu {
+    width: 215px;
+    height: 200px;
+    font-size: 15px;
+}
+.inside__header .profile-menu li:not(:last-child) {
+    margin-bottom: 20px;
+}
+.profile-menu li::before {
+    top: 1px;
+}
+.inside__filter input, .inside__filter select {
+    font-size: 15px;
+    height: 38px;
+}
+.inside__filter select {
+    height: 43px;
+}
+.button-arrow {
+    width: 47px;
+    height: 43px;
+}
+.inside__filter .ui-datepicker-trigger {
+    top: 38px;
+}
+.inside__filter .time-from::before, .inside__filter .time-to::after {
+    top: 36px;
+}
+.inside__body {
+    font-size: 14px;
+}
+.customer-phone {
+    margin-left: 15px;
+    margin-right: 50px;
+}
+.appointment.empty .appointment-info {
+    margin-right: 147px;
+}
+.inside__content-menu {
+    font-size: 14px;
+}
+    .time-column {
+        margin-left: 30px;
+    }
+    .inside__filter label:last-child {
+        margin-right: 0;
+    }
+    .appointment.empty input[type="checkbox"]:checked + label:after, .appointment.empty input[type="checkbox"]:not(:checked) + label:after {
+        width: 11px;
+        height: 9px;
+    }
+    .appointment.empty input[type="checkbox"]:checked + label, .appointment.empty input[type="checkbox"]:not(:checked) + label {
+        padding-left: 25px;
     }
 }
 @media screen and (min-width: 1023px) and (max-width: 1278px) {
@@ -1679,12 +1824,12 @@ font-size: 19px;
     input[type="checkbox"]:checked + label:before, input[type="checkbox"]:not(:checked) + label:before {
         width: 10px;
         height: 10px;
-        top: 2px;
+        top: 4px;
     }
     input[type="checkbox"]:checked + label:after, input[type="checkbox"]:not(:checked) + label:after {
         width: 8px;
         height: 6px;
-        top: 5px;
+        top: 7px;
         left: 2px;
     }
     .form__login a {
@@ -1844,7 +1989,7 @@ font-size: 19px;
     .registration__window form input[type="checkbox"]:not(:checked) + label:before {
         width: 6px;
         height: 6px;
-        top: 3px;
+        top: 5px;
     }
     .registration__window form input[type="submit"] {
         margin: 6px auto;
@@ -1852,6 +1997,10 @@ font-size: 19px;
         font-size: 11px;
         height: 28px;
 
+    }
+    .registration__window form #reg-confirm-tel {
+        margin-bottom: 25px;
+        margin-top: 7px;
     }
 
     .registration__window .registration__step-2 h2 {
@@ -1882,5 +2031,128 @@ font-size: 19px;
         top: 25px;
         width: 15px;
         height: 9px;
+    }
+    .inside__header .container,
+    .inside__main .container,
+    .inside__content .container{
+        width: 800px;
+    }
+
+    .inside__content-menu {
+        margin-left: 0;
+    }
+    .inside__header .header__logo {
+        margin-left: 0;
+        width: 130px;
+    }
+    .inside__header .header__menu {
+        margin-right: 80px;
+        margin-left: 60px;
+
+    }
+    .inside__header .profile-name {
+        font-size: 15px;
+    }
+    .inside__header .profile-type {
+        font-size: 14px;
+    }
+
+    .inside__header .header__menu a {
+        font-size: 14px;
+
+    }
+    .inside__header .profile-name {
+        font-size: 15px;
+    }
+    .inside__header .profile-type {
+        font-size: 14px;
+    }
+    .header__profile-photo {
+        width: 40px;
+    }
+    .inside__header .show-profile-menu {
+        background-size: cover;
+        width: 14px;
+        height: 8px;
+        margin-left: 10px;
+    }
+    .inside__header .profile-menu {
+        width: 215px;
+        height: 200px;
+        font-size: 15px;
+    }
+    .inside__header .profile-menu li:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    .profile-menu li::before {
+        top: 1px;
+    }
+    .inside__filter input, .inside__filter select {
+        font-size: 15px;
+        height: 38px;
+    }
+    .inside__filter select {
+        height: 43px;
+    }
+    .button-arrow {
+        width: 47px;
+        height: 43px;
+    }
+    .inside__filter .ui-datepicker-trigger {
+        top: 38px;
+    }
+    .inside__filter .time-from::before, .inside__filter .time-to::after {
+        top: 36px;
+    }
+    .inside__body {
+        font-size: 14px;
+    }
+    .customer-phone {
+        margin-left: 15px;
+        margin-right: 40px;
+    }
+    .appointment-settings a {
+        width: 30px;
+        height: 30px;
+    }
+    .appointment-settings {
+        margin-left: 40px;
+    }
+    .appointment.empty .appointment-info {
+        margin-right: 100px;
+
+    }
+    .appointment.empty .make-an-appointment {
+        width: 110px;
+        margin-left: 38px;
+    }
+    .inside__content-menu {
+        font-size: 14px;
+    }
+    .inside__content-menu li {
+        width: 200px;
+    }
+    .time-column {
+        margin-left: 15px;
+    }
+    .time-column p {
+        width: 50px;
+    }
+    .appointment {
+        width: 500px;
+        margin-right: 40px;
+    }
+    .inside__filter label:last-child {
+        margin-right: 0;
+    }
+    .appointment.empty input[type="checkbox"]:checked + label:after, .appointment.empty input[type="checkbox"]:not(:checked) + label:after {
+        width: 11px;
+        height: 9px;
+    }
+    .appointment.empty input[type="checkbox"]:checked + label, .appointment.empty input[type="checkbox"]:not(:checked) + label {
+        padding-left: 25px;
+    }
+    .inside__filter label {
+        font-size: 15px;
     }
 }
