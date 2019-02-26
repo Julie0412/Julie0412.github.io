@@ -68,6 +68,16 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Albertus MT';
+    src: url('fonts/AlbertusMT.eot');
+    src: local('AlbertusMT'), local('Albertus MT'),
+    url('fonts/AlbertusMT.eot?#iefix') format('embedded-opentype'),
+    url('fonts/AlbertusMT.woff') format('woff'),
+    url('fonts/AlbertusMT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 body, header, footer, main, section, div, h1, h2, h3, p, a, span, img, ul, li {
     padding: 0;
@@ -105,24 +115,18 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
+
+    flex-direction: row-reverse;
+
+    justify-content: space-between;
+
     align-items: flex-start;
 }
 .header-top .phone {
     color: #e4ff00;
     font-size: 27px;
     font-weight: 500;
-    -ms-flex-item-align: end;
-    align-self: flex-end;
-    padding-top: 20px;
+    padding-top: 14px;
     text-decoration: none;
     position: relative;
     margin-right: 55px;
@@ -153,18 +157,28 @@ header {
     align-items: center;
     padding-bottom: 15px;
     margin-left: 65px;
+    margin-top: 10px;
 }
 .header-top .logo-title {
-    font-family: "Britannic Bold", sans-serif;
-    font-size: 35px;
+    font-family: "Albertus MT", serif;
+    font-size: 30px;
+    text-transform: uppercase;
     color: #fff;
-    margin-right: 15px;
+
+
+}
+.header-top span.logo-title:first-of-type {
     margin-left: 22px;
+}
+
+.header-top .logo-title:first-letter {
+    font-size: 36px;
 }
 .header-top .logo-description {
     font-family: "Museo Sans Cyrillic", sans-serif;
     font-weight: 500;
     font-size: 25px;
+    margin-left: 15px;
 }
 .header-menu {
     width: 100%;
@@ -195,11 +209,14 @@ header {
     list-style: none;
 }
 .header-menu .menu li {
-    color: #024e3a;
-    font-size: 23px;
+
     font-weight: 100;
     padding-top: 22px;
     padding-bottom:22px;
+}
+.header-menu .menu a{
+    color: #024e3a;
+    font-size: 20px;
 }
 .header-menu .menu li:hover {
     text-decoration: underline;
@@ -347,6 +364,9 @@ header {
 .feature:first-of-type span::before {
     left: -19px;
 }
+.feature:last-of-type span::before {
+    left: -22px;
+}
 .feature p {
     font-size: 20px;
     font-weight: 300;
@@ -436,7 +456,6 @@ header {
     -ms-flex-align: center;
     align-items: center;
     width: 285px;
-    position: relative;
 }
 .problem img {
     cursor: pointer;
@@ -478,7 +497,7 @@ header {
 .problem-description {
     background-color: #7ddd32;
     left: 0;
-    font-size: 20px;
+    font-size: 26px;
     text-align: left;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -496,14 +515,20 @@ header {
     border-radius: 20px;
     position: absolute;
     z-index: 21;
-    width: 300px;
-    height: 300px;
+    width: 1250px;
+    height: 550px;
     overflow: hidden;
 }
 .holder {
-    width: 240px;
-    height: 240px;
+    width: 1200px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     overflow-x: scroll;
+}
+.problem:nth-child(2) .holder {
+    justify-content: flex-start;
 }
 .system-steps {
     position: relative;
@@ -907,7 +932,7 @@ footer .container {
     list-style: none;
     margin-top: 20px;
 }
-.footer-menu .menu li {
+.footer-menu .menu a {
     color: #0a6b17;
     font-size: 20px;
     font-weight: 100;
@@ -1442,13 +1467,13 @@ footer .container {
 
     }
     .problem-description {
-        width: 200px;
-        height: 200px;
-        font-size: 16px;
+        width: 886px;
+        height: 355px;
+        font-size: 18px;
     }
     .holder {
-        width: 170px;
-        height: 170px;
+        width: 840px;
+        height: 300px;
     }
     .problems-second-line .problem-title {
         min-height: 50px;
@@ -1861,13 +1886,13 @@ footer .container {
 
     }
     .problem-description {
-        width: 200px;
-        height: 200px;
-        font-size: 15px;
+        width: 886px;
+        height: 355px;
+        font-size: 18px;
     }
     .holder {
-        width: 170px;
-        height: 170px;
+        width: 840px;
+        height: 300px;
     }
     .problems-second-line .problem-title {
         min-height: 50px;
@@ -2270,13 +2295,13 @@ footer .container {
         width: 100px;
     }
     .problem-description {
-        width: 160px;
-        height: 160px;
-        font-size: 12px;
+        width: 724px;
+        height: 300px;
+        font-size: 14px;
     }
     .holder {
-        width: 130px;
-        height: 130px;
+        width: 680px;
+        height: 260px;
     }
     .reviews .read-more, .consultations .read-more, .consultations-block .read-more {
         top: 0;
@@ -2709,13 +2734,13 @@ footer .container {
 
     }
     .problem-description {
-        width: 160px;
-        height: 160px;
-        font-size: 12px;
+        width: 724px;
+        height: 300px;
+        font-size: 14px;
     }
     .holder {
-        width: 130px;
-        height: 130px;
+        width: 680px;
+        height: 260px;
     }
     .problems-second-line .problem-title {
         min-height: 50px;
@@ -3181,6 +3206,16 @@ footer .container {
         -ms-flex-direction: column;
         flex-direction: column;
     }
+    .problem-description {
+        width: 340px;
+        height: 300px;
+        font-size: 14px;
+    }
+    .holder {
+        width: 300px;
+        height: 260px;
+        justify-content: flex-start;
+    }
     .about .info p {
         font-size: 24px;
         line-height: 38px
@@ -3531,6 +3566,16 @@ footer .container {
     .problems-second-line .problem-title {
         min-height: 0;
         margin-top: 0;
+    }
+    .problem-description {
+        width: 290px;
+        height: 300px;
+        font-size: 14px;
+    }
+    .holder {
+        width: 250px;
+        height: 260px;
+        justify-content: flex-start;
     }
     .system-steps img {
         width: 290px;

@@ -1,7 +1,11 @@
 
-$(document).on('click', '.top-menu li', function() {
-    $('.modal-menu').removeClass('hidden');
-    $('body').css('overflow', 'hidden');
+$(document).ready(function(){
+    $(".menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
 });
 
 
