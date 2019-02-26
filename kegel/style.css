@@ -211,10 +211,12 @@ header {
 .header-menu .menu li {
 
     font-weight: 100;
-    padding-top: 22px;
-    padding-bottom:22px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+
 }
 .header-menu .menu a{
+
     color: #024e3a;
     font-size: 20px;
 }
@@ -1356,15 +1358,17 @@ footer .container {
     }
     .header-top .logo-title {
         font-size: 24px;
-        margin-left: 13px;
-        margin-right: 6px;
+
+    }
+    .header-top .logo-title:first-letter {
+        font-size: 30px;
     }
     .header-top .logo-description {
         font-size: 17px;
     }
     .header-top .phone {
         font-size: 18px;
-        padding-top: 10px;
+        padding-top: 16px;
     }
     .header-top .phone::before {
         width: 18px;
@@ -1374,10 +1378,15 @@ footer .container {
     .header-menu .container {
         width: 764px;
     }
-    .header-menu .menu li {
-        font-size: 16px;
-        padding-top: 12px;
-        padding-bottom: 15px;
+    .header-menu .menu a {
+        font-size: 14px;
+
+    }
+    .header-menu .menu li:last-child {
+        margin-right: 10px;
+    }
+    .header-menu .menu li:first-child {
+        margin-left: 10px;
     }
     .first-screen {
         -webkit-box-pack: start;
@@ -1771,15 +1780,20 @@ footer .container {
     }
     .header-top .logo-title {
         font-size: 24px;
-        margin-left: 13px;
-        margin-right: 6px;
+
     }
+
+    .header-top .logo-title:first-letter {
+        font-size: 30px;
+    }
+
     .header-top .logo-description {
         font-size: 17px;
     }
     .header-top .phone {
         font-size: 18px;
-        padding-top: 10px;
+        padding-top: 17px;
+        margin-right: 65px;
     }
     .header-top .phone::before {
         width: 18px;
@@ -1789,10 +1803,16 @@ footer .container {
     .header-menu .container {
         width: 764px;
     }
-    .header-menu .menu li {
-        font-size: 16px;
+    .header-menu .menu a {
+        font-size: 14px;
         padding-top: 12px;
         padding-bottom: 15px;
+    }
+    .header-menu .menu li:first-child {
+        margin-left: 10px;
+    }
+    .header-menu .menu li:last-child {
+        margin-right: 10px;
     }
     .reviews .read-more, .consultations .read-more, .consultations-block .read-more {
         top: 0;
@@ -2192,15 +2212,21 @@ footer .container {
     }
     .header-top .logo-title {
         font-size: 19px;
-        margin-left: 13px;
-        margin-right: 6px;
+
+    }
+
+
+    .header-top .logo-title:first-letter {
+        font-size: 25px;
     }
     .header-top .logo-description {
         font-size: 14px;
+        margin-left: 5px;
     }
+
     .header-top .phone {
         font-size: 14px;
-        padding-top: 10px;
+        padding-top: 17px;
     }
     .header-top .phone::before {
         width: 14px;
@@ -2210,10 +2236,16 @@ footer .container {
     .header-menu .container {
         width: 620px;
     }
-    .header-menu .menu li {
+    .header-menu .menu a {
         font-size: 12px;
         padding-top: 12px;
         padding-bottom: 15px;
+    }
+    .header-menu .menu li:first-child {
+        margin-left: 10px;
+    }
+    .header-menu .menu li:last-child {
+        margin-right: 10px;
     }
     .first-screen {
         -webkit-box-pack: start;
@@ -2617,15 +2649,20 @@ footer .container {
     }
     .header-top .logo-title {
         font-size: 19px;
-        margin-left: 13px;
-        margin-right: 6px;
+
     }
     .header-top .logo-description {
         font-size: 14px;
+        margin-left:5px;
     }
     .header-top .phone {
         font-size: 14px;
-        padding-top: 10px;
+        padding-top: 17px;
+    }
+
+
+    .header-top .logo-title:first-letter {
+        font-size: 25px;
     }
     .header-top .phone::before {
         width: 14px;
@@ -2635,10 +2672,21 @@ footer .container {
     .header-menu .container {
         width: 620px;
     }
+    .header-menu .menu a {
+        font-size: 11px;
+
+    }
     .header-menu .menu li {
-        font-size: 12px;
-        padding-top: 12px;
-        padding-bottom: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .header-menu .menu li:first-child {
+        margin-left: 10px;
+
+    }
+    .header-menu .menu li:last-child {
+        margin-right: 10px;
+
     }
     .first-screen {
         -webkit-box-pack: start;
@@ -3075,6 +3123,11 @@ footer .container {
     .mobile-menu li {
         margin-bottom: 25px;
     }
+    .header-top .container {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
     .reviews .section-title,
     .consultations .section-title {
         margin-bottom: 20px;
@@ -3097,12 +3150,18 @@ footer .container {
     }
 
     .header-top .phone {
+        margin: 0 auto;
         margin-bottom: 10px;
         font-size: 24px;
     }
 
+
     .header-top .logo-title {
-        margin-right: 50px;
+        font-size: 24px;
+    }
+
+    .header-top .logo-title:first-letter {
+        font-size: 30px;
     }
 
     .show-menu {
@@ -3112,6 +3171,7 @@ footer .container {
         cursor: pointer;
         background: url('img/menu.png') no-repeat;
         background-size: cover;
+        margin-left: 30px;
     }
 
     .first-screen {
