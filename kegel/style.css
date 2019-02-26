@@ -367,7 +367,7 @@ header {
     left: -19px;
 }
 .feature:last-of-type span::before {
-    left: -22px;
+    left: -20px;
 }
 .feature p {
     font-size: 20px;
@@ -1445,6 +1445,9 @@ footer .container {
     .feature:first-of-type span::before {
         left: -15px;
     }
+    .feature:last-of-type span::before {
+        left: -17px;
+    }
     .about .container {
         width: 710px;
     }
@@ -1875,6 +1878,9 @@ footer .container {
     .feature:first-of-type span::before {
         left: -15px;
     }
+    .feature:last-of-type span::before {
+        left: -15px;
+    }
     .about .container {
         width: 710px;
     }
@@ -2302,6 +2308,9 @@ footer .container {
         top: -14px;
     }
     .feature:first-of-type span::before {
+        left: -13px;
+    }
+    .feature:last-of-type span::before {
         left: -13px;
     }
     .about .container {
@@ -3155,7 +3164,6 @@ footer .container {
         font-size: 24px;
     }
 
-
     .header-top .logo-title {
         font-size: 24px;
     }
@@ -3240,6 +3248,9 @@ footer .container {
         left: -24px;
         top: -20px;
         background-size: cover;
+    }
+    .feature:last-of-type span::before {
+        left: -18px;
     }
 
     .feature:first-of-type span::before {
