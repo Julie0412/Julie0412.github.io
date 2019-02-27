@@ -167,8 +167,11 @@ header {
 
 
 }
+.header-top .logo img{
+    width: 40px;
+}
 .header-top span.logo-title:first-of-type {
-    margin-left: 22px;
+    margin-left: 7px;
 }
 
 .header-top .logo-title:first-letter {
@@ -483,6 +486,7 @@ header {
     -ms-flex-pack: center;
     justify-content: center;
     margin-bottom: 10px;
+    cursor: pointer;
 
 }
 
@@ -497,7 +501,7 @@ header {
     margin-top: 10px;
 }
 .problem-description {
-    background-color: #7ddd32;
+    background-color: #d5fab7;
     left: 0;
     font-size: 26px;
     text-align: left;
@@ -520,6 +524,18 @@ header {
     width: 1250px;
     height: 550px;
     overflow: hidden;
+    cursor: pointer;
+}
+.close-popup {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    display: block;
+    background: url('img/close.png') no-repeat;
+    background-size: cover;
+    width: 15px;
+    height: 15px;
 }
 .holder {
     width: 1200px;
@@ -748,18 +764,33 @@ header {
     position: relative;
     padding-top: 50px;
 }
+.doctor-photo {
+    display: block;
+    border: 10px solid red;
+    border-radius: 100%;
+    width: 160px;
+    height: 160px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.doctor-photo img {
+    position: absolute;
+}
+
 .consultations .container::before {
     content: '';
     width: 150px;
-    height: 150px;
+    height: 156px;
     background: url('img/doctor.png') no-repeat center;
-    background-position: 45% 0%;
-    border-radius: 100%;
+    background-size: cover;
     display: block;
     position: absolute;
     top: 0;
     left: 20px;
 }
+
 .consultations-block {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1725,9 +1756,9 @@ footer .container {
         margin-top: 10px;
         margin-left: 0;
     }
-    .footer-menu .menu li {
+    .footer-menu .menu a {
 
-        font-size: 13px;
+        font-size: 15px;
     }
     .footer-menu .menu li:not(:last-of-type) {
         margin-right: 10px;
@@ -2154,7 +2185,7 @@ footer .container {
         margin-top: 10px;
         margin-left: 0;
     }
-    .footer-menu .menu li {
+    .footer-menu .menu a {
 
         font-size: 13px;
     }
@@ -2601,7 +2632,7 @@ footer .container {
     .footer-menu .menu {
         margin-top: 12px;
     }
-    .footer-menu .menu li {
+    .footer-menu .menu a {
 
         font-size: 10px;
     }
@@ -3049,7 +3080,7 @@ footer .container {
     .footer-menu .menu {
         margin-top: 12px;
     }
-    .footer-menu .menu li {
+    .footer-menu .menu a {
 
         font-size: 10px;
     }
