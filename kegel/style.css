@@ -744,6 +744,22 @@ header {
     background: url('img/grass.png') no-repeat;
     background-position-y: 100%;
 }
+.consultations .container {
+    position: relative;
+    padding-top: 50px;
+}
+.consultations .container::before {
+    content: '';
+    width: 150px;
+    height: 150px;
+    background: url('img/doctor.png') no-repeat center;
+    background-position: 45% 0%;
+    border-radius: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
 .consultations-block {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -759,6 +775,7 @@ header {
     -ms-flex-align: start;
     align-items: flex-start;
     position: relative;
+    padding-top: 20px;
 }
 .consultation {
     display: -webkit-box;
@@ -2503,6 +2520,11 @@ footer .container {
         padding-top: 0;
         height: 220px;
     }
+    .consultations .container::before {
+        background-size: cover;
+        width: 120px;
+        height: 120px;
+    }
     .consultation-ask {
 
         margin-bottom: 10px;
@@ -2939,6 +2961,11 @@ footer .container {
     }
     .consultations {
         background-size: contain;
+    }
+    .consultations .container::before {
+        background-size: cover;
+        width: 110px;
+        height: 110px;
     }
     .consultation {
         height: 340px;
@@ -3396,6 +3423,9 @@ footer .container {
     .consultation {
         width: 340px;
         height: 345px;
+    }
+    .consultations .container::before {
+        display: none;
     }
     .consultation-answer {
         max-width: 90%;
