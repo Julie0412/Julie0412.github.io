@@ -1,127 +1,4 @@
-/*
 
-x
-.bg-apple {
-    width: 78px; height: 93px;
-    background: url('css_sprites.png') -396px -10px;
-}
-
-x
-.bg-arrow {
-    width: 75px; height: 45px;
-    background: url('css_sprites.png') -396px -123px;
-}
-
-x
-.bg-dell {
-
-}
-
-x
-.bg-asus {
-    width: 42px; height: 10px;
-    background: url('css_sprites.png') -494px -451px;
-}
-
-x
-.bg-benq {
-    width: 46px; height: 24px;
-    background: url('css_sprites.png') -494px -270px;
-}
-
-x
-.bg-close {
-
-}
-
-x
-
-
-x
-.bg-icon1 {
-
-}
-
-x
-.bg-icon2 {
-    width: 176px; height: 176px;
-    background: url('css_sprites.png') -10px -10px;
-}
-
-x
-.bg-dns {
-    width: 46px; height: 15px;
-    background: url('css_sprites.png') -494px -356px;
-}
-
-x
-.bg-icon3 {
-    width: 170px; height: 175px;
-    background: url('css_sprites.png') -206px -10px;
-}
-
-x
-.bg-emachines {
-    width: 46px; height: 46px;
-    background: url('css_sprites.png') -494px -204px;
-}
-
-x
-.bg-lenovo {
-    width: 57px; height: 10px;
-    background: url('css_sprites.png') -494px -391px;
-}
-
-x
-
-
-x
-.bg-menu {
-    width: 57px; height: 42px;
-    background: url('css_sprites.png') -494px -10px;
-}
-
-x
-.bg-msi {
-    width: 102px; height: 24px;
-    background: url('css_sprites.png') -86px -405px;
-}
-
-x
-
-
-x
-.bg-search {
-
-}
-
-x
-
-
-x
-.bg-skype {
-    width: 114px; height: 114px;
-    background: url('css_sprites.png') -203px -206px;
-}
-
-x
-.bg-toshiba {
-    width: 75px; height: 10px;
-    background: url('css_sprites.png') -154px -362px;
-}
-
-x
-.bg-sony {
-    width: 124px; height: 23px;
-    background: url('css_sprites.png') -10px -362px;
-}
-
-x
-.bg-vk {
-    width: 56px; height: 56px;
-    background: url('css_sprites.png') -10px -405px;
-}
-*/
 
 body, header, main, footer, section, div, h1, h2, h3, p, a, img, ul, li, input {
     padding: 0;
@@ -129,7 +6,8 @@ body, header, main, footer, section, div, h1, h2, h3, p, a, img, ul, li, input {
 }
 body {
     background-color: #000000;
-    width: 320px;
+    max-width: 420px;
+    margin: 0 auto;
     font-family: 'Rubik', sans-serif;
     font-size: 17px;
     font-weight: 500;
@@ -192,6 +70,51 @@ header {
     background: url('images/search.png') no-repeat;
     background-size: cover;
     margin-left: 113px;
+    cursor: pointer;
+}
+.header-search {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.header-search input[type="text"]{
+    width: 250px;
+    height: 24px;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 4px 0 rgba(0, 0, 0, 0.25);
+    background-color: #ffffff;
+    font-size: 17px;
+    line-height: 1.3;
+    letter-spacing: normal;
+    color: rgba(85, 81, 81, 0.75);
+
+}
+.close-search {
+    display: block;
+    width: 17px;
+    height: 17px;
+    background: url('images/close.png') no-repeat;
+    background-size: cover;
+    opacity: 0.4;
+    position: absolute;
+    left: 230px;
+    top: 6px;
+    z-index: 5;
+    cursor: pointer;
+}
+.header-search input[type="button"] {
+    display: block;
+    font-size: 0;
+    -webkit-appearance: none;
+    width: 28px;
+    height: 28px;
+    background: url('images/search.png') no-repeat;
+    background-size: cover;
+    border: none;
+    margin-left: 10px;
 }
 .show-menu {
     display: block;
@@ -200,10 +123,11 @@ header {
     background: url('images/menu.png') no-repeat;
     background-size: cover;
     margin-left: 19px;
+    cursor: pointer;
 }
 .menu {
     position: absolute;
-    width: 290px;
+    width: 100%;
     display: flex;
     list-style: none;
     text-decoration: none;
@@ -216,7 +140,7 @@ header {
 }
 header .menu {
     top: 0;
-    left: -14px;
+    right: 0;
 }
 
 .menu li {
@@ -227,10 +151,10 @@ header .menu {
     margin-left: 8px;
 }
 .menu li:first-child {
-    margin-top: 54px;
+    margin-top: 59px;
 }
 .menu li:nth-child(7) {
-    margin-bottom: 53px;
+    margin-bottom: 59px;
 }
 .menu .close {
     position: absolute;
@@ -239,6 +163,7 @@ header .menu {
     width: 28px; height: 28px;
     background: url('images/close.png') no-repeat;
     background-size: cover;
+    cursor: pointer;
 }
 .header-content h1 {
     font-size: 36px;
@@ -278,6 +203,11 @@ header .menu {
     color: #ffffff;
     padding: 0;
     padding-right: 16px;
+}
+.contact-form input[type="submit"]:hover,
+.button-hover:hover{
+    color: rgba(255, 255, 255, 0.75);
+    background-color: #023d6d;
 }
 .header-content form {
     padding-bottom: 50px;
@@ -339,7 +269,7 @@ header .menu {
     font-stretch: normal;
     line-height: 1.11;
 }
-.about-text {
+.about-text, .about-text-visible {
     margin-top: 20px;
     line-height: 1.3;
 }
@@ -351,7 +281,9 @@ header .menu {
     height: 21px;
     background: url('images/arrow.png') no-repeat;
     background-size: cover;
+    cursor: pointer;
 }
+
 .close-info {
     margin: 0 auto;
     margin-top: 30px;
@@ -361,6 +293,7 @@ header .menu {
     background: url('images/arrow.png') no-repeat;
     background-size: cover;
     transform: rotate(180deg);
+    cursor: pointer;
 }
 .main-steps .container {
     width: 100%;
@@ -559,7 +492,6 @@ main .main-price .owl-dot.active,
 main .main-why-us .owl-dot.active {
     background-color: rgba(255, 255, 255, 0.3);
     border: none;
-    
 }
 .main-works {
     position: relative;
@@ -580,6 +512,7 @@ main .main-why-us .owl-dot.active {
     top: 86px;
     left: -16px;
     cursor: pointer;
+
 }
 .main-works .owl-carousel .owl-nav button.owl-prev.disabled,
 .main-works .owl-carousel .owl-nav button.owl-next.disabled{
@@ -628,6 +561,10 @@ main .main-why-us .owl-dot.active {
     text-align: center;
     padding-top: 9px;
     margin: 10px auto;
+}
+.more-button:hover {
+    color: rgba(255, 255, 255, 0.75);
+    border-color: rgba(255, 255, 255, 0.75);
 }
 .work-three .more-button {
     margin-top: 20px;
@@ -944,9 +881,11 @@ footer {
 }
 footer .show-menu {
     margin-left: 10px;
+    cursor: pointer;
 }
 footer ul.menu {
     bottom: 0;
+    right: 0;
     position: absolute;
 }
 .copyright {
@@ -958,13 +897,38 @@ footer ul.menu {
 .hidden {
     display: none;
 }
+a[href^="tel"],a  {
+    color: inherit;
+    text-decoration: none;
+}
 
 
+@media screen and (min-width: 330px){
+    .container {
+        margin: 0 auto;
+    }
+    .main-steps .container {
+        width: 286px;
+        margin: 0 auto;
+    }
+    .main-price,
+    .main-why-us {
+        width: 320px;
+        margin: 0 auto;
+    }
+    .main-price .container,
+    .main-why-us .container {
+        margin: 0 auto;
+    }
+    .main-why-us .container {
+        margin-top: 100px;
+    }
+    .main-check form {
+        margin-left: 0;
+    }
+    .main-brands .container {
+        width: 313px;
+    }
 
 
-
-
-
-
-
-
+}
